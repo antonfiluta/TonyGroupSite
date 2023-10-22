@@ -30,7 +30,7 @@ function toScroll() {
         mail.style.display = "none";
     } else {                      //без прокурутки
         if (window.innerWidth < 800) {
-            head.style.height = "25vw";
+            head.style.height = "40vw";
             logo.style.width = "40vw";
             nav.style.height = "7vw";
             nav.style.display = "flex";

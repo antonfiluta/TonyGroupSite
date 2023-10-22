@@ -36,6 +36,8 @@ header {
     right: 2vw;
     top: 2vw;
     font-size: 2vw;
+    text-decoration: none;
+    color: (53, 53, 164);
 }
 
 #mail {
@@ -161,7 +163,7 @@ label {
 .bar1, .bar2, .bar3 {
     width: 8vw;
     height: 0.7vw;
-    background-color: blue;;
+    background-color: rgb(89, 108, 157);
     margin: 1vw 0;
     transition: 0.4s;
 }
@@ -196,6 +198,7 @@ label {
     width: 35vw;
     height: 30vw;
     border: 1px blue solid;
+    border-radius: 0 0 2px 2px;
 }
 
 #m1:checked ~ label:nth-of-type(1) > button::after,
@@ -295,7 +298,7 @@ main > p {
 @media screen and (max-width: 700px) {
     /* header start */
 header {
-    height: 25vw; /*10vw*/
+    height: 40vw; /*10vw*/
     box-shadow: 0 0 2vw 0;
     display: flex;
     justify-content: space-around;
@@ -322,7 +325,7 @@ header {
 }
 
 nav {
-    width: 77vw;
+    width: 84vw;
     height: 7vw; /*100%*/
 }
 
@@ -338,7 +341,7 @@ nav {
 
 /* main start*/
 main {
-    margin-top: 25vw;
+    margin-top: 40vw;
 }
 
 h1 {
