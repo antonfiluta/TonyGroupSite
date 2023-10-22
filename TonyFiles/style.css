@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Forum;
+}
+
+body {
+    background-color: aliceblue;;
+}
+
+body,
+main,
+header,
+footer {
+    width: 100%;
+}
+
+/* header start */
+header {
+    position: fixed;
+    height: 15vw; /*5vw*/
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: end; /*center*/
+    box-shadow: 0 0 1vw 0;
+    color: rgb(53, 53, 164);
+    background-color: white;
+    transition: all 0.35s ease;
+}
+
+#number {
+    position: absolute;
+    right: 2vw;
+    top: 2vw;
+    font-size: 2vw;
+}
+
+#mail {
+    position: absolute;
+    right: 2vw;
+    top: 4.3vw;
+    font-size: 1.6vw;
+}
+
+#logoBox {
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#logo {
+    width: 22vw; /*12vw*/
+    transition: all 0.35s ease;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    height: 4.5vw; /*100%*/
+}
+
+#r1, #r2, #r3, #r4, #m1, #m2, #m3, #m4{
+    display: none;
+}
+
+label {
+    width: 100%;
+    height: 100%;
+}
+
+.head-buttons {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5vw;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: inter;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 1;
+    text-align: center;
+    background-color: white;
+    color: blue;
+    border-radius: 3px;
+}
+
+.head-buttons:hover {
+    color: rgb(255, 255, 255);
+}
+
+.head-buttons::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(155, 195, 235), rgb(115, 115, 222));
+    transition: all 0.8s;
+    z-index: -1;
+}
+
+.head-buttons:hover::before {
+    width: 100%;
+}
+
+.head-buttons::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: blue;
+    transition: all 1s;
+}
+
+#r1:checked ~ label:nth-of-type(1) > button::after,
+#r2:checked ~ label:nth-of-type(2) > button::after,
+#r3:checked ~ label:nth-of-type(3) > button::after,
+#r4:checked ~ label:nth-of-type(4) > button::after {
+    animation-name: width;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function:ease;
+}
+
+#r1:checked ~ label:nth-of-type(1) > button:hover::before,
+#r2:checked ~ label:nth-of-type(2) > button:hover::before,
+#r3:checked ~ label:nth-of-type(3) > button:hover::before,
+#r4:checked ~ label:nth-of-type(4) > button:hover::before {
+    width: 0%;
+}
+
+#r1:checked ~ label:nth-of-type(1) > button:hover,
+#r2:checked ~ label:nth-of-type(2) > button:hover,
+#r3:checked ~ label:nth-of-type(3) > button:hover,
+#r4:checked ~ label:nth-of-type(4) > button:hover {
+    color: blue;
+}
+/* header end */
+
+/* menu start */
+#menuBox {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 2.7vw;
+    top: 1.8vw;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 8vw;
+    height: 0.7vw;
+    background-color: blue;;
+    margin: 1vw 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: rotate(45deg) translateY(2.35vw);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(-45deg) translateY(-2.35vw);
+}
+
+
+#menuM {
+    position: absolute;
+    width: 35vw;
+    height: 0vw;
+    right: 0;
+    top: 10vw;
+    overflow: hidden;
+    transition: all 0.5s;
+    background-color: aliceblue;
+}
+
+#navM {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 30vw;
+}
+
+#m1:checked ~ label:nth-of-type(1) > button::after,
+#m2:checked ~ label:nth-of-type(2) > button::after,
+#m3:checked ~ label:nth-of-type(3) > button::after,
+#m4:checked ~ label:nth-of-type(4) > button::after {
+    animation-name: width;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function:ease;
+}
+
+#m1:checked ~ label:nth-of-type(1) > button:hover::before,
+#m2:checked ~ label:nth-of-type(2) > button:hover::before,
+#m3:checked ~ label:nth-of-type(3) > button:hover::before,
+#m4:checked ~ label:nth-of-type(4) > button:hover::before {
+    width: 0%;
+}
+
+#m1:checked ~ label:nth-of-type(1) > button:hover,
+#m2:checked ~ label:nth-of-type(2) > button:hover,
+#m3:checked ~ label:nth-of-type(3) > button:hover,
+#m4:checked ~ label:nth-of-type(4) > button:hover {
+    color: blue;
+}
+/* menu end */
+
+/* main start*/
+main {
+    margin-top: 15vw;
+    background-color: aliceblue;
+    padding: 2vw;
+}
+
+h1 {
+    font-size: 2.8vw;
+    font-weight: 300;
+    margin-top: 0.7vw;
+    margin-left: 3vw;
+    font-family: Inter;
+    color: rgb(18, 17, 17);
+    text-shadow: 0.05em 0.04em 1px rgb(142, 141, 141);
+}
+
+main > p {
+    margin-left: 3vw;
+    margin-top: 1vw;
+    font-size: 1.4vw;
+}
+
+.shop-wrapper {
+    width: 100%;
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shop-card {
+    width: 23.8vw;
+    height: 26vw;
+    padding: 1vw;
+    border: 1px solid blue;
+    margin-bottom: 0.5vw;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px gray;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-card:hover {
+    width: 24vw;
+    height: 26.5vw;
+    box-shadow: 5px 5px 1px gray;
+    border: 3px solid blue;
+}
+
+.shop-card > img {
+    width: 80%;
+    border-radius: 1vw;
+}
+
+.shop-card > p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 2.4vw;
+    font-size: 1.7vw;
+    text-align: center;
+}
+/* main end*/
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    /* header start */
+header {
+    height: 25vw; /*10vw*/
+    box-shadow: 0 0 2vw 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: end; 
+}
+
+#number {
+    font-size: 3.6vw;
+}
+
+#mail {
+    top: 5.3vw;
+    font-size: 3vw;
+}
+
+#logoBox {
+    width: 100vw;
+    height: 50%;
+}
+
+#logo {
+    width: 40vw; /*25vw*/
+}
+
+nav {
+    width: 77vw;
+    height: 7vw; /*100%*/
+}
+
+.head-buttons {
+    font-size: 2.4vw;
+    border-radius: 3px;
+}
+
+.head-buttons::after {
+    height: 4px;
+}
+/* header end */
+
+/* main start*/
+main {
+    margin-top: 25vw;
+}
+
+h1 {
+    font-size: 4vw;
+    text-shadow: 0.07em 0.07em 1px rgb(142, 141, 141);
+}
+
+main > p {
+    font-size: 2.65vw;
+}
+
+.shop-card {
+    width: 31vw;
+    height: 37vw;
+    padding: 1vw;
+    border: 2px solid blue;
+    margin-bottom: 0.5vw;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px gray;
+}
+
+.shop-card:hover {
+    width: 32vw;
+    height: 38vw;
+    box-shadow: 7px 7px 1px gray;
+    border: 5px solid blue;
+}
+
+.shop-card > p {
+    margin-top: 3vw;
+    font-size: 2.5vw;
+}
+
+/* main end*/
+}
+
+
+
+@keyframes width {
+    0% {width:0;}
+    100% {width: 100%;}
+}
+
+
+@font-face {
+    font-family: "Forum"; 
+    src: url("font/Forum/Forum-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "Inter"; 
+    src: url("font/Inter/Inter-VariableFont_slnt,wght.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 

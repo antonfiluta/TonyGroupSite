@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>TonyGroup</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="TonyGroup">
+    <meta property="og:title" content="описание">
+    <meta property="og:description" content="длинное описание">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+</head>
+<body>
+    <header id="header">
+      <div id="number">+375 (29) 352-37-70</div>
+      <div id="mail">info@mail.ru</div>
+      <div onclick="window.location.href='index.html'" id="logoBox"><img src="images/logoM.jpeg" alt="tonygroup" id="logo"></div>
+      <nav id="nav">
+        <input type="radio" name="radio" id="r1" checked>
+        <input type="radio" name="radio" id="r2">
+        <input type="radio" name="radio" id="r3">
+        <input type="radio" name="radio" id="r4">
+        <label for="r1">
+          <button class="head-buttons">каталог</button>
+        </label>
+        <label for="r2">
+          <button class="head-buttons" onclick="window.location.href = 'about.html'">о компании</button>
+        </label>
+        <label for="r3">
+          <button class="head-buttons" onclick="window.location.href = 'prices.html'">прайс-лист</button>
+        </label>
+        <label for="r4">
+          <button class="head-buttons" onclick="window.location.href = 'contact.html'">контакты</button>
+        </label>
+      </nav>
+      <div id="menuBox" onclick="menu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="menuM">
+        <div id="navM">
+          <input type="radio" name="radioM" id="m1" checked>
+          <input type="radio" name="radioM" id="m2">
+          <input type="radio" name="radioM" id="m3">
+          <input type="radio" name="radioM" id="m4">
+          <label for="m1">
+            <button class="head-buttons">каталог</button>
+          </label> 
+          <label for="m2">
+            <button class="head-buttons" onclick="window.location.href = 'about.html'">о компании</button>
+          </label>
+          <label for="m3">
+            <button class="head-buttons" onclick="window.location.href = 'prices.html'">прайс-лист</button>
+          </label>
+          <label for="m4">
+            <button class="head-buttons" onclick="window.location.href = 'contact.html'">контакты</button>
+          </label>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <h1>Каталог оборудования</h1>
+      <p>Выберите нужную вам категорию оборудования и ищите подходящий товар</p>
+      <div class="shop-wrapper">
+        <div class="shop-card">
+          <img src="images/" alt="">
+          <p>Теплообменики</p>
+        </div>
+        <div class="shop-card">
+          <img src="images/" alt="">
+          <p>Насосы</p>
+        </div>
+        <div class="shop-card">
+          <img src="images/" alt="">
+          <p>Элементы автоматики</p>
+        </div>
+        <div class="shop-card">
+          <img src="images/" alt="">
+          <p>Сервоприводы и трехходовые клапаны</p>
+        </div>
+        <div class="shop-card">
+          <img src="images/" alt="">
+          <p>Рабочие колеса с диффузором</p>
+        </div>
+        <div class="shop-card">
+          <img src="images/" alt="">
+          <p>Мотор-колеса</p>
+        </div>
+        <div class="shop-card">
+          <img src="images/" alt="">
+          <p>Вентиляторные блоки</p>
+        </div>
+        <div class="shop-card">
+          <img src="images/" alt="">
+          <p>Электроприводы воздушных заслонок</p>
+        </div>
+        <div class="shop-card">
+          <img src="images/" alt="">
+          <p>Осевые вентиляторы</p>
+        </div>
+        <div class="shop-card">
+          <img src="images/" alt="">
+          <p>Теплоутилизаторы</p>
+        </div>
+        <div class="shop-card">
+          <img src="images/" alt="">
+          <p>Вставки фильтрующие</p>
+        </div>
+        <div class="shop-card">
+          <img src="images/" alt="">
+          <p>Панель ППУ</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
