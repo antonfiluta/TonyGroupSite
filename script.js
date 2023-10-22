@@ -20,7 +20,7 @@ function toScroll() {
             menuBox.style.display = "inline-block";
         } else {
             head.style.height = "5vw";
-            logo.style.width = "12vw";
+            logo.style.width = "14vw";
             nav.style.display = "flex";
             nav.style.height = "5vw";
             menuBox.style.display = "none";
@@ -31,12 +31,12 @@ function toScroll() {
     } else {                      //без прокурутки
         if (window.innerWidth < 800) {
             head.style.height = "40vw";
-            logo.style.width = "40vw";
+            logo.style.width = "45vw";
             nav.style.height = "7vw";
             nav.style.display = "flex";
         } else {
-            head.style.height = "15vw";
-            logo.style.width = "22vw";
+            head.style.height = "20vw";
+            logo.style.width = "28vw";
             nav.style.height = "4.5vw";
             nav.style.display = "flex";
         }

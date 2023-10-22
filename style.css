@@ -19,7 +19,7 @@ footer {
 /* header start */
 header {
     position: fixed;
-    height: 15vw; /*5vw*/
+    height: 20vw; /*5vw*/
     top: 0;
     left: 0;
     display: flex;
@@ -48,7 +48,7 @@ header {
 }
 
 #logoBox {
-    width: 30vw;
+    width: 35vw;
     height: 100%;
     display: flex;
     align-items: center;
@@ -57,7 +57,7 @@ header {
 }
 
 #logo {
-    width: 22vw; /*12vw*/
+    width: 28vw; /*12vw*/
     transition: all 0.35s ease;
 }
 
@@ -228,7 +228,7 @@ label {
 
 /* main start*/
 main {
-    margin-top: 15vw;
+    margin-top: 20vw;
     background-color: aliceblue;
     padding: 2vw;
 }
@@ -321,11 +321,11 @@ header {
 }
 
 #logo {
-    width: 40vw; /*25vw*/
+    width: 45vw; /*25vw*/
 }
 
 nav {
-    width: 90vw;
+    width: 95vw;
     height: 7vw; /*100%*/
 }
 
