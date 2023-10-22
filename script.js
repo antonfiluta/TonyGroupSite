@@ -6,6 +6,8 @@ const nav = document.getElementById('nav');
 const menuM = document.getElementById('menuM');
 const navM = document.getElementById('navM');
 const main = document.getElementById('main');
+const menuB = document.getElementById('menuBox');
+
 
 
 function toScroll() {
@@ -58,3 +60,11 @@ function menu(x) {
     isHide = true;
   }
 }
+
+function hideMenu() {
+  menuB.classList.remove("change");
+  menuM.style.height = "0";
+  isHide = true;
+}
+
+window.addEventListener('scroll', hideMenu);
