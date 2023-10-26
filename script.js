@@ -7,7 +7,7 @@ const menuM = document.getElementById('menuM');
 const navM = document.getElementById('navM');
 const main = document.getElementById('main');
 const menuB = document.getElementById('menuBox');
-
+const list = document.getElementById('list');
 
 
 function toScroll() {
@@ -68,3 +68,18 @@ function hideMenu() {
 }
 
 window.addEventListener('scroll', hideMenu);
+
+
+function showList() {
+  list.style.display = "flex";
+}
+
+function hideList() {
+  list.style.display = "none";
+}
+
+window.onclick = function(event) {
+  let target = event.target; 
+  if (target.id != 'list') return;
+  hideList();
+};

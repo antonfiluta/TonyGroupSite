@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="cards.css">
     <title>TonyGroup</title>
 
     <meta name="HandheldFriendly" content="True">
@@ -23,7 +23,7 @@
       <input type="radio" name="radio" id="r1">
       <input type="radio" name="radio" id="r2">
       <input type="radio" name="radio" id="r3">
-      <input type="radio" name="radio" id="r4" checked>
+      <input type="radio" name="radio" id="r4">
       <label for="r1">
         <button class="head-buttons" onclick="window.location.href = 'index.html'">каталог</button>
       </label>
@@ -34,7 +34,7 @@
         <button class="head-buttons" onclick="window.location.href = 'prices.html'">прайс-лист</button>
       </label>
       <label for="r4">
-        <button class="head-buttons">контакты</button>
+        <button class="head-buttons" onclick="window.location.href = 'contact.html'">контакты</button>
       </label>
     </nav>
     <div id="menuBox" onclick="menu(this)">
@@ -47,7 +47,7 @@
         <input type="radio" name="radioM" id="m1">
         <input type="radio" name="radioM" id="m2">
         <input type="radio" name="radioM" id="m3">
-        <input type="radio" name="radioM" id="m4" checked>
+        <input type="radio" name="radioM" id="m4">
         <label for="m1">
           <button class="head-buttons" onclick="window.location.href = 'index.html'">каталог</button>
         </label> 
@@ -58,17 +58,39 @@
           <button class="head-buttons" onclick="window.location.href = 'prices.html'">прайс-лист</button>
         </label>
         <label for="m4">
-          <button class="head-buttons">контакты</button>
+          <button class="head-buttons" onclick="window.location.href = 'contact.html'">контакты</button>
         </label>
       </div>
     </div>
   </header>
   <main>
-    <h1>Наши контакты</h1>
+    <div class="main-head">
+      <h1>Каталог теплообмеников</h1>
+      <img src="images/search.png" alt="search" onclick="showList()">
+    </div>
+    <hr>
   </main>
   <footer>
       
   </footer>
+  <div id="list">
+    <div class="listBox">
+      <ul>
+        <li>Теплообменики</li>
+        <li>Насосы</li>
+        <li>Элементы автоматики</li>
+        <li>Сервоприводы и трехходовые клапаны</li>
+        <li>Рабочие колеса с диффузором</li>
+        <li>Мотор-колеса</li>
+        <li>Вентиляторные блоки</li>
+        <li>Электроприводы воздушных заслонок</li>
+        <li>Осевые вентиляторы</li>
+        <li>Теплоутилизаторы</li>
+        <li>Вставки фильтрующие</li>
+        <li>Панель ППУ</li>
+      </ul>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

@@ -18,14 +18,14 @@
   <header id="header">
     <div id="number">+375 (29) 352-37-70</div>
     <div id="mail">info@mail.ru</div>
-    <div onclick="window.location.href = 'prices.html'" id="logoBox"><img src="images/logoM.jpeg" alt="tonygroup" id="logo"></div>
+    <div onclick="window.location.href='index.html'" id="logoBox"><img src="images/logoM.jpeg" alt="tonygroup" id="logo"></div>
     <nav id="nav">
       <input type="radio" name="radio" id="r1">
       <input type="radio" name="radio" id="r2">
       <input type="radio" name="radio" id="r3" checked>
       <input type="radio" name="radio" id="r4">
       <label for="r1">
-        <button class="head-buttons" onclick="window.location.href='index.html'">каталог</button>
+        <button class="head-buttons" onclick="window.location.href = 'index.html'">каталог</button>
       </label>
       <label for="r2">
         <button class="head-buttons" onclick="window.location.href = 'about.html'">о компании</button>
@@ -37,6 +37,31 @@
         <button class="head-buttons" onclick="window.location.href = 'contact.html'">контакты</button>
       </label>
     </nav>
+    <div id="menuBox" onclick="menu(this)">
+      <div class="bar1" id="b1"></div>
+      <div class="bar2" id="b2"></div>
+      <div class="bar3" id="b3"></div>
+    </div>
+    <div id="menuM">
+      <div id="navM">
+        <input type="radio" name="radioM" id="m1">
+        <input type="radio" name="radioM" id="m2">
+        <input type="radio" name="radioM" id="m3" checked>
+        <input type="radio" name="radioM" id="m4">
+        <label for="m1">
+          <button class="head-buttons" onclick="window.location.href = 'index.html'">каталог</button>
+        </label> 
+        <label for="m2">
+          <button class="head-buttons" onclick="window.location.href = 'about.html'">о компании</button>
+        </label>
+        <label for="m3">
+          <button class="head-buttons">прайс-лист</button>
+        </label>
+        <label for="m4">
+          <button class="head-buttons" onclick="window.location.href = 'contact.html'">контакты</button>
+        </label>
+      </div>
+    </div>
   </header>
   <main>
     <h1>Прайс-лист</h1>
