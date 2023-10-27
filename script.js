@@ -85,3 +85,9 @@ window.onclick = function(event) {
   if (target.id != 'list') return;
   hideList();
 };
+
+list.onclick = function(event) {
+  let target = event.target; 
+  if (target.id != 'list') return;
+  hideList();
+};

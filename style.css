@@ -279,8 +279,8 @@ main > p {
 }
 
 .shop-card:hover {
-    width: 24vw;
-    height: 26.5vw;
+    width: 24.2vw;
+    height: 26.6vw;
     box-shadow: 5px 5px 1px gray;
     border: 3px solid blue;
 }
