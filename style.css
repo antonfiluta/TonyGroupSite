@@ -260,10 +260,12 @@ main > p {
 .shop-wrapper a {
     text-decoration: none;
     color: black;
+    margin: 0;
+    padding: 0;
 }
 
 .shop-card {
-    width: 23.8vw;
+    width: 23.4vw;
     height: 26vw;
     padding: 1vw;
     border: 1px solid blue;
@@ -359,7 +361,7 @@ main > p {
 }
 
 .shop-card {
-    width: 31vw;
+    width: 30.8vw;
     height: 37vw;
     padding: 1vw;
     border: 2px solid blue;
@@ -369,7 +371,7 @@ main > p {
 }
 
 .shop-card:hover {
-    width: 32vw;
+    width: 31.8vw;
     height: 38vw;
     box-shadow: 7px 7px 1px gray;
     border: 5px solid blue;

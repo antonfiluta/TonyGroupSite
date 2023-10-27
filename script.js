@@ -25,6 +25,7 @@ function toScroll() {
             nav.style.height = "5vw";
             menuBox.style.display = "none";
         }
+        logo.src = "images/logoM.jpeg";
         head.style.alignItems = "center";
         num.style.display = "none";
         mail.style.display = "none";
@@ -41,6 +42,7 @@ function toScroll() {
             nav.style.display = "flex";
         }
       head.style.alignItems = "end";
+      logo.src = "images/bigLogo.jpeg";
       num.style.display = "block";
       mail.style.display = "block";
       menuBox.style.display = "none";
