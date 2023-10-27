@@ -5,6 +5,11 @@
     font-family: Forum;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(78, 107, 176);
+}
+
 body {
     background-color: aliceblue;;
 }
@@ -264,11 +269,21 @@ label {
     cursor: pointer;
 }
 
+.listBox ul li a{
+    width: 100%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
 .listBox ul li:hover {
-    color: rgb(50, 86, 170);
-    font-size: 2vw;
     padding: 0.8vw 0.5vw;
     box-shadow: 0 0 4px 0;
+}
+
+.listBox ul li:hover a {
+    color: blue;
+    font-size: 2vw;
 }
 
 main {
