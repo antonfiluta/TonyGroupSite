@@ -369,6 +369,38 @@ main {
     margin-top: 40vw;
 }
 
+.listBox {
+    width: 70vw;
+    border-radius: 5px;
+}
+
+.listBox ul li {
+    box-shadow: 0 0 2px 0;
+    margin-bottom: 2px;
+    padding: 1vw;
+    font-size: 3.2vw;
+    text-indent: 2vw;
+}
+
+.listBox ul li:hover {
+    padding: 2vw 1vw;
+    box-shadow: 0 0 4px 0;
+}
+
+.listBox ul li:hover a {
+    font-size: 3.4vw;
+}
+
+.main-head {
+    margin-bottom: 1vw;
+}
+
+.main-head img {
+    width: 5vw;
+    margin-right: 2vw;
+    margin-top: 1vw;
+}
+
 h1 {
     font-size: 4.3vw;
     text-shadow: 0.07em 0.07em 1px rgb(142, 141, 141);
