@@ -491,12 +491,12 @@ h1 {
 }
 
 .tips-box {
-    width: 100%;
+    width: 90%;
 }
 
 .tips {
     border: 1px solid black;
-    font-size: 2.3vw;
+    font-size: 2.4vw;
     padding: 0.6vw;
     border-radius: 3px;
     margin-bottom: 0.5vw;
@@ -504,7 +504,7 @@ h1 {
 }
 
 .tips:hover {
-    font-size: 2.7vw;
+    font-size: 2.6vw;
     margin: -0.3vw 0 0.6vw -0.3vw;
     box-shadow: 7px 7px 2px 1px rgba(0, 0, 0, 0.6);
 }
