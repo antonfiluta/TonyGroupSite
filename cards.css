@@ -11,7 +11,7 @@ a {
 }
 
 body {
-    background-color: aliceblue;;
+    background-color: aliceblue;
 }
 
 body,
@@ -24,7 +24,7 @@ footer {
 /* header start */
 header {
     position: fixed;
-    height: 20vw; /*5vw*/
+    height: 15vw; /*5vw*/
     top: 0;
     left: 0;
     display: flex;
@@ -34,6 +34,7 @@ header {
     color: rgb(78, 107, 176);
     background-color: white;
     transition: all 0.35s ease;
+    z-index: 3;
 }
 
 #number {
@@ -77,7 +78,7 @@ nav {
     display: none;
 }
 
-label {
+nav label {
     width: 100%;
     height: 100%;
 }
@@ -232,6 +233,25 @@ label {
 /* menu end */
 
 /* main start*/
+main {
+    margin-top: 15vw;
+    background-color: aliceblue;
+    padding: 2vw;
+}
+
+.main-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5vw;
+}
+
+.main-head img {
+    width: 3vw;
+    margin-right: 2vw;
+    margin-top: 1vw;
+    cursor: pointer;
+}  
+
 #list {
     position: fixed;
     top: 0;
@@ -286,25 +306,6 @@ label {
     font-size: 2vw;
 }
 
-main {
-    margin-top: 20vw;
-    background-color: aliceblue;
-    padding: 2vw;
-}
-
-.main-head {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5vw;
-}
-
-.main-head img {
-    width: 3vw;
-    margin-right: 2vw;
-    margin-top: 1vw;
-    cursor: pointer;
-}
-
 h1 {
     font-size: 2.8vw;
     font-weight: 300;
@@ -314,6 +315,93 @@ h1 {
     color: rgb(18, 17, 17);
     text-shadow: 0.05em 0.04em 1px rgb(142, 141, 141);
 }
+
+.tips-wrapper {
+    width: 100%;
+    display: flex;
+    margin-top: 2vw;
+}
+
+.TIB {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tips-img {
+    width: 20vw;
+}
+
+.line {
+    height: 100%;
+    align-self: stretch;
+    width: 2px;
+    background-color: black;
+}
+
+.tips-box {
+    width: 75%;
+}
+
+.tips {
+    border: 1px solid black;
+    background: linear-gradient(to right, rgb(155, 195, 235), rgb(115, 115, 222));
+    display: inline-block;
+    font-size: 1.2vw;
+    cursor: pointer;
+    font-family: inter;
+    padding: 0.4vw;
+    border-radius: 3px;
+    transition: 0.4s;
+    margin-bottom: 0.2vw;
+    box-shadow: 0 0 1px 0;
+}
+
+.tips:hover {
+    position: relative;
+    background: rgb(155, 195, 235);
+    font-size: 1.3vw;
+    margin: -0.2vw 0 0.4vw -0.2vw;
+    box-shadow: 9px 9px 2px 1px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+input[type = radio] {
+    display: none;
+}
+
+#t1:checked ~ label:nth-of-type(1) > span,
+#t2:checked ~ label:nth-of-type(2) > span,
+#t3:checked ~ label:nth-of-type(3) > span,
+#t4:checked ~ label:nth-of-type(4) > span,
+#t5:checked ~ label:nth-of-type(5) > span,
+#t6:checked ~ label:nth-of-type(6) > span,
+#t7:checked ~ label:nth-of-type(7) > span,
+#t8:checked ~ label:nth-of-type(8) > span {
+    position: relative;
+    background: rgb(115, 115, 222);
+    font-size: 1.3vw;
+    margin: -0.5vw 0 0.4vw -0.5vw;
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+
+/*
+#t1:checked ~ label:nth-of-type(1) > button:hover::before,
+#t2:checked ~ label:nth-of-type(2) > button:hover::before,
+#t3:checked ~ label:nth-of-type(3) > button:hover::before,
+#t4:checked ~ label:nth-of-type(4) > button:hover::before {
+    width: 0%;
+}
+
+#t1:checked ~ label:nth-of-type(1) > button:hover,
+#t2:checked ~ label:nth-of-type(2) > button:hover,
+#t3:checked ~ label:nth-of-type(3) > button:hover,
+#t4:checked ~ label:nth-of-type(4) > button:hover {
+    color: blue;
+} */
 /* main end*/
 
 

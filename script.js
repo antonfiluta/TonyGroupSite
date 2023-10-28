@@ -36,7 +36,7 @@ function toScroll() {
             nav.style.height = "7vw";
             nav.style.display = "flex";
         } else {
-            head.style.height = "20vw";
+            head.style.height = "15vw";
             logo.style.width = "28vw";
             nav.style.height = "4.5vw";
             nav.style.display = "flex";
