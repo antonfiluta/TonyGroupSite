@@ -319,7 +319,7 @@ h1 {
 .tips-wrapper {
     width: 100%;
     display: flex;
-    margin-top: 2vw;
+    margin: 2vw 0;
 }
 
 .TIB {
@@ -331,13 +331,6 @@ h1 {
 
 .tips-img {
     width: 20vw;
-}
-
-.line {
-    height: 100%;
-    align-self: stretch;
-    width: 2px;
-    background-color: black;
 }
 
 .tips-box {
@@ -387,21 +380,16 @@ input[type = radio] {
     z-index: 2;
 }
 
-
-/*
-#t1:checked ~ label:nth-of-type(1) > button:hover::before,
-#t2:checked ~ label:nth-of-type(2) > button:hover::before,
-#t3:checked ~ label:nth-of-type(3) > button:hover::before,
-#t4:checked ~ label:nth-of-type(4) > button:hover::before {
-    width: 0%;
+.items-wrapper {
+    margin: 2vw 0;
+    width: 100%;
 }
 
-#t1:checked ~ label:nth-of-type(1) > button:hover,
-#t2:checked ~ label:nth-of-type(2) > button:hover,
-#t3:checked ~ label:nth-of-type(3) > button:hover,
-#t4:checked ~ label:nth-of-type(4) > button:hover {
-    color: blue;
-} */
+.about-type-box {
+    margin: 2vw 0;
+    width: 100%;
+    
+}
 /* main end*/
 
 
@@ -492,6 +480,46 @@ main {
 h1 {
     font-size: 4.3vw;
     text-shadow: 0.07em 0.07em 1px rgb(142, 141, 141);
+}
+
+.tips-wrapper {
+    margin: 1vw 0;
+}
+
+.TIB {
+    display: none;
+}
+
+.tips-box {
+    width: 100%;
+}
+
+.tips {
+    border: 1px solid black;
+    font-size: 2.3vw;
+    padding: 0.6vw;
+    border-radius: 3px;
+    margin-bottom: 0.5vw;
+    box-shadow: 0 0 1px 0;
+}
+
+.tips:hover {
+    font-size: 2.7vw;
+    margin: -0.3vw 0 0.6vw -0.3vw;
+    box-shadow: 7px 7px 2px 1px rgba(0, 0, 0, 0.6);
+}
+
+#t1:checked ~ label:nth-of-type(1) > span,
+#t2:checked ~ label:nth-of-type(2) > span,
+#t3:checked ~ label:nth-of-type(3) > span,
+#t4:checked ~ label:nth-of-type(4) > span,
+#t5:checked ~ label:nth-of-type(5) > span,
+#t6:checked ~ label:nth-of-type(6) > span,
+#t7:checked ~ label:nth-of-type(7) > span,
+#t8:checked ~ label:nth-of-type(8) > span {
+    font-size: 2.7vw;
+    margin: -0.5vw 0 0.6vw -0.5vw;
+    box-shadow: 9px 9px 2px 1px rgba(0, 0, 0, 0.5);
 }
 /* main end*/
 }
