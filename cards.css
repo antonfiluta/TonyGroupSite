@@ -397,7 +397,7 @@ input[type = radio] {
     font-size: 1.8vw;
 }
 
-.about-type-box p{
+.bigP{
     font-family: inter;
     font-size: 1.7vw;
 }
@@ -406,6 +406,12 @@ input[type = radio] {
     padding-top: 1vw;
     padding-left: 2vw;
     font-size: 1.5vw;
+}
+
+.litP {
+    font-family: Forum;
+    font-size: 1.6vw;
+    margin-top: 0.5vw;
 }
 /* main end*/
 
@@ -537,6 +543,31 @@ h1 {
     font-size: 2.7vw;
     margin: -0.5vw 0 0.6vw -0.5vw;
     box-shadow: 9px 9px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.about-type-box {
+    margin: 2vw 0;
+    width: 100%;
+    
+}
+
+.about-type-box p:first-of-type{
+    font-size: 2.8vw;
+}
+
+.bigP{
+    font-size: 2.9vw;
+}
+
+.about-type-box ul{
+    padding-top: 1vw;
+    padding-left: 2vw;
+    font-size: 2.6vw;
+}
+
+.litP {
+    font-size: 2.8vw;
+    margin-top: 0.5vw;
 }
 /* main end*/
 }
