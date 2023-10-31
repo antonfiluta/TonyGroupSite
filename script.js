@@ -12,7 +12,7 @@ const list = document.getElementById('list');
 
 function toScroll() {
     if (window.scrollY > 100) { //с прокруткой
-        if (window.innerWidth < 800) {
+        if (window.innerWidth < 700) {
             head.style.height = "10vw";
             logo.style.width = "30vw";
             //burger
@@ -30,7 +30,7 @@ function toScroll() {
         num.style.display = "none";
         mail.style.display = "none";
     } else {                      //без прокурутки
-        if (window.innerWidth < 800) {
+        if (window.innerWidth < 700) {
             head.style.height = "40vw";
             logo.style.width = "45vw";
             nav.style.height = "7vw";

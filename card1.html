@@ -42,7 +42,7 @@
       <div class="bar2" id="b2"></div>
       <div class="bar3" id="b3"></div>
     </div>
-    <div id="menuM">
+    <div id="menuM"> <!-- основное меню -->
       <div id="navM">
         <input type="radio" name="radioM" id="m1">
         <input type="radio" name="radioM" id="m2">
@@ -64,26 +64,26 @@
     </div>
   </header>
   <main>
+    <input type="radio" name="radioT" id="t1">
+    <input type="radio" name="radioT" id="t2">
+    <input type="radio" name="radioT" id="t3">
+    <input type="radio" name="radioT" id="t4">
+    <input type="radio" name="radioT" id="t5">
+    <input type="radio" name="radioT" id="t6">
+    <input type="radio" name="radioT" id="t7">
+    <input type="radio" name="radioT" id="t8">
     <div class="main-head">
       <h1>Каталог теплообмеников</h1>
       <img src="images/search.png" alt="search" onclick="showList()">
     </div>
     <hr>
-    <div class="tips-wrapper">
+    <div class="tips-wrapper"> <!-- типы товаров -->
       <div class="TIB">
         <img src="" alt="img of teploobmen" class="tips-img">
       </div> 
       <div class="tips-box">
-        <input type="radio" name="radioT" id="t1">
-        <input type="radio" name="radioT" id="t2">
-        <input type="radio" name="radioT" id="t3">
-        <input type="radio" name="radioT" id="t4">
-        <input type="radio" name="radioT" id="t5">
-        <input type="radio" name="radioT" id="t6">
-        <input type="radio" name="radioT" id="t7">
-        <input type="radio" name="radioT" id="t8">
         <label for="t1">
-          <span class="tips" onclick="showTip(2)">Водяные теплообменники для круглых каналов</span>
+          <span class="tips" onclick="showTip(1)">Водяные теплообменники для круглых каналов</span>
         </label> 
         <label for="t2">
           <span class="tips" onclick="showTip(2)">Двухрядные и Трехрядные теплообменники для канальных воздухоохладителей и нагревателей</span>
@@ -109,11 +109,229 @@
       </div>
     </div>
     <hr>
-    <div class="items-wrapper">
+    <div class="items-wrapper"> <!-- здесь таблицы с информацией -->
+    <table id="tip1">
+      <tr>
+        <td>н.н</td>
+        <td>Водяные теплообменники для круглых каналов</td>
+      </tr>
+      <tr>
+        <td>243441</td>
+        <td>Теплообменник водяной TEW 160</td>
+      </tr>
+      <tr>
+        <td>243442</td>
+        <td>Теплообменник водяной TEW 200</td>
+      </tr>
+      <tr>
+        <td>243443</td>
+        <td>Теплообменник водяной TEW 250</td>
+      </tr>
+      <tr>
+        <td>243444</td>
+        <td>Теплообменник водяной TEW 315</td>
+      </tr>
+    </table>
 
+    <table id="tip2">
+      <tr>
+        <td>н.н</td>
+        <td>Двухрядные канальные теплообменники</td>
+      </tr>
+      <tr>
+        <td>240216</td>
+        <td>Теплообменник водяной 2-х рядный TEW 02.30-15</td>
+      </tr>
+      <tr>
+        <td>240217</td>
+        <td>Теплообменник водяной 2-х рядный TEW 02.40-20</td>
+      </tr>
+      <tr>
+        <td>240218</td>
+        <td>Теплообменник водяной 2-х рядный TEW 02.50-25</td>
+      </tr>
+      <tr>
+        <td>240219</td>
+        <td>Теплообменник водяной 2-х рядный TEW 02.50-30</td>
+      </tr>
+      <tr>
+        <td>240220</td>
+        <td>Теплообменник водяной 2-х рядный TEW 02.60-30</td>
+      </tr>
+      <tr>
+        <td>240221</td>
+        <td>Теплообменник водяной 2-х рядный TEW 02.60-35</td>
+      </tr>
+      <tr>
+        <td>240222</td>
+        <td>Теплообменник водяной 2-х рядный TEW 02.70-40</td>
+      </tr>
+      <tr>
+        <td>240223</td>
+        <td>Теплообменник водяной 2-х рядный TEW 02.80-50</td>
+      </tr>
+      <tr>
+        <td>240224</td>
+        <td>Теплообменник водяной 2-х рядный TEW 02.90-50</td>
+      </tr>
+      <tr>
+        <td>240225</td>
+        <td>Теплообменник водяной 2-х рядный TEW 02.100-50</td>
+      </tr>
+      <tr>
+        <td><b>н.н</b></td>
+        <td><b>Трехрядные канальные теплообменники</b></td>
+      </tr>
+      <tr>
+        <td>240226</td>
+        <td>Теплообменник водяной 3-х рядный TEW 03.30-15</td>
+      </tr>
+      <tr>
+        <td>240227</td>
+        <td>Теплообменник водяной 3-х рядный TEW 03.40-20</td>
+      </tr>
+      <tr>
+        <td>240228</td>
+        <td>Теплообменник водяной 3-х рядный TEW 03.50-25</td>
+      </tr>
+      <tr>
+        <td>240229</td>
+        <td>Теплообменник водяной 3-х рядный TEW 03.50-30</td>
+      </tr>
+      <tr>
+        <td>240230</td>
+        <td>Теплообменник водяной 3-х рядный TEW 03.60-30</td>
+      </tr>
+      <tr>
+        <td>240231</td>
+        <td>Теплообменник водяной 3-х рядный TEW 03.60-35</td>
+      </tr>
+      <tr>
+        <td>240232</td>
+        <td>Теплообменник водяной 3-х рядный TEW 03.70-40</td>
+      </tr>
+      <tr>
+        <td>240233</td>
+        <td>Теплообменник водяной 3-х рядный TEW 03.80-50</td>
+      </tr>
+      <tr>
+        <td>240234</td>
+        <td>Теплообменник водяной 3-х рядный TEW 03.90-50</td>
+      </tr>
+      <tr>
+        <td>240235</td>
+        <td>Теплообменник водяной 3-х рядный TEW 03.100-50</td>
+      </tr>
+    </table>
+
+    <table id="tip3">
+      <tr>
+        <td>н.н</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247838</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247839</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247840</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247841</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247842</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247843</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247844</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247845</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247846</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247847</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247848</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247849</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247850</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247851</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247852</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247853</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247854</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247855</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>247856</td>
+        <td></td>
+      </tr>
+    </table>
+
+    <table id="tip4">
+      <tr>
+        <td>н.н</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
     </div>
     <hr>
-    <div class="about-type-box">
+    <div class="about-type-box"> <!-- тут описание -->
       <p>Теплообменники, устанавливаемые в системах вентиляции и кондиционирования, предназначены для нагрева и охлаждения воздуха в системах воздушного отопления, вентиляции и кондиционирования воздуха различных конструкций.</p>
       <hr style="margin: 1.5vw 0;">
       <p class="bigP">Основная область применения теплообменников с внешним оребрением</p>
@@ -152,7 +370,7 @@
   <footer>
       <div style="height: 1000px;"></div>
   </footer>
-  <div id="list">
+  <div id="list"> <!-- виды товаров(лупа) -->
     <div class="listBox">
       <ul>
         <li><a href="card1.html">Теплообменики</a></li>
