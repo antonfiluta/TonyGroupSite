@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="cards.css">
+    <title>TonyGroup</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="TonyGroup">
+    <meta property="og:title" content="описание">
+    <meta property="og:description" content="длинное описание">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+</head>
+<body>
+  <header id="header">
+    <div id="number">+375 (29) 352-37-70</div>
+    <div id="mail">info@mail.ru</div>
+    <div onclick="window.location.href='index.html'" id="logoBox"><img src="images/bigLogo.jpeg" alt="tonygroup" id="logo"></div>
+    <nav id="nav">
+      <input type="radio" name="radio" id="r1">
+      <input type="radio" name="radio" id="r2">
+      <input type="radio" name="radio" id="r3">
+      <input type="radio" name="radio" id="r4">
+      <label for="r1">
+        <button class="head-buttons" onclick="window.location.href = 'index.html'">каталог</button>
+      </label>
+      <label for="r2">
+        <button class="head-buttons" onclick="window.location.href = 'about.html'">о компании</button>
+      </label>
+      <label for="r3">
+        <button class="head-buttons" onclick="window.location.href = 'prices.html'">заявка</button>
+      </label>
+      <label for="r4">
+        <button class="head-buttons" onclick="window.location.href = 'contact.html'">контакты</button>
+      </label>
+    </nav>
+    <div id="menuBox" onclick="menu(this)">
+      <div class="bar1" id="b1"></div>
+      <div class="bar2" id="b2"></div>
+      <div class="bar3" id="b3"></div>
+    </div>
+    <div id="menuM"> <!-- основное меню -->
+      <div id="navM">
+        <input type="radio" name="radioM" id="m1">
+        <input type="radio" name="radioM" id="m2">
+        <input type="radio" name="radioM" id="m3">
+        <input type="radio" name="radioM" id="m4">
+        <label for="m1">
+          <button class="head-buttons" onclick="window.location.href = 'index.html'">каталог</button>
+        </label> 
+        <label for="m2">
+          <button class="head-buttons" onclick="window.location.href = 'about.html'">о компании</button>
+        </label>
+        <label for="m3">
+          <button class="head-buttons" onclick="window.location.href = 'prices.html'">заявка</button>
+        </label>
+        <label for="m4">
+          <button class="head-buttons" onclick="window.location.href = 'contact.html'">контакты</button>
+        </label>
+      </div>
+    </div>
+  </header>
+  <main>
+    <input type="radio" name="radioT" id="t1">
+    <input type="radio" name="radioT" id="t2">
+    <input type="radio" name="radioT" id="t3">
+    <input type="radio" name="radioT" id="t4">
+    <input type="radio" name="radioT" id="t5">
+    <input type="radio" name="radioT" id="t6">
+    <div class="main-head">
+      <h1>Каталог ...</h1> <!-- название -->
+      <img src="images/search.png" alt="search" onclick="showList()">
+    </div>
+    <hr>
+    <div class="tips-wrapper"> <!-- типы товаров -->
+      <div class="TIB">
+        <img src="" alt="img of teploobmen" class="tips-img">
+      </div> 
+      <div class="tips-box">
+        <label for="t1">
+          <span class="tips" onclick="showTip(1)"></span>
+        </label> 
+        <label for="t2">
+          <span class="tips" onclick="showTip(2)"></span>
+        </label>
+        <label for="t3">
+          <span class="tips" onclick="showTip(3)"></span>
+        </label>
+        <label for="t4">
+          <span class="tips" onclick="showTip(4)"></span>
+        </label>
+      </div>
+    </div>
+    <hr>
+    <div class="items-wrapper"> <!-- здесь таблицы с информацией -->
+    <table id="tip1">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    </div>
+    <hr>
+    <div class="about-type-box"> <!-- тут описание -->
+      <p></p> <!-- главный абазац, на нем уже установлены стили -->
+      <hr style="margin: 1.5vw 0;">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <p class="bigP"></p> 
+      <p class="litP"></p>
+    </div>
+  </main>
+  <footer>
+      <div style="height: 1000px;"></div>
+  </footer>
+  <div id="list">
+    <div class="listBox">
+      <ul>
+        <li><a href="card1.html">Теплообменики</a></li>
+        <li><a href="card.html">Насосы</a></li>
+        <li><a href="card.html">Элементы автоматики</a></li>
+        <li><a href="card.html">Сервоприводы и трехходовые клапаны</a></li>
+        <li><a href="card.html">Рабочие колеса с диффузором</a></li>
+        <li><a href="card.html">Мотор-колеса</a></li>
+        <li><a href="card.html">Вентиляторные блоки</a></li>
+        <li><a href="card.html">Электроприводы воздушных заслонок</a></li>
+        <li><a href="card.html">Осевые вентиляторы</a></li>
+        <li><a href="card.html">Теплоутилизаторы</a></li>
+        <li><a href="card.html">Вставки фильтрующие</a></li>
+        <li><a href="card.html">Панель ППУ</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
