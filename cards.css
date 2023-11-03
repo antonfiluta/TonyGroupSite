@@ -397,9 +397,24 @@ input[type = radio] {
     
 }
 
-.about-type-box p:first-of-type{
+.mainP {
     font-family: inter;
     font-size: 1.8vw;
+}
+
+.aboutType {
+    margin-top: 1vw;
+}
+
+.aboutType p{
+    font-family: inter;
+    font-size: 1.4vw;
+}
+
+.aboutType p span{
+    font-family: forum;
+    font-size: 1.55vw;
+    color: rgb(27, 26, 26);
 }
 
 .bigP{
