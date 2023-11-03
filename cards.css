@@ -11,7 +11,7 @@ a {
 }
 
 body {
-    background-color: aliceblue;
+    background: rgba(156, 185, 251);
 }
 
 body,
@@ -449,6 +449,22 @@ input[type = radio] {
     display: table;
 }
 
+#t1:checked ~ hr,
+#t2:checked ~ hr,
+#t3:checked ~ hr,
+#t4:checked ~ hr,
+#t5:checked ~ hr,
+#t6:checked ~ hr,
+#t7:checked ~ hr,
+#t8:checked ~ hr,
+#t9:checked ~ hr {
+    display: block;
+}
+
+.magic-HR {
+    display: none;
+}
+
 .items-wrapper {
     display: flex;
     justify-content: center;
@@ -573,13 +589,13 @@ main {
 }
 
 .main-head img {
-    width: 5vw;
-    margin-right: 2vw;
-    margin-top: 1vw;
+    width: 6.5vw;
+    height: 6.5vw;
+    margin-right: 1vw;
 }
 
 h1 {
-    font-size: 4.3vw;
+    font-size: 4vw;
     text-shadow: 0.07em 0.07em 1px rgb(142, 141, 141);
 }
 
