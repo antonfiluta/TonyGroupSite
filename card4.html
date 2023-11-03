@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="cards.css">
+    <title>TonyGroup</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="TonyGroup">
+    <meta property="og:title" content="описание">
+    <meta property="og:description" content="длинное описание">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+</head>
+<body>
+  <header id="header">
+    <div id="number">+375 (29) 352-37-70</div>
+    <div id="mail">info@mail.ru</div>
+    <div onclick="window.location.href='index.html'" id="logoBox"><img src="images/bigLogo.jpeg" alt="tonygroup" id="logo"></div>
+    <nav id="nav">
+      <input type="radio" name="radio" id="r1">
+      <input type="radio" name="radio" id="r2">
+      <input type="radio" name="radio" id="r3">
+      <input type="radio" name="radio" id="r4">
+      <label for="r1">
+        <button class="head-buttons" onclick="window.location.href = 'index.html'">каталог</button>
+      </label>
+      <label for="r2">
+        <button class="head-buttons" onclick="window.location.href = 'about.html'">о компании</button>
+      </label>
+      <label for="r3">
+        <button class="head-buttons" onclick="window.location.href = 'prices.html'">заявка</button>
+      </label>
+      <label for="r4">
+        <button class="head-buttons" onclick="window.location.href = 'contact.html'">контакты</button>
+      </label>
+    </nav>
+    <div id="menuBox" onclick="menu(this)">
+      <div class="bar1" id="b1"></div>
+      <div class="bar2" id="b2"></div>
+      <div class="bar3" id="b3"></div>
+    </div>
+    <div id="menuM"> <!-- основное меню -->
+      <div id="navM">
+        <input type="radio" name="radioM" id="m1">
+        <input type="radio" name="radioM" id="m2">
+        <input type="radio" name="radioM" id="m3">
+        <input type="radio" name="radioM" id="m4">
+        <label for="m1">
+          <button class="head-buttons" onclick="window.location.href = 'index.html'">каталог</button>
+        </label> 
+        <label for="m2">
+          <button class="head-buttons" onclick="window.location.href = 'about.html'">о компании</button>
+        </label>
+        <label for="m3">
+          <button class="head-buttons" onclick="window.location.href = 'prices.html'">заявка</button>
+        </label>
+        <label for="m4">
+          <button class="head-buttons" onclick="window.location.href = 'contact.html'">контакты</button>
+        </label>
+      </div>
+    </div>
+  </header>
+  <main>
+    <input type="radio" name="radioT" id="t1">
+    <input type="radio" name="radioT" id="t2">
+    <div class="main-head">
+      <h1>Каталог </h1> <!-- название -->
+      <img src="images/search.png" alt="search" onclick="showList()">
+    </div>
+    <hr>
+    <div class="tips-wrapper"> <!-- типы товаров -->
+      <div class="TIB">
+        <img src="" alt="img of teploobmen" class="tips-img">
+      </div> 
+      <div class="tips-box">
+        <label for="t1">
+          <span class="tips" onclick="showTip(1)">Клапаны/приводы ESBE</span>
+        </label> 
+        <label for="t2">
+          <span class="tips" onclick="showTip(2)">Клапан/привод DANFOSS</span>
+        </label>
+      </div>
+    </div>
+    <hr class="magic-HR">
+    <div class="items-wrapper"> <!-- здесь таблицы с информацией -->
+      <table>
+         <tr>
+           <td>н.н</td>
+           <td>Трехходовые клапаны</td>
+         </tr>
+         <tr>
+           <td>128994</td>
+           <td>Трехходовой клапан VRG131 15-0.63 art.11600200</td>
+         </tr>
+         <tr>
+           <td>129011</td>
+           <td>Трехходовой клапан VRG131 15-1.0 art.11600300</td>
+         </tr>
+         <tr>
+           <td>129012</td>
+           <td>Трехходовой клапан VRG131 15-1.63 art.11600400</td>
+         </tr>
+         <tr>
+           <td>129013</td>
+           <td>Трехходовой клапан VRG131 15-2.5 art.11600500</td>
+         </tr>
+         <tr>
+           <td>129014</td>
+           <td>Трехходовой клапан VRG131 20-4 art.11600800</td>
+         </tr>
+         <tr>
+           <td>231812</td>
+           <td>Трехходовой клапан VRG131 20-4 Multipack 24 art.11600801</td>
+         </tr>
+         <tr>
+           <td>129016</td>
+           <td>Трехходовой клапан VRG131 20-6.3 art.11600900</td>
+         </tr>
+         <tr>
+           <td>231814</td>
+           <td>Трехходовой клапан VRG131 20-6.3 Multipack 24 art.11600901</td>
+         </tr>
+         <tr>
+           <td>236894</td>
+           <td>Трехходовой клапан VRG131 25-6.3</td>
+         </tr>
+         <tr>
+           <td>129018</td>
+           <td>Трехходовой клапан VRG131 25-10 art.11601100</td>
+         </tr>
+         <tr>
+           <td>129019</td>
+           <td>Трехходовой клапан VRG131 32-16 art.11601200</td>
+         </tr>
+         <tr>
+           <td>129027</td>
+           <td>Трехходовой клапан VRG131 40-25 art. 11603400</td>
+         </tr>
+         <tr>
+           <td>129030</td>
+           <td>Трехходовой клапан VRG131 50-40 art.11603600</td>
+         </tr>
+         <tr>
+           <td>046711</td>
+           <td>Трехходовой клапан 3 F50 art.11100600</td>
+         </tr>
+         <tr>
+           <td>039656</td>
+           <td>Трехходовой клапан 3 F65 art.11100800</td>
+         </tr>
+         <tr>
+           <td>039657</td>
+           <td>Трехходовой клапан 3 F80 art.11101000</td>
+         </tr>
+         <tr>
+           <td>116299</td>
+           <td>Трехходовой клапан 3 F100 art.11101200</td>
+         </tr>
+         <tr>
+           <td>116300</td>
+           <td>Трехходовой клапан 3 F125</td>
+         </tr>
+         <tr>
+           <td><strong>н.н</strong></td>
+           <td><strong>Сервоприводы клапанов</strong></td>
+         </tr>
+         <tr>
+           <td>231818</td>
+           <td>Сервопривод ARA559 Multipack 36 art. 12140211</td>
+         </tr>
+         <tr>
+           <td>229493</td>
+           <td>Сервопривод ARA651 art.1201200</td>
+         </tr>
+         <tr>
+           <td>129022</td>
+           <td>Сервопривод ARA659 art.12520200</td>
+         </tr>
+         <tr>
+           <td>129025</td>
+           <td>Сервопривод ARA663 art.12100300</td>
+         </tr>
+         <tr>
+           <td>039661</td>
+           <td>Сервопривод ESBE 92 art. 12050600</td>
+         </tr>
+         <tr>
+           <td>039660</td>
+           <td>Сервопривод ESBE 92 P плавная регулеровка 0-10 art. 12550100</td>
+         </tr>
+     </table> 
+
+     <table>
+		<tr>
+			<td><strong>н.н</strong></td>
+			<td><strong>Трехходовые клапаны</strong></td>
+		</tr>
+		<tr>
+			<td>303455</td>
+			<td>Клапан рег. поворотный HRB3 DN15 Kvs 0.4</td>
+		</tr>
+		<tr>
+			<td>303459</td>
+			<td>Клапан рег. поворотный HRB3 DN15 Kvs 0.63</td>
+		</tr>
+		<tr>
+			<td>303460</td>
+			<td>Клапан рег. поворотный HRB3 DN15 Kvs 1.0</td>
+		</tr>
+		<tr>
+			<td>303461</td>
+			<td>Клапан рег. поворотный HRB3 DN15 Kvs1.63</td>
+		</tr>
+		<tr>
+			<td>303462</td>
+			<td>Клапан рег. поворотный HRB3 DN15 Kvs 2.5</td>
+		</tr>
+		<tr>
+			<td>303457</td>
+			<td>Клапан рег. поворотный HRB3 DN20 Kvs 2.5</td>
+		</tr>
+		<tr>
+			<td>303463</td>
+			<td>Клапан рег. поворотный HRB3 DN20 Kvs 4.0</td>
+		</tr>
+		<tr>
+			<td>303464</td>
+			<td>Клапан рег. поворотный HRB3 DN20 Kvs 6.3</td>
+		</tr>
+		<tr>
+			<td>303465</td>
+			<td>Клапан рег. поворотный HRB3 DN25 Kvs 6.3</td>
+		</tr>
+		<tr>
+			<td>303467</td>
+			<td>Клапан рег. поворотный HRB3 DN25 Kvs 10</td>
+		</tr>
+		<tr>
+			<td>303468</td>
+			<td>Клапан рег. поворотный HRB3 DN32 Kvs 16</td>
+		</tr>
+		<tr>
+			<td>303469</td>
+			<td>Клапан рег. поворотный HRB3 DN40 Kvs 25</td>
+		</tr>
+		<tr>
+			<td>303470</td>
+			<td>Клапан рег. поворотный HRB3 DN50 Kvs 40</td>
+		</tr>
+		<tr>
+			<td>303471</td>
+			<td>Привод AMB 162, 24В, аналоговый</td>
+		</tr>
+</table>
+    </div>
+    <hr>
+    <div class="about-type-box"> <!-- тут описание -->
+      <p class="bigP">Сервоприводы и трехходовые клапаны предназначены для регулирования расхода воды (незамерзающих смесей) в системах отопления, вентиляции и кондиционирования.</p> <!-- главный абазац, на нем уже установлены стили -->
+    </div>
+  </main>
+  <footer>
+    <div class="footBlock1">
+      <span>+375 (29) 352-37-70</span>
+      <span>info@tonigroup.by</span>
+      <span>adress</span>
+    </div>
+    <div>
+      
+    </div>
+</footer>
+  <div id="list"> <!-- виды товаров(лупа) -->
+    <div class="listBox">
+        <a href="card1.html"><button>Теплообменики</button></a>
+        <a href="card2.html"><button>Насосы</button></a>
+        <a href="card3.html"><button>Элементы автоматики</button></a>
+        <a href="card4.html"><button>Сервоприводы и трехходовые клапаны</button></a>
+        <a href="card5.html"><button>Рабочие колеса с диффузором</button></a>
+        <a href="card6.html"><button>Мотор-колеса</button></a>
+        <a href="card7.html"><button>Вентиляторные блоки</button></a>
+        <a href="card8.html"><button>Электроприводы воздушных заслонок</button></a>
+        <a href="card9.html"><button>Осевые вентиляторы</button></a>
+        <a href="card.html"><button>Теплоутилизаторы</button></a>
+        <a href="card.html"><button>Вставки фильтрующие</button></a>
+        <a href="card.html"><button>Панель ППУ</button></a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
