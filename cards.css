@@ -352,7 +352,7 @@ h1 {
     font-family: inter;
     padding: 0.4vw;
     border-radius: 3px;
-    transition: 0.4s;
+    transition: 0.3s;
     margin-bottom: 0.2vw;
     box-shadow: 0 0 1px 0;
 }
@@ -361,8 +361,32 @@ h1 {
     position: relative;
     background: rgb(155, 195, 235);
     font-size: 1.3vw;
-    margin: -0.2vw 0 0.4vw -0.2vw;
-    box-shadow: 9px 9px 2px 1px rgba(0, 0, 0, 0.6);
+    margin: -0.15vw 0 0.35vw -0.15vw;
+    box-shadow: 7px 7px 2px 1px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.clean-tip {
+    border: 1px solid black;
+    color: white;
+    background: linear-gradient(to right, gray, rgb(58, 58, 58));
+    display: inline-block;
+    font-size: 1.2vw;
+    cursor: pointer;
+    font-family: inter;
+    padding: 0.4vw;
+    border-radius: 3px;
+    transition: 0.4s;
+    margin-bottom: 0.2vw;
+    box-shadow: 0 0 1px 0;
+}
+
+.clean-tip:hover {
+    position: relative;
+    background: linear-gradient(to right, rgb(58, 58, 58), gray);
+    font-size: 1.3vw;
+    margin: -0.1vw 0 0.2vw -0.1vw;
+    box-shadow: 3px 4px 2px 1px rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
