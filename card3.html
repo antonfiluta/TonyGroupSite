@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="cards.css">
+    <title>TonyGroup</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="TonyGroup">
+    <meta property="og:title" content="описание">
+    <meta property="og:description" content="длинное описание">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+</head>
+<body>
+  <header id="header">
+    <div id="number">+375 (29) 352-37-70</div>
+    <div id="mail">info@mail.ru</div>
+    <div onclick="window.location.href='index.html'" id="logoBox"><img src="images/bigLogo.jpeg" alt="tonygroup" id="logo"></div>
+    <nav id="nav">
+      <input type="radio" name="radio" id="r1">
+      <input type="radio" name="radio" id="r2">
+      <input type="radio" name="radio" id="r3">
+      <input type="radio" name="radio" id="r4">
+      <label for="r1">
+        <button class="head-buttons" onclick="window.location.href = 'index.html'">каталог</button>
+      </label>
+      <label for="r2">
+        <button class="head-buttons" onclick="window.location.href = 'about.html'">о компании</button>
+      </label>
+      <label for="r3">
+        <button class="head-buttons" onclick="window.location.href = 'prices.html'">заявка</button>
+      </label>
+      <label for="r4">
+        <button class="head-buttons" onclick="window.location.href = 'contact.html'">контакты</button>
+      </label>
+    </nav>
+    <div id="menuBox" onclick="menu(this)">
+      <div class="bar1" id="b1"></div>
+      <div class="bar2" id="b2"></div>
+      <div class="bar3" id="b3"></div>
+    </div>
+    <div id="menuM"> <!-- основное меню -->
+      <div id="navM">
+        <input type="radio" name="radioM" id="m1">
+        <input type="radio" name="radioM" id="m2">
+        <input type="radio" name="radioM" id="m3">
+        <input type="radio" name="radioM" id="m4">
+        <label for="m1">
+          <button class="head-buttons" onclick="window.location.href = 'index.html'">каталог</button>
+        </label> 
+        <label for="m2">
+          <button class="head-buttons" onclick="window.location.href = 'about.html'">о компании</button>
+        </label>
+        <label for="m3">
+          <button class="head-buttons" onclick="window.location.href = 'prices.html'">заявка</button>
+        </label>
+        <label for="m4">
+          <button class="head-buttons" onclick="window.location.href = 'contact.html'">контакты</button>
+        </label>
+      </div>
+    </div>
+  </header>
+  <main>
+    <input type="radio" name="radioT" id="t1">
+    <input type="radio" name="radioT" id="t2">
+    <input type="radio" name="radioT" id="t3">
+    <input type="radio" name="radioT" id="t4">
+    <div class="main-head">
+      <h1>Каталог элементов автоматики</h1> <!-- название -->
+      <img src="images/search.png" alt="search" onclick="showList()">
+    </div>
+    <hr>
+    <div class="tips-wrapper"> <!-- типы товаров -->
+      <div class="TIB">
+        <img src="" alt="img of teploobmen" class="tips-img">
+      </div> 
+      <div class="tips-box">
+        <label for="t1">
+          <span class="tips" onclick="showTip(1)">Термостаты, гидростаты</span>
+        </label> 
+        <label for="t2">
+          <span class="tips" onclick="showTip(2)">Датчики температуры, Датчики давления</span>
+        </label>
+        <label for="t3">
+          <span class="tips" onclick="showTip(3)">Преобразователи частоты</span>
+        </label>
+        <label for="t4">
+          <span class="tips" onclick="showTip(4)">Регуляторы скорости</span>
+        </label>
+      </div>
+    </div>
+    <hr class="magic-HR">
+    <div class="items-wrapper"> <!-- здесь таблицы с информацией -->
+      <table>
+         <tr>
+           <td><strong>н.н</strong></td>
+           <td><strong>Гидростаты</strong></td>
+         </tr>
+         <tr>
+           <td>117292</td>
+           <td>Комнатный гидростат QFA1000</td>
+         </tr>
+         <tr>
+           <td>237123</td>
+           <td>Комнатный гидростат QFA1001</td>
+         </tr>
+         <tr>
+           <td>231249</td>
+           <td>Гигростат комнатный FRR/N-20</td>
+         </tr>
+         <tr>
+           <td>231247</td>
+           <td>Гигростат канальный FRK/N-20</td>
+         </tr>
+         <tr>
+           <td><strong>н.н</strong></td>
+           <td><strong>Термостаты</strong></td>
+         </tr>
+         <tr>
+           <td>268543</td>
+           <td>Термостат KP 61 (060L126666) 1 м</td>
+         </tr>
+         <tr>
+           <td>268544</td>
+           <td>Термостат KP 61 (060L126766) 3 м</td>
+         </tr>
+         <tr>
+           <td>268545</td>
+           <td>Термостат KP 61 (060L126466) 6 м</td>
+         </tr>
+         <tr>
+           <td>268546</td>
+           <td>Термостат KP 61 (060L126566) 11,5 м</td>
+         </tr>
+         <tr>
+           <td>230954</td>
+           <td>Термостат TAF/N-10</td>
+         </tr>
+         <tr>
+           <td>230955</td>
+           <td>Термостат TAF/N-20</td>
+         </tr>
+         <tr>
+           <td>116198</td>
+           <td>Термостат TER-9/24</td>
+         </tr>
+         <tr>
+           <td>112025</td>
+           <td>Термостат TER-7/24</td>
+         </tr>
+         <tr>
+           <td>231448</td>
+           <td>Термостат KTR-40 / IMRT-0/40</td>
+         </tr>
+     </table>
+
+     <table>
+        <tr>
+          <td><strong>н.н</strong></td>
+          <td><strong>Датчики температуры</strong></td>
+        </tr>
+        <tr>
+          <td>109255</td>
+          <td>Датчик температуры канальный STK-1</td>
+        </tr>
+        <tr>
+          <td>117099</td>
+          <td>Датчик температуры канальный STK-1M</td>
+        </tr>
+        <tr>
+          <td>109254</td>
+          <td>Датчик температуры канальный STK-2</td>
+        </tr>
+        <tr>
+          <td>117112</td>
+          <td>Датчик температуры канальный STK-2M</td>
+        </tr>
+        <tr>
+          <td>218242</td>
+          <td>Датчик температуры канальный STK-3</td>
+        </tr>
+        <tr>
+          <td>218244</td>
+          <td>Датчик температуры канальный STK-3M</td>
+        </tr>
+        <tr>
+          <td>109257</td>
+          <td>Датчик температуры в помещении STP</td>
+        </tr>
+        <tr>
+          <td>228238</td>
+          <td>Датчик комнатной температуры STP-3</td>
+        </tr>
+        <tr>
+          <td>109256</td>
+          <td>Датчик температуры наружн. STN</td>
+        </tr>
+        <tr>
+          <td>228237</td>
+          <td>Датчик наружной температуры STN-3</td>
+        </tr>
+        <tr>
+          <td>109258</td>
+          <td>Датчик температуры воды накладной VSN</td>
+        </tr>
+        <tr>
+          <td>228235</td>
+          <td>Датчик температуры воды накладной VSN-3</td>
+        </tr>
+        <tr>
+          <td>109259</td>
+          <td>Датчик температуры воды погружной VSP</td>
+        </tr>
+        <tr>
+          <td>228236</td>
+          <td>Датчик температуры воды погружной VSP-3</td>
+        </tr>
+        <tr>
+          <td><strong>н.н</strong></td>
+          <td><strong>Устройства дистанционного управления</strong></td>
+        </tr>
+        <tr>
+          <td>117614</td>
+          <td>Устройство дистанционного управления RTF</td>
+        </tr>
+        <tr>
+          <td>228239</td>
+          <td>Устройство дистанционного управления RTF-3</td>
+        </tr>
+        <tr>
+          <td><strong>н.н</strong></td>
+          <td><strong>Датчики давления</strong></td>
+        </tr>
+        <tr>
+          <td>117101</td>
+          <td>Датчик перепада давления 20-200 Pa DPD-2 с контактором</td>
+        </tr>
+        <tr>
+          <td>109240</td>
+          <td>Датчик перепада давления 500 Pa DPD-5 с контактором</td>
+        </tr>
+        <tr>
+          <td>109241</td>
+          <td>Датчик перепада давления 1000 Pa DPD-10 с контактором</td>
+        </tr>
+        <tr>
+          <td><strong>н.н</strong></td>
+          <td><strong>Детекторы СО2</strong></td>
+        </tr>
+        <tr>
+          <td>113823</td>
+          <td>Датчик качества воздуха (VOC) для внутренних помещений RLQ-S</td>
+        </tr>
+        <tr>
+          <td>246288</td>
+          <td>Детектор СО QPA1000</td>
+        </tr>
+    </table> 
+
+    <table>
+       <tr>
+         <td><strong>н.н</strong></td>
+         <td><strong>Преобразователи частоты</strong></td>
+       </tr>
+       <tr>
+         <td>131625</td>
+         <td>Преобразователь частоты 0,75 кВт FC-051P1K75 (4,2 А, 220 В) №132F0003</td>
+       </tr>
+       <tr>
+         <td>232697</td>
+         <td>Преобразователь частоты 0,75 кВт FC-051P0K75 (2,2 А, 380 В) №132F0018</td>
+       </tr>
+       <tr>
+         <td>131626</td>
+         <td>Преобразователь частоты 1,5 кВт FC-051P1K5 (6,8 А, 220 В) №132F0005</td>
+       </tr>
+       <tr>
+         <td>235901</td>
+         <td>Преобразователь частоты 1,5 кВт FC-051P1K5 (3,7 А, 380 В) №132F0020</td>
+       </tr>
+       <tr>
+         <td>131627</td>
+         <td>Преобразователь частоты 2,2 кВт FC-051P2K2 (9,6 А, 220 В) №132F0007</td>
+       </tr>
+       <tr>
+         <td>235902</td>
+         <td>Преобразователь частоты 2,2 кВт FC-051P2K2 (5,3 А, 380 В) №132F0022</td>
+       </tr>
+       <tr>
+         <td>131628</td>
+         <td>Преобразователь частоты 3 кВт FC-051P3K0 (7,2 А, 380 В) №132F0024</td>
+       </tr>
+       <tr>
+         <td>131629</td>
+         <td>Преобразователь частоты 4 кВт FC-051P4K0 (9 А, 380 В) №132F0026</td>
+       </tr>
+       <tr>
+         <td>131631</td>
+         <td>Преобразователь частоты 5,5 кВт FC-051P5K5 (12 А, 380 В) №132F0028</td>
+       </tr>
+       <tr>
+         <td>131632</td>
+         <td>Преобразователь частоты 7,5 кВт FC-051P7K5 (15,5 А, 380 В) №132F0030</td>
+       </tr>
+       <tr>
+         <td>203839</td>
+         <td>Преобразователь частоты 11 кВт VLT Micro VAC (23А, 380В) №132F0058</td>
+       </tr>
+       <tr>
+         <td>203840</td>
+         <td>Преобразователь частоты 15 кВт VLT Micro VAC (31А, 380В) №132F0059</td>
+       </tr>
+       <tr>
+         <td>203841</td>
+         <td>Преобразователь частоты 18,5 кВт VLT Micro VAC (37A, 380В) №132F0060</td>
+       </tr>
+       <tr>
+         <td>203842</td>
+         <td>Преобразователь частоты 22 кВт VLT Micro VAC (44 А, 380В) №132F0061</td>
+       </tr>
+       <tr>
+         <td>234147</td>
+         <td>Преобразователь частоты 30 кВт FC-101P30KT4 (30 кВт, 61 А, 380 В) №131L9873</td>
+       </tr>
+       <tr>
+         <td>234148</td>
+         <td>Преобразователь частоты 37 кВт FC-101P37KT4 (37 кВт, 73 А, 380 В) №131L9881</td>
+       </tr>
+       <tr>
+         <td>234149</td>
+         <td>Преобразователь частоты 45 кВт FC-101P45KT4 (45 кВт, 90 А, 380 В) №131L9889</td>
+       </tr>
+       <tr>
+         <td>131646</td>
+         <td>Преобразователь частоты 45 кВт FC-102P45K (90 А, 380 В) №131F1454</td>
+       </tr>
+       <tr>
+         <td>234151</td>
+         <td>Преобразователь частоты 75 кВт FC-101P75KT4 (75 кВт, 147 А, 380 В) №131L9905</td>
+       </tr>
+       <tr>
+         <td>131634</td>
+         <td>Комплект NEMA1-M1 №132B0103</td>
+       </tr>
+       <tr>
+         <td>131635</td>
+         <td>Комплект NEMA1-M2 №132B0104</td>
+       </tr>
+       <tr>
+         <td>131636</td>
+         <td>Комплект NEMA1-M3 №132B0105</td>
+       </tr>
+       <tr>
+         <td>203843</td>
+         <td>Комплект NEMA1-M4 (для VLT Micro 11-15кВт) №132B0120</td>
+       </tr>
+       <tr>
+         <td>203844</td>
+         <td>Комплект NEMA1-M5 (для VLT Micro 18,5-22кВт) №132B0121</td>
+       </tr>
+       <tr>
+         <td>234154</td>
+         <td>Комплект NEMA1-Н6 (для FC-101 30-45 кВт) №132B0217</td>
+       </tr>
+       <tr>
+         <td>234155</td>
+         <td>Комплект NEMA1-Н7 (для FC-101 55-75 кВт) №132B0218</td>
+       </tr>
+       <tr>
+         <td>131633</td>
+         <td>Панель управления LCP для FC-051 №132B0101</td>
+       </tr>
+       <tr>
+         <td>234153</td>
+         <td>Панель управления цифровая для FC-101 №132B0200</td>
+       </tr>
+   </table>
+
+   <table>
+      <tr>
+        <td><strong>н.н</strong></td>
+        <td><strong>Регуляторы скорости</strong></td>
+      </tr>
+      <tr>
+        <td>121981</td>
+        <td>Регулятор скорости SI-RS11</td>
+      </tr>
+      <tr>
+        <td>231446</td>
+        <td>Регулятор скорости RTY-1,5 / ETY-0-15-AT</td>
+      </tr>
+      <tr>
+        <td>231447</td>
+        <td>Регулятор скорости RTY-2,5 / ETY-0-25-AT</td>
+      </tr>
+      <tr>
+        <td>292537</td>
+        <td>ITRS9-30-DT(3A)</td>
+      </tr>
+      <tr>
+        <td>292540</td>
+        <td>ITRS9-60-DT(6A)</td>
+      </tr>
+      <tr>
+        <td>292541</td>
+        <td>ITRS9-100-DT(10A)</td>
+      </tr>
+  </table> 
+    </div>
+    <hr>
+    <div class="about-type-box"> <!-- тут описание -->
+      <p class="mainP">Системы автоматики или системы автоматического регулирования в вентиляции и кондиционировании служат для поддержания определенных параметров, предварительно рассчитанных и заданных.</p> <!-- главный абазац, на нем уже установлены стили -->
+      <hr style="margin: 1.5vw 0;">
+      <p class="litP">Основные задачи, стоящие перед системами управления вентиляцией это:</p>
+      <ul>
+        <li>Поддержание постоянных заданных параметров с определенной точностью, например поддержание температуры в помещении с точностью до нескольких градусов Цельсия.</li>
+        <li>Программное управление (управление некими параметрами по заданной формуле), например подготовка воздуха подающегося в помещение в определенной зависимости от наружного.</li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <div class="footBlock1">
+      <span>+375 (29) 352-37-70</span>
+      <span>info@tonigroup.by</span>
+      <span>adress</span>
+    </div>
+    <div>
+      
+    </div>
+</footer>
+  <div id="list"> <!-- виды товаров(лупа) -->
+    <div class="listBox">
+        <a href="card1.html"><button>Теплообменики</button></a>
+        <a href="card2.html"><button>Насосы</button></a>
+        <a href="card3.html"><button>Элементы автоматики</button></a>
+        <a href="card4.html"><button>Сервоприводы и трехходовые клапаны</button></a>
+        <a href="card5.html"><button>Рабочие колеса с диффузором</button></a>
+        <a href="card6.html"><button>Мотор-колеса</button></a>
+        <a href="card7.html"><button>Вентиляторные блоки</button></a>
+        <a href="card8.html"><button>Электроприводы воздушных заслонок</button></a>
+        <a href="card9.html"><button>Осевые вентиляторы</button></a>
+        <a href="card.html"><button>Теплоутилизаторы</button></a>
+        <a href="card.html"><button>Вставки фильтрующие</button></a>
+        <a href="card.html"><button>Панель ППУ</button></a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -609,6 +609,7 @@ h1 {
 
 .tips-box {
     width: 90%;
+    padding: 1.5vw;
 }
 
 .tips {
@@ -641,38 +642,40 @@ h1 {
 
 .about-type-box {
     margin: 2vw 0;
+    padding: 2vw;
     width: 100%;
-    
-}
-
-.bigP{
-    font-size: 2.9vw;
 }
 
 .about-type-box ul{
-    padding-top: 1vw;
+    padding-top: 1.4vw;
     padding-left: 2vw;
-    font-size: 3vw;
+    font-size: 3.4vw;
 }
 
 .litP {
-    font-size: 3vw;
-    margin-top: 0.5vw;
+    font-size: 3.5vw;
+    margin-top: 1vw;
+}
+
+.bigP{
+    font-size: 3.1vw;
+    margin-top: 1vw;
 }
 
 td {
     text-align: center;
     border: 1px solid black;
-    padding: 8px;
-    font-size: 16px;
+    padding: 7px;
+    font-size: 14px;
 }
 
 .mainP {
-    font-size: 2.5vw;
+    font-size: 3.2vw;
 }
 
 .aboutType {
     margin-top: 1vw;
+    border: 1px solid black;
 }
 
 .aboutType p{
@@ -680,9 +683,10 @@ td {
 }
 
 .aboutType p span{
-    font-size: 2.4vw;
+    font-size: 2.6vw;
 }
 /* main end*/
+
 /* footer start*/
 .footBlock1 {
     font-size: 2.9vw;
