@@ -647,8 +647,22 @@ h1 {
 
 .tips:hover {
     font-size: 2.6vw;
-    margin: -0.3vw 0 0.6vw -0.3vw;
-    box-shadow: 7px 7px 2px 1px rgba(0, 0, 0, 0.6);
+    margin: -0.25vw 0 0.5vw -0.25vw;
+    box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, 0.6);
+}
+
+.clean-tip {
+    font-size: 2.4vw;
+    padding: 0.6vw;
+    margin-bottom: 0.5vw;
+    box-shadow: 0 0 1px 0;
+}
+
+.clean-tip:hover {
+    font-size: 2.5vw;
+    margin: -0.1vw 0 0.2vw -0.1vw;
+    box-shadow: 3px 4px 2px 1px rgba(0, 0, 0, 0.6);
+    z-index: 1;
 }
 
 #t1:checked ~ .tips-wrapper .tips-box label:nth-of-type(1) > span,
@@ -690,7 +704,7 @@ td {
     text-align: center;
     border: 1px solid black;
     padding: 7px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .mainP {
