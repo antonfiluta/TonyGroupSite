@@ -366,6 +366,10 @@ h1 {
     z-index: 1;
 }
 
+#clean-box {
+    display: none;
+}
+
 .clean-tip {
     border: 1px solid black;
     color: white;
@@ -410,6 +414,23 @@ input[type = radio] {
     z-index: 2;
 }
 
+#t1:checked ~ .tips-wrapper .tips-box label:last-child,
+#t2:checked ~ .tips-wrapper .tips-box label:last-child,
+#t3:checked ~ .tips-wrapper .tips-box label:last-child,
+#t4:checked ~ .tips-wrapper .tips-box label:last-child,
+#t5:checked ~ .tips-wrapper .tips-box label:last-child,
+#t6:checked ~ .tips-wrapper .tips-box label:last-child,
+#t7:checked ~ .tips-wrapper .tips-box label:last-child,
+#t8:checked ~ .tips-wrapper .tips-box label:last-child,
+#t9:checked ~ .tips-wrapper .tips-box label:last-child {
+    display: inline-block;
+}
+
+#t1:checked ~ .about-type-box 
+ {
+    display: block;
+}
+
 .items-wrapper {
     margin: 2vw 0;
     width: 100%;
@@ -446,7 +467,7 @@ input[type = radio] {
     font-size: 1.7vw;
 }
 
-.about-type-box ul{
+.about-type-box .main-about ul{
     padding-top: 1vw;
     padding-left: 2vw;
     font-size: 1.5vw;
@@ -638,7 +659,7 @@ h1 {
 
 .tips {
     border: 1px solid black;
-    font-size: 2.4vw;
+    font-size: 2.8vw;
     padding: 0.6vw;
     border-radius: 3px;
     margin-bottom: 0.5vw;
@@ -646,7 +667,7 @@ h1 {
 }
 
 .tips:hover {
-    font-size: 2.6vw;
+    font-size: 3vw;
     margin: -0.25vw 0 0.5vw -0.25vw;
     box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, 0.6);
 }
@@ -684,7 +705,7 @@ h1 {
     width: 100%;
 }
 
-.about-type-box ul{
+.about-type-box .main-about ul{
     padding-top: 1.4vw;
     padding-left: 2vw;
     font-size: 3.4vw;
