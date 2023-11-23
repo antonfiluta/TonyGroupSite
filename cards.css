@@ -355,6 +355,13 @@ h1 {
     transition: 0.3s;
     margin-bottom: 0.2vw;
     box-shadow: 0 0 1px 0;
+    color: white;
+}
+
+hr {
+    height: 3px;
+    color: blue;
+    background: black;
 }
 
 .tips:hover {
@@ -364,6 +371,18 @@ h1 {
     margin: -0.15vw 0 0.35vw -0.15vw;
     box-shadow: 7px 7px 2px 1px rgba(0, 0, 0, 0.6);
     z-index: 1;
+}
+
+#t1:checked ~ .tips-wrapper .tips-box label:last-child,
+#t2:checked ~ .tips-wrapper .tips-box label:last-child,
+#t3:checked ~ .tips-wrapper .tips-box label:last-child,
+#t4:checked ~ .tips-wrapper .tips-box label:last-child,
+#t5:checked ~ .tips-wrapper .tips-box label:last-child,
+#t6:checked ~ .tips-wrapper .tips-box label:last-child,
+#t7:checked ~ .tips-wrapper .tips-box label:last-child,
+#t8:checked ~ .tips-wrapper .tips-box label:last-child,
+#t9:checked ~ .tips-wrapper .tips-box label:last-child {
+    display: inline-block;
 }
 
 #clean-box {
@@ -414,71 +433,6 @@ input[type = radio] {
     z-index: 2;
 }
 
-#t1:checked ~ .tips-wrapper .tips-box label:last-child,
-#t2:checked ~ .tips-wrapper .tips-box label:last-child,
-#t3:checked ~ .tips-wrapper .tips-box label:last-child,
-#t4:checked ~ .tips-wrapper .tips-box label:last-child,
-#t5:checked ~ .tips-wrapper .tips-box label:last-child,
-#t6:checked ~ .tips-wrapper .tips-box label:last-child,
-#t7:checked ~ .tips-wrapper .tips-box label:last-child,
-#t8:checked ~ .tips-wrapper .tips-box label:last-child,
-#t9:checked ~ .tips-wrapper .tips-box label:last-child {
-    display: inline-block;
-}
-
-#t1:checked ~ .about-type-box 
- {
-    display: block;
-}
-
-.items-wrapper {
-    margin: 2vw 0;
-    width: 100%;
-}
-
-.about-type-box {
-    margin: 2vw 0;
-    width: 70%;
-    
-}
-
-.mainP {
-    font-family: inter;
-    font-size: 1.8vw;
-}
-
-.aboutType {
-    margin-top: 1vw;
-}
-
-.aboutType p{
-    font-family: inter;
-    font-size: 1.4vw;
-}
-
-.aboutType p span{
-    font-family: forum;
-    font-size: 1.55vw;
-    color: rgb(27, 26, 26);
-}
-
-.bigP{
-    font-family: inter;
-    font-size: 1.7vw;
-}
-
-.about-type-box .main-about ul{
-    padding-top: 1vw;
-    padding-left: 2vw;
-    font-size: 1.5vw;
-}
-
-.litP {
-    font-family: Forum;
-    font-size: 1.6vw;
-    margin-top: 0.5vw;
-}
-
 #t1:checked ~ .items-wrapper table:nth-of-type(1),
 #t2:checked ~ .items-wrapper table:nth-of-type(2),
 #t3:checked ~ .items-wrapper table:nth-of-type(3),
@@ -494,26 +448,12 @@ input[type = radio] {
     display: table;
 }
 
-#t1:checked ~ hr,
-#t2:checked ~ hr,
-#t3:checked ~ hr,
-#t4:checked ~ hr,
-#t5:checked ~ hr,
-#t6:checked ~ hr,
-#t7:checked ~ hr,
-#t8:checked ~ hr,
-#t9:checked ~ hr {
-    display: block;
-}
-
-.magic-HR {
-    display: none;
-}
-
 .items-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 2vw 0;
+    width: 100%;
 }
 
 table {
@@ -532,6 +472,94 @@ td {
     padding: 10px;
     font-size: 19px;
 }
+
+#t1:checked ~ hr,
+#t2:checked ~ hr,
+#t3:checked ~ hr,
+#t4:checked ~ hr,
+#t5:checked ~ hr,
+#t6:checked ~ hr,
+#t7:checked ~ hr,
+#t8:checked ~ hr,
+#t9:checked ~ hr {
+    display: block;
+}
+
+.magic-HR {
+    display: none;
+}
+
+#t1:checked ~ .about-type-box .about-type:nth-of-type(2),
+#t2:checked ~ .about-type-box .about-type:nth-of-type(3),
+#t3:checked ~ .about-type-box .about-type:nth-of-type(4),
+#t4:checked ~ .about-type-box .about-type:nth-of-type(5),
+#t5:checked ~ .about-type-box .about-type:nth-of-type(6),
+#t6:checked ~ .about-type-box .about-type:nth-of-type(7),
+#t7:checked ~ .about-type-box .about-type:nth-of-type(8),
+#t8:checked ~ .about-type-box .about-type:nth-of-type(9),
+#t9:checked ~ .about-type-box .about-type:nth-of-type(10){
+    display: block;
+}
+
+#t1:checked ~ .about-type-box .main-about, 
+#t2:checked ~ .about-type-box .main-about, 
+#t3:checked ~ .about-type-box .main-about, 
+#t4:checked ~ .about-type-box .main-about, 
+#t5:checked ~ .about-type-box .main-about, 
+#t6:checked ~ .about-type-box .main-about, 
+#t7:checked ~ .about-type-box .main-about, 
+#t8:checked ~ .about-type-box .main-about, 
+#t9:checked ~ .about-type-box .main-about {
+    display: none;
+}
+
+.about-type-box {
+    margin: 2vw 0;
+    width: 70%;
+    margin-left: 2vw;
+}
+
+.about-type {
+    display: none;
+}
+
+.aboutType {
+    margin-top: 1vw;
+}
+
+.aboutType p {
+    font-family: inter;
+    font-size: 1.4vw;
+}
+
+.aboutType p span{
+    font-family: forum;
+    font-size: 1.55vw;
+    color: rgb(27, 26, 26);
+}
+
+.about-type-box .main-about ul{
+    padding-top: 1vw;
+    padding-left: 2vw;
+    font-size: 1.5vw;
+}
+
+.mainP {
+    font-family: inter;
+    font-size: 1.8vw;
+}
+
+.bigP{
+    font-family: inter;
+    font-size: 1.7vw;
+}
+
+.litP {
+    font-family: Forum;
+    font-size: 1.6vw;
+    margin-top: 0.5vw;
+}
+
 /* main end*/
 
 /* footer start*/
@@ -556,7 +584,7 @@ footer {
 
 
 @media screen and (max-width: 700px) {
-    /* header start */
+/* header start */
 header {
     height: 40vw; /*10vw*/
     box-shadow: 0 0 2vw 0;
@@ -673,14 +701,14 @@ h1 {
 }
 
 .clean-tip {
-    font-size: 2.4vw;
+    font-size: 2.6vw;
     padding: 0.6vw;
     margin-bottom: 0.5vw;
     box-shadow: 0 0 1px 0;
 }
 
 .clean-tip:hover {
-    font-size: 2.5vw;
+    font-size: 2.7vw;
     margin: -0.1vw 0 0.2vw -0.1vw;
     box-shadow: 3px 4px 2px 1px rgba(0, 0, 0, 0.6);
     z-index: 1;
@@ -694,13 +722,14 @@ h1 {
 #t6:checked ~ .tips-wrapper .tips-box label:nth-of-type(6) > span,
 #t7:checked ~ .tips-wrapper .tips-box label:nth-of-type(7) > span,
 #t8:checked ~ .tips-wrapper .tips-box label:nth-of-type(8) > span {
-    font-size: 2.7vw;
+    font-size: 3.1vw;
     margin: -0.5vw 0 0.6vw -0.5vw;
     box-shadow: 9px 9px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .about-type-box {
     margin: 2vw 0;
+    margin-left: 0;
     padding: 2vw;
     width: 100%;
 }
