@@ -345,14 +345,14 @@ h1 {
 
 .tips {
     border: 1px solid black;
-    background: linear-gradient(to right, rgb(155, 195, 235), rgb(115, 115, 222));
+    background: rgb(78, 107, 176);
     display: inline-block;
     font-size: 1.2vw;
     cursor: pointer;
     font-family: inter;
     padding: 0.4vw;
     border-radius: 3px;
-    transition: 0.3s;
+    transition: all 0.3s;
     margin-bottom: 0.2vw;
     box-shadow: 0 0 1px 0;
     color: white;
@@ -365,12 +365,11 @@ hr {
 }
 
 .tips:hover {
-    position: relative;
-    background: rgb(155, 195, 235);
-    font-size: 1.3vw;
-    margin: -0.15vw 0 0.35vw -0.15vw;
-    box-shadow: 7px 7px 2px 1px rgba(0, 0, 0, 0.6);
     z-index: 1;
+    position: relative;
+    right: 0.15vw;
+    top: -0.15vw;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.6);
 }
 
 #t1:checked ~ .tips-wrapper .tips-box label:last-child,
@@ -381,7 +380,9 @@ hr {
 #t6:checked ~ .tips-wrapper .tips-box label:last-child,
 #t7:checked ~ .tips-wrapper .tips-box label:last-child,
 #t8:checked ~ .tips-wrapper .tips-box label:last-child,
-#t9:checked ~ .tips-wrapper .tips-box label:last-child {
+#t9:checked ~ .tips-wrapper .tips-box label:last-child,
+#t10:checked ~ .tips-wrapper .tips-box label:last-child,
+#t11:checked ~ .tips-wrapper .tips-box label:last-child {
     display: inline-block;
 }
 
@@ -424,13 +425,19 @@ input[type = radio] {
 #t5:checked ~ .tips-wrapper .tips-box label:nth-of-type(5) > span,
 #t6:checked ~ .tips-wrapper .tips-box label:nth-of-type(6) > span,
 #t7:checked ~ .tips-wrapper .tips-box label:nth-of-type(7) > span,
-#t8:checked ~ .tips-wrapper .tips-box label:nth-of-type(8) > span {
+#t8:checked ~ .tips-wrapper .tips-box label:nth-of-type(8) > span,
+#t9:checked ~ .tips-wrapper .tips-box label:nth-of-type(9) > span,
+#t10:checked ~ .tips-wrapper .tips-box label:nth-of-type(10) > span,
+#t11:checked ~ .tips-wrapper .tips-box label:nth-of-type(11) > span {
     position: relative;
-    background: rgb(115, 115, 222);
+    background: white;
+    color: rgb(78, 107, 176);
     font-size: 1.3vw;
     margin: -0.5vw 0 0.4vw -0.5vw;
     box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, 0.5);
     z-index: 2;
+    right: 0;
+    top: 0;
 }
 
 #t1:checked ~ .items-wrapper table:nth-of-type(1),
@@ -443,7 +450,8 @@ input[type = radio] {
 #t8:checked ~ .items-wrapper table:nth-of-type(8),
 #t9:checked ~ .items-wrapper table:nth-of-type(9),
 #t10:checked ~ .items-wrapper table:nth-of-type(10),
-#t11:checked ~ .items-wrapper table:nth-of-type(11)
+#t11:checked ~ .items-wrapper table:nth-of-type(11),
+#t20:checked ~ .items-wrapper table:nth-of-type(20)
  {
     display: table;
 }
@@ -481,7 +489,9 @@ td {
 #t6:checked ~ hr,
 #t7:checked ~ hr,
 #t8:checked ~ hr,
-#t9:checked ~ hr {
+#t9:checked ~ hr,
+#t10:checked ~ hr,
+#t11:checked ~ hr {
     display: block;
 }
 
@@ -497,7 +507,9 @@ td {
 #t6:checked ~ .about-type-box .about-type:nth-of-type(7),
 #t7:checked ~ .about-type-box .about-type:nth-of-type(8),
 #t8:checked ~ .about-type-box .about-type:nth-of-type(9),
-#t9:checked ~ .about-type-box .about-type:nth-of-type(10){
+#t9:checked ~ .about-type-box .about-type:nth-of-type(10),
+#t10:checked ~ .about-type-box .about-type:nth-of-type(11),
+#t11:checked ~ .about-type-box .about-type:nth-of-type(12) {
     display: block;
 }
 
@@ -509,7 +521,9 @@ td {
 #t6:checked ~ .about-type-box .main-about, 
 #t7:checked ~ .about-type-box .main-about, 
 #t8:checked ~ .about-type-box .main-about, 
-#t9:checked ~ .about-type-box .main-about {
+#t9:checked ~ .about-type-box .main-about, 
+#t10:checked ~ .about-type-box .main-about, 
+#t11:checked ~ .about-type-box .main-about {
     display: none;
 }
 
@@ -676,6 +690,13 @@ h1 {
     margin: 1vw 0;
 }
 
+.items-wrapper {
+    width: 95vw;
+    display: flex;
+    justify-content: flex-start;
+    overflow: scroll;
+}
+
 .TIB {
     display: none;
 }
@@ -721,7 +742,10 @@ h1 {
 #t5:checked ~ .tips-wrapper .tips-box label:nth-of-type(5) > span,
 #t6:checked ~ .tips-wrapper .tips-box label:nth-of-type(6) > span,
 #t7:checked ~ .tips-wrapper .tips-box label:nth-of-type(7) > span,
-#t8:checked ~ .tips-wrapper .tips-box label:nth-of-type(8) > span {
+#t8:checked ~ .tips-wrapper .tips-box label:nth-of-type(8) > span,
+#t9:checked ~ .tips-wrapper .tips-box label:nth-of-type(9) > span,
+#t10:checked ~ .tips-wrapper .tips-box label:nth-of-type(10) > span,
+#t11:checked ~ .tips-wrapper .tips-box label:nth-of-type(11) > span {
     font-size: 3.1vw;
     margin: -0.5vw 0 0.6vw -0.5vw;
     box-shadow: 9px 9px 2px 1px rgba(0, 0, 0, 0.5);
