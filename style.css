@@ -251,7 +251,8 @@ hr {
 main > p {
     margin-left: 3vw;
     margin-top: 1vw;
-    font-size: 1.4vw;
+    font-size: 1.6vw;
+    text-align: justify;
 }
 
 .shop-wrapper {
@@ -310,71 +311,88 @@ main > p {
 
 
 /* zapros start*/
-.h3-zap {
-    font-size: 1.6vw;
-    font-weight: 300;
-    text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(29, 28, 28);
-    margin-bottom: 36px;
-}
-
-.h4-zap {
-    font-size: 1.3vw;
-    font-weight: 300;
-    text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(29, 28, 28);
-    margin-bottom: 33px;
-}
-
-.form-box-wrapper {
+.form-wrapper {
     width: 100%;
     display: flex;
-    justify-content: center;
+    margin-top: 2vw;
+    gap: 10vw;
 }
 
 .form-box {
-    margin-top: 2.5vw;
-    width: 60%;
-    padding: 1vw;
-    box-shadow: 0 0 4px black;
-    background: rgb(247, 248, 251);
-    transition: 0.3s;
-}
-
-.form-box:hover {
-    box-shadow: 0 0 13px black;
-}
-
-.input-box {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
 }
 
-.input-zap {
-    width: 48%;
-    height: 48px;
-    background: none;
-    margin-bottom: 1.3vw;
-    font-size: 1.3vw;
-    padding: 0.7vw;
+.formH2 {
+    font-size: 2.1vw;
 }
 
-.form-img-box {
-    display: flex;
-    justify-content: center;
+.formImg {
+    width: 35vw;
 }
 
-.form-img-box img {
-    width: 90%;
-    border-radius: 3px;
-    margin-bottom: 32px;
-}
+.buttonF {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #2c9caf;
+    transition: all 0.4s ease;
+    font-size: 1vw;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #2c9caf;
+    background-color: #fcfcfc;
+  }
+  
+  .buttonF:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391;
+  }
+  
+  .buttonF::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2c9caf;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 0.5s;
+  }
+  
+  .buttonF:hover::before {
+    width: 150%;
+  }
 /* zapros start*/
 
+/* footer start*/
+footer {
+    display: flex;
+    background: rgba(156, 185, 251, 0.8);
+}
 
+.footBlock1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6vw;
+    padding: 2vw;
+}
+
+.footBlock1 span {
+    font-family: forum;
+}
+/* footer end*/
 
 
 
@@ -459,6 +477,30 @@ main > p {
     font-size: 2.8vw;
 }
 /* main end*/
+
+
+/* zapros start*/
+.form-wrapper {
+    flex-direction: column;
+}
+
+.form-box {
+    gap: 3vw;
+}
+
+.formH2 {
+    font-size: 3.2vw;
+}
+
+.formImg {
+    width: 60vw;
+}
+
+.buttonF {
+    padding: 12px 22px;
+    font-size: 2vw;
+}
+/* zapros end*/
 }
 
 

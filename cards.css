@@ -566,12 +566,14 @@ td {
 .bigP{
     font-family: inter;
     font-size: 1.7vw;
+    text-align: justify;
 }
 
 .litP {
     font-family: Forum;
     font-size: 1.6vw;
     margin-top: 0.5vw;
+    text-align: justify;
 }
 
 /* main end*/

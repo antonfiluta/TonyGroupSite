@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="style.css">
-    <link type="text/css" rel="stylesheet" href="input.css">
     <title>TonyGroup</title>
 
     <meta name="HandheldFriendly" content="True">
@@ -17,8 +16,8 @@
 </head>
 <body>
   <header id="header">
-    <div id="number">+375 (29) 352-37-70</div>
-    <div id="mail">info@mail.ru</div>
+    <div id="number">+375 (33) 300-23-11</div>
+    <div id="mail">tonigroup@yandex.ru</div>
     <div onclick="window.location.href='index.html'" id="logoBox"><img src="images/bigLogo.jpeg" alt="tonygroup" id="logo"></div>
     <nav id="nav">
       <input type="radio" name="radio" id="r1">
@@ -26,13 +25,13 @@
       <input type="radio" name="radio" id="r3" checked>
       <input type="radio" name="radio" id="r4">
       <label for="r1">
-        <button class="head-buttons" onclick="window.location.href = 'index.html'">каталог</button>
-      </label>
-      <label for="r2">
         <button class="head-buttons" onclick="window.location.href = 'about.html'">о компании</button>
       </label>
+      <label for="r2">
+        <button class="head-buttons" onclick="window.location.href = 'index.html'">каталог</button>
+      </label>
       <label for="r3">
-        <button class="head-buttons">заявка</button>
+        <button class="head-buttons">подбор</button>
       </label>
       <label for="r4">
         <button class="head-buttons" onclick="window.location.href = 'contact.html'">контакты</button>
@@ -50,13 +49,13 @@
         <input type="radio" name="radioM" id="m3" checked>
         <input type="radio" name="radioM" id="m4">
         <label for="m1">
-          <button class="head-buttons" onclick="window.location.href = 'index.html'">каталог</button>
-        </label> 
-        <label for="m2">
           <button class="head-buttons" onclick="window.location.href = 'about.html'">о компании</button>
         </label>
+        <label for="m2">
+          <button class="head-buttons" onclick="window.location.href = 'index.html'">каталог</button>
+        </label> 
         <label for="m3">
-          <button class="head-buttons">заявка</button>
+          <button class="head-buttons">подбор</button>
         </label>
         <label for="m4">
           <button class="head-buttons" onclick="window.location.href = 'contact.html'">контакты</button>
@@ -65,122 +64,31 @@
     </div>
   </header>
   <main>
-    <h1>Расчет нестандартных теплообменников</h1>
+    <h1>Подбор нестандартных теплообменников</h1>
     <hr>
     <p>Вы можете заказать расчет нестандартных теплообменников позвонив нам по телефону NUMBER или отправить необходимые параметры на почту EMAIL. Чтобы получить решение "под ключ" укажите контакты для связи. Мы произведем весь необходимый расчет теплообменника, подберут подходящий тип, количество, материалы пластин и уплотнений, предложат вам несколько альтернативных вариантов на выбор.</p>
-    <div class="form-box-wrapper">
+    <div class="form-wrapper">
       <div class="form-box">
-        <h3 class="h3-zap">РАСЧЕТ НЕСТАНДАРТНЫХ ТЕПЛООБМЕННИКОВ</h3>
-        <form>
-          <div class="input-box">
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">ФИО заявителя*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">Электронный адрес (email)*</label>
-            </div>
-            <div class="container">
-              <input required="" type="tel" name="text" class="input">
-              <label class="label">Контактный телефон*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">Cторона обслуживания*</label>
-            </div>
-          </div>
-          <div class="form-img-box">
-            <img src="images/zapros.jpeg" alt="запрос нестандартных теплообмеников">
-          </div>
-          <div class="input-box">
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">A, мм*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">B, мм*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">S, мм*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">M=N, мм*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">E=F, мм*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">L, мм*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">S, мм*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">FTA, мм*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">FTB, мм*</label>
-            </div>
-          </div>
-          <h4 class="h4-zap">Данные для расчета:</h4>
-          <div class="input-box">
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">Расход воздуха*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">Температура воздуха на входе*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">Влажность воздуха на входе*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">Температура воздуха на выходе*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">Мощность*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">Запас*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">Теплоноситель*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">Какой процент?*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">Температура теплоносителя на входе*</label>
-            </div>
-            <div class="container">
-              <input required="" type="text" name="text" class="input">
-              <label class="label">Температура теплоносителя на выходе*</label>
-            </div>
-          </div>
-          <input type="reset">
-        </form>
+        <h2 class="formH2">Водяные теплообменники</h2>
+        <img src="images/opros.pdf" alt="formPhoto" class="formImg">
+        <a href="images/opros.pdf" download target="_blank"><button class="buttonF">Скачать опросный лист</button></a>
+      </div>
+      <div class="form-box">
+        <h2 class="formH2">Фреоновые теплообменники</h2>
+        <img src="images/opros1.pdf" alt="formPhoto" class="formImg">
+        <a href="images/opros1.pdf" download target="_blank"><button class="buttonF">Скачать опросный лист</button></a>
       </div>
     </div>
   </main>
   <footer>
-      
+      <div class="footBlock1">
+        <span>+375 (29) 352-37-70</span>
+        <span>info@tonigroup.by</span>
+        <span>adress</span>
+      </div>
+      <div>
+        
+      </div>
   </footer>
   <script src="script.js"></script>
 </body>
