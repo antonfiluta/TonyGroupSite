@@ -567,6 +567,7 @@ td {
     font-family: inter;
     font-size: 1.7vw;
     text-align: justify;
+    margin-top: 1.5vw;
 }
 
 .litP {
@@ -768,12 +769,12 @@ h1 {
 
 .litP {
     font-size: 3.5vw;
-    margin-top: 1vw;
+    margin-top: 2vw;
 }
 
 .bigP{
     font-size: 3.1vw;
-    margin-top: 1vw;
+    margin-top: 3vw;
 }
 
 td {
@@ -788,7 +789,7 @@ td {
 }
 
 .aboutType {
-    margin-top: 1vw;
+    margin-top: 2vw;
     border: 1px solid black;
 }
 

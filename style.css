@@ -501,6 +501,13 @@ main > p {
     font-size: 2vw;
 }
 /* zapros end*/
+
+/* footer start*/
+.footBlock1 {
+    font-size: 2.9vw;
+    padding: 3.5vw;
+}
+/* footer end*/
 }
 
 
