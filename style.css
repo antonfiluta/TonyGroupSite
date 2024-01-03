@@ -375,6 +375,41 @@ main > p {
   }
 /* zapros start*/
 
+/* about start*/
+.sertif-wrapper{
+    width: 100%;
+    display: flex;
+    margin-top: 3.3vw;
+}
+
+.sertif-block1{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    align-items: center;
+}
+
+.serf-img {
+    width: 80%;
+    box-shadow: 4px 5px 10px #268391;
+}
+
+.sertif-block2{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serf-text {
+    width: 80%;
+    text-align: justify;
+    font-size: 2vw;
+    margin-top: 2vw;
+}
+/* about end*/
+
 /* footer start*/
 footer {
     display: flex;
@@ -501,6 +536,33 @@ main > p {
     font-size: 2vw;
 }
 /* zapros end*/
+
+
+/* about start*/
+.sertif-wrapper{
+    margin-top: 3.3vw;
+}
+
+.sertif-block1{
+    width: 30%;
+    gap: 5vw;
+}
+
+.serf-img {
+    width: 100%;
+}
+
+.sertif-block2{
+    width: 70%;
+}
+
+.serf-text {
+    width: 85%;
+    margin-top: 0;
+    font-size: 2.6vw;
+}
+/* about end*/
+
 
 /* footer start*/
 .footBlock1 {
