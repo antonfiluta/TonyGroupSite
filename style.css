@@ -408,6 +408,40 @@ main > p {
     font-size: 2vw;
     margin-top: 2vw;
 }
+
+.aboutH2 {
+    font-size: 2.65vw;
+    font-weight: 300;
+    margin-left: 3vw;
+    font-family: Inter;
+    color: rgb(18, 17, 17);
+    text-shadow: 0.05em 0.04em 1px rgb(142, 141, 141);
+    text-align: center;
+    margin-right: 4vw;
+}
+
+.label-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2vw;
+    background-color: #ffffff;
+    box-shadow: 0 0 17px black;
+    border-radius: 7px;
+    padding: 2vw 1vw;
+}
+
+.label-wrapper div {
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label-wrapper div img {
+    width: 100%;
+}
 /* about end*/
 
 /* footer start*/
@@ -560,6 +594,11 @@ main > p {
     width: 85%;
     margin-top: 0;
     font-size: 2.6vw;
+}
+
+.aboutH2 {
+    font-size: 3.8vw;
+    text-shadow: 0.07em 0.07em 1px rgb(142, 141, 141);
 }
 /* about end*/
 
