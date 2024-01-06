@@ -410,7 +410,7 @@ main > p {
 }
 
 .aboutH2 {
-    font-size: 2.65vw;
+    font-size: 2.65vw; 
     font-weight: 300;
     margin-bottom: 60px;
     font-family: Inter;
@@ -424,7 +424,7 @@ main > p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 2vw;
+    gap: 3vw;
     background-color: #ffffff;
     box-shadow: 0 0 12px #268391;
     border-radius: 7px;
@@ -432,7 +432,7 @@ main > p {
 }
 
 .label-wrapper div {
-    width: 14vw;
+    width: 10vw;
     display: flex;
     align-items: center;
     justify-content: center;
