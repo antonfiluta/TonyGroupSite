@@ -1,0 +1,79 @@
+.contacts-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-info span {
+    font-family: forum;
+    font-size: 2.5vw;
+    color: black;
+}
+
+.contacts-info span:nth-child(2) {
+    font-family: forum;
+    font-size: 2.5vw;
+    margin-left: 16px;
+}
+
+.card {
+    padding: 7px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 1vw;
+    box-shadow: 0 0 20px 7px #07182E;
+    margin-bottom: 2vw;
+    background-color: linear-gradient(to bottom right, #82c7d3, #237c89);
+}
+
+.card-wrapper {
+    display: flex;
+    background-color: linear-gradient(#70bdca, #268391);
+    flex-direction: column;
+    gap: 3vw;
+    padding: 2.5vw;
+    border-radius: 20px;
+    z-index: 1;
+    border: #07182E 2px solid;
+}
+  
+.card::before {
+    content: '';
+    position: absolute;
+    width: 300%;
+    left: -100%;
+    top: -100%;
+    background: linear-gradient(to right,#268391,rgb(155, 195, 235), rgb(78, 107, 176));
+    height: 300%;
+    animation: rotBGimg 4s infinite;
+}
+  
+@keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(1800deg);
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .contacts-info span {
+        font-size: 3.4vw;
+    }
+    
+    .contacts-info span:nth-child(2) {
+        font-size: 3.4vw;
+        margin-left: 10px;
+    }
+    
+    .card-wrapper {
+        gap: 5vw;
+        padding: 3vw;
+    }
+}

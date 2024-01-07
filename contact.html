@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css-files/style.css">
+    <link type="text/css" rel="stylesheet" href="css-files/contact.css">
+    <title>TonyGroup</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="TonyGroup">
+    <meta property="og:title" content="описание">
+    <meta property="og:description" content="длинное описание">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+</head>
+<body>
+  <header id="header">
+    <div id="number">+375 (33) 300-23-11</div>
+    <div id="mail">tonigroup@yandex.ru</div>
+    <div onclick="window.location.href='index.html'" id="logoBox"><img src="images/bigLogo.jpeg" alt="tonygroup" id="logo"></div>
+    <nav id="nav">
+      <input type="radio" name="radio" id="r1">
+      <input type="radio" name="radio" id="r2">
+      <input type="radio" name="radio" id="r3">
+      <input type="radio" name="radio" id="r4" checked>
+      <label for="r1">
+        <button class="head-buttons" onclick="window.location.href = 'about.html'">о компании</button>
+      </label>
+      <label for="r2">
+        <button class="head-buttons" onclick="window.location.href = 'index.html'">каталог</button>
+      </label>
+      <label for="r3">
+        <button class="head-buttons" onclick="window.location.href = 'zapros.html'">подбор</button>
+      </label>
+      <label for="r4">
+        <button class="head-buttons">контакты</button>
+      </label>
+    </nav>
+    <div id="menuBox" onclick="menu(this)">
+      <div class="bar1" id="b1"></div>
+      <div class="bar2" id="b2"></div>
+      <div class="bar3" id="b3"></div>
+    </div>
+    <div id="menuM">
+      <div id="navM">
+        <input type="radio" name="radioM" id="m1">
+        <input type="radio" name="radioM" id="m2">
+        <input type="radio" name="radioM" id="m3">
+        <input type="radio" name="radioM" id="m4" checked>
+        <label for="m1">
+          <button class="head-buttons" onclick="window.location.href = 'about.html'">о компании</button>
+        </label> 
+        <label for="m2">
+          <button class="head-buttons" onclick="window.location.href = 'index.html'">каталог</button>
+        </label>
+        <label for="m3">
+          <button class="head-buttons" onclick="window.location.href = 'zapros.html'">подбор</button>
+        </label>
+        <label for="m4">
+          <button class="head-buttons">контакты</button>
+        </label>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1>Наши контакты</h1>
+    <hr>
+    <div class="contacts-wrapper">
+      <div class="card">
+        <div class="card-wrapper">
+          <div class="contacts-info">
+            <p><span>Номер телефона:</span> <span>+375 (33) 300-23-11</span></p>
+          </div>
+          <div class="contacts-info">
+            <p><span>Электронная почта:</span> <span>tonigroup@yandex.ru</span></p>
+          </div>
+          <div class="contacts-info">
+            <p><span>Контактное лицо:</span> <span>Дмитрий</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footBlock1">
+      <span>+375 (33) 300-23-11</span>
+      <span>info@tonigroup.by</span>
+      <span>adress</span>
+    </div>
+    <div>
+      
+    </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
