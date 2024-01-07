@@ -1,0 +1,87 @@
+.form-wrapper {
+    width: 100%;
+    display: flex;
+    margin-top: 2vw;
+    gap: 10vw;
+}
+
+.form-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.formH2 {
+    font-size: 2.1vw;
+}
+
+.formImg {
+    width: 35vw;
+}
+
+.buttonF {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #2c9caf;
+    transition: all 0.4s ease;
+    font-size: 1vw;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #2c9caf;
+    background-color: #fcfcfc;
+  }
+  
+  .buttonF:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391;
+  }
+  
+  .buttonF::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2c9caf;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 0.5s;
+  }
+  
+  .buttonF:hover::before {
+    width: 150%;
+  }
+
+
+@media screen and (max-width: 700px) {
+  .form-wrapper {
+      flex-direction: column;
+  }
+  
+  .form-box {
+      gap: 3vw;
+  }
+  
+  .formH2 {
+      font-size: 3.2vw;
+  }
+  
+  .formImg {
+      width: 60vw;
+  }
+  
+  .buttonF {
+      padding: 12px 22px;
+      font-size: 2vw;
+  }
+
+}

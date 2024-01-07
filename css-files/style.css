@@ -157,6 +157,8 @@ label {
 }
 /* header end */
 
+
+
 /* menu start */
 #menuBox {
     display: none;
@@ -232,6 +234,8 @@ label {
 }
 /* menu end */
 
+
+
 /* main start*/
 main {
     margin-top: 15vw;
@@ -257,262 +261,7 @@ main > p {
     font-size: 1.6vw;
     text-align: justify;
 }
-
-.shop-wrapper {
-    width: 100%;
-    margin-top: 2vw;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.shop-wrapper a {
-    text-decoration: none;
-    color: black;
-    margin: 0;
-    padding: 0;
-}
-
-.shop-card {
-    width: 23.4vw;
-    height: 26vw;
-    padding: 1vw;
-    border: 1px solid rgb(78, 107, 176);
-    margin-bottom: 0.5vw;
-    border-radius: 5px;
-    box-shadow: 2px 2px 1px gray;
-    transition: all 0.5s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-}
-
-.shop-card:hover {
-    width: 24.2vw;
-    height: 26.6vw;
-    box-shadow: 6px 6px 1px gray;
-    border: 0.3vw solid rgb(78, 107, 176);
-    z-index: 2;
-}
-
-.shop-card > img {
-    width: 80%;
-    border-radius: 1vw;
-}
-
-.shop-card > p {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 2.4vw;
-    font-size: 1.7vw;
-    text-align: center;
-}
 /* main end*/
-
-
-
-
-
-/* zapros start*/
-.form-wrapper {
-    width: 100%;
-    display: flex;
-    margin-top: 2vw;
-    gap: 10vw;
-}
-
-.form-box {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2vw;
-}
-
-.formH2 {
-    font-size: 2.1vw;
-}
-
-.formImg {
-    width: 35vw;
-}
-
-.buttonF {
-    padding: 15px 25px;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #2c9caf;
-    transition: all 0.4s ease;
-    font-size: 1vw;
-    position: relative;
-    overflow: hidden;
-    outline: 2px solid #2c9caf;
-    background-color: #fcfcfc;
-  }
-  
-  .buttonF:hover {
-    color: #ffffff;
-    transform: scale(1.1);
-    outline: 2px solid #70bdca;
-    box-shadow: 4px 5px 17px -4px #268391;
-  }
-  
-  .buttonF::before {
-    content: "";
-    position: absolute;
-    left: -50px;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background-color: #2c9caf;
-    transform: skewX(45deg);
-    z-index: -1;
-    transition: width 0.5s;
-  }
-  
-  .buttonF:hover::before {
-    width: 150%;
-  }
-/* zapros start*/
-
-/* about start*/
-.sertif-wrapper{
-    width: 100%;
-    display: flex;
-    margin-top: 3.3vw;
-}
-
-.sertif-block1{
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    gap: 3vw;
-    align-items: center;
-}
-
-.serf-img {
-    width: 80%;
-    box-shadow: 4px 5px 10px #268391;
-}
-
-.sertif-block2{
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.serf-text {
-    width: 80%;
-    text-align: justify;
-    font-size: 2vw;
-    margin-top: 2vw;
-}
-
-.aboutH2 {
-    font-size: 2.65vw; 
-    font-weight: 300;
-    margin-bottom: 60px;
-    font-family: Inter;
-    color: rgb(18, 17, 17);
-    text-shadow: 0.05em 0.04em 1px rgb(142, 141, 141);
-    text-align: center;
-}
-
-.label-wrapper {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 3vw;
-    background-color: #ffffff;
-    box-shadow: 0 0 12px #268391;
-    border-radius: 7px;
-    padding: 2vw 1vw;
-}
-
-.label-wrapper div {
-    width: 10vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.label-wrapper div img {
-    width: 100%;
-}
-/* about end*/
-
-
-
-/* contacts start*/
-
-.contacts-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contacts-info span {
-    font-family: forum;
-    font-size: 2.5vw;
-    color: black;
-}
-
-.contacts-info span:nth-child(2) {
-    font-family: forum;
-    font-size: 2.5vw;
-    margin-left: 16px;
-}
-
-.card {
-    padding: 7px;
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    border-radius: 20px;
-    margin-top: 1vw;
-    box-shadow: 0 0 20px 7px #07182E;
-    margin-bottom: 2vw;
-    background-color: linear-gradient(to bottom right, #82c7d3, #237c89);
-  }
-
-  .card-wrapper {
-    display: flex;
-    background-color: linear-gradient(#70bdca, #268391);
-    flex-direction: column;
-    gap: 3vw;
-    padding: 2.5vw;
-    border-radius: 20px;
-    z-index: 1;
-    border: #07182E 2px solid;
-  }
-  
-  .card::before {
-    content: '';
-    position: absolute;
-    width: 300%;
-    left: -100%;
-    top: -100%;
-    background: linear-gradient(to right,#268391,rgb(155, 195, 235), rgb(78, 107, 176));
-    height: 300%;
-    animation: rotBGimg 4s infinite;
-  }
-  
-  @keyframes rotBGimg {
-    from {
-      transform: rotate(0deg);
-    }
-  
-    to {
-      transform: rotate(1800deg);
-    }
-  }
-/* contacts end*/
 
 
 
@@ -539,7 +288,7 @@ footer {
 
 
 @media screen and (max-width: 700px) {
-    /* header start */
+/* header start */
 header {
     height: 40vw; /*10vw*/
     box-shadow: 0 0 2vw 0;
@@ -595,102 +344,7 @@ h1 {
 main > p {
     font-size: 3vw;
 }
-
-.shop-card {
-    width: 30.8vw;
-    height: 37vw;
-    padding: 1vw;
-    border: 0.3vw solid rgb(78, 107, 176);
-    margin-bottom: 0.5vw;
-    border-radius: 5px;
-    box-shadow: 2px 2px 1px gray;
-}
-
-.shop-card:hover {
-    width: 31.8vw;
-    height: 38vw;
-    box-shadow: 7px 7px 1px gray;
-    border: 0.5vw solid rgb(78, 107, 176);
-}
-
-.shop-card > p {
-    margin-top: 4vw;
-    font-size: 2.8vw;
-}
 /* main end*/
-
-
-/* zapros start*/
-.form-wrapper {
-    flex-direction: column;
-}
-
-.form-box {
-    gap: 3vw;
-}
-
-.formH2 {
-    font-size: 3.2vw;
-}
-
-.formImg {
-    width: 60vw;
-}
-
-.buttonF {
-    padding: 12px 22px;
-    font-size: 2vw;
-}
-/* zapros end*/
-
-
-/* about start*/
-.sertif-wrapper{
-    margin-top: 3.3vw;
-}
-
-.sertif-block1{
-    width: 30%;
-    gap: 5vw;
-}
-
-.serf-img {
-    width: 100%;
-}
-
-.sertif-block2{
-    width: 70%;
-}
-
-.serf-text {
-    width: 85%;
-    margin-top: 0;
-    font-size: 2.6vw;
-}
-
-.aboutH2 {
-    font-size: 3.8vw;
-    text-shadow: 0.07em 0.07em 1px rgb(142, 141, 141);
-}
-/* about end*/
-
-
-/* contacts start*/
-.contacts-info span {
-    font-size: 3.4vw;
-}
-
-.contacts-info span:nth-child(2) {
-    font-size: 3.4vw;
-    margin-left: 10px;
-}
-
-.card-wrapper {
-    gap: 5vw;
-    padding: 3vw;
-}
-/* contacts end*/
-
 
 /* footer start*/
 .footBlock1 {
@@ -698,7 +352,6 @@ main > p {
     padding: 3.5vw;
 }
 /* footer end*/
-
 }
 
 
