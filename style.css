@@ -475,7 +475,8 @@ main > p {
     border-radius: 20px;
     margin-top: 1vw;
     box-shadow: 0 0 20px 7px #07182E;
-    background-color: linear-gradient(#70bdca, #268391);
+    margin-bottom: 2vw;
+    background-color: linear-gradient(to bottom right, #82c7d3, #237c89);
   }
 
   .card-wrapper {
@@ -483,7 +484,7 @@ main > p {
     background-color: linear-gradient(#70bdca, #268391);
     flex-direction: column;
     gap: 3vw;
-    padding: 3vw 2.5vw;
+    padding: 2.5vw;
     border-radius: 20px;
     z-index: 1;
     border: #07182E 2px solid;
@@ -495,10 +496,9 @@ main > p {
     width: 300%;
     left: -100%;
     top: -100%;
-    background: linear-gradient(#70bdca, #268391);
+    background: linear-gradient(to right,#268391,rgb(155, 195, 235), rgb(78, 107, 176));
     height: 300%;
-    animation: rotBGimg 2s infinite;
-    transition: 0.2s;
+    animation: rotBGimg 4s infinite;
   }
   
   @keyframes rotBGimg {
@@ -507,7 +507,7 @@ main > p {
     }
   
     to {
-      transform: rotate(360deg);
+      transform: rotate(1800deg);
     }
   }
 /* contacts end*/
