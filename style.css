@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: aliceblue;;
+    background-color: rgba(156, 185, 251);
 }
 
 body,
@@ -237,6 +237,8 @@ main {
     margin-top: 15vw;
     background-color: aliceblue;
     padding: 2vw;
+    position: relative;
+    box-shadow: 0 0 1vw 0 black;
 }
 
 h1 {
@@ -517,7 +519,7 @@ main > p {
 /* footer start*/
 footer {
     display: flex;
-    background: rgba(156, 185, 251, 0.8);
+    background: rgba(156, 185, 251);
 }
 
 .footBlock1 {
@@ -671,6 +673,23 @@ main > p {
     text-shadow: 0.07em 0.07em 1px rgb(142, 141, 141);
 }
 /* about end*/
+
+
+/* contacts start*/
+.contacts-info span {
+    font-size: 3.4vw;
+}
+
+.contacts-info span:nth-child(2) {
+    font-size: 3.4vw;
+    margin-left: 10px;
+}
+
+.card-wrapper {
+    gap: 5vw;
+    padding: 3vw;
+}
+/* contacts end*/
 
 
 /* footer start*/

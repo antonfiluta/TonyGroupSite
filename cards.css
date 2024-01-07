@@ -11,7 +11,7 @@ a {
 }
 
 body {
-    background: rgba(156, 185, 251);
+    background-color: rgba(156, 185, 251);
 }
 
 body,
@@ -30,7 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: end; /*center*/
-    box-shadow: 0 0 1vw 0;
+    box-shadow: 0 0 20px #268391;
     color: rgb(78, 107, 176);
     background-color: white;
     transition: all 0.35s ease;
@@ -440,34 +440,48 @@ input[type = radio] {
     top: 0;
 }
 
-#t1:checked ~ .items-wrapper table:nth-of-type(1),
-#t2:checked ~ .items-wrapper table:nth-of-type(2),
-#t3:checked ~ .items-wrapper table:nth-of-type(3),
-#t4:checked ~ .items-wrapper table:nth-of-type(4),
-#t5:checked ~ .items-wrapper table:nth-of-type(5),
-#t6:checked ~ .items-wrapper table:nth-of-type(6),
-#t7:checked ~ .items-wrapper table:nth-of-type(7),
-#t8:checked ~ .items-wrapper table:nth-of-type(8),
-#t9:checked ~ .items-wrapper table:nth-of-type(9),
-#t10:checked ~ .items-wrapper table:nth-of-type(10),
-#t11:checked ~ .items-wrapper table:nth-of-type(11),
-#t20:checked ~ .items-wrapper table:nth-of-type(20)
+#t1:checked ~ .items-wrapper .table-box:nth-of-type(1),
+#t2:checked ~ .items-wrapper .table-box:nth-of-type(2),
+#t3:checked ~ .items-wrapper .table-box:nth-of-type(3),
+#t4:checked ~ .items-wrapper .table-box:nth-of-type(4),
+#t5:checked ~ .items-wrapper .table-box:nth-of-type(5),
+#t6:checked ~ .items-wrapper .table-box:nth-of-type(6),
+#t7:checked ~ .items-wrapper .table-box:nth-of-type(7),
+#t8:checked ~ .items-wrapper .table-box:nth-of-type(8),
+#t9:checked ~ .items-wrapper .table-box:nth-of-type(9),
+#t10:checked ~ .items-wrapper .table-box:nth-of-type(10),
+#t11:checked ~ .items-wrapper .table-box:nth-of-type(11),
+#t20:checked ~ .items-wrapper .table-box:nth-of-type(20)
  {
-    display: table;
+    display: flex;
 }
 
 .items-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 2vw 0;
+    width: 100%;
+}
+
+.table-box{
+    display: none;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.table-imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 25vw;
+}
+
+.table-imgs img {
     width: 100%;
 }
 
 table {
     border: 1px solid black;
     border-collapse: collapse;
-    display: none;
 }
 
 tr:first-child {
@@ -775,6 +789,10 @@ h1 {
 .bigP{
     font-size: 3.1vw;
     margin-top: 3vw;
+}
+
+.table-imgs {
+    display: none;
 }
 
 td {
