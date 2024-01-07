@@ -360,8 +360,8 @@ h1 {
 
 hr {
     height: 3px;
-    color: blue;
     background: black;
+    margin: 3vw 0;
 }
 
 .tips:hover {

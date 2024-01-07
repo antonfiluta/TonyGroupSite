@@ -16,6 +16,11 @@ footer {
     width: 100%;
 }
 
+hr {
+    height: 3px;
+    background: black;
+    margin: 3vw 0;
+}
 /* header start */
 header {
     position: fixed;
@@ -244,10 +249,6 @@ h1 {
     text-shadow: 0.05em 0.04em 1px rgb(142, 141, 141);
 }
 
-hr {
-    margin: 3vw 0;
-}
-
 main > p {
     margin-left: 3vw;
     margin-top: 1vw;
@@ -443,6 +444,76 @@ main > p {
 }
 /* about end*/
 
+
+
+/* contacts start*/
+
+.contacts-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-info span {
+    font-family: forum;
+    font-size: 2.5vw;
+    color: black;
+}
+
+.contacts-info span:nth-child(2) {
+    font-family: forum;
+    font-size: 2.5vw;
+    margin-left: 16px;
+}
+
+.card {
+    padding: 7px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 1vw;
+    box-shadow: 0 0 20px 7px #07182E;
+    background-color: linear-gradient(#70bdca, #268391);
+  }
+
+  .card-wrapper {
+    display: flex;
+    background-color: linear-gradient(#70bdca, #268391);
+    flex-direction: column;
+    gap: 3vw;
+    padding: 3vw 2.5vw;
+    border-radius: 20px;
+    z-index: 1;
+    border: #07182E 2px solid;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    width: 300%;
+    left: -100%;
+    top: -100%;
+    background: linear-gradient(#70bdca, #268391);
+    height: 300%;
+    animation: rotBGimg 2s infinite;
+    transition: 0.2s;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+/* contacts end*/
+
+
+
 /* footer start*/
 footer {
     display: flex;
@@ -608,6 +679,7 @@ main > p {
     padding: 3.5vw;
 }
 /* footer end*/
+
 }
 
 
