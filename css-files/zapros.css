@@ -1,3 +1,48 @@
+.zapros-text-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.zapros-text {
+  width: 94%;
+  font-size: 1.9vw;
+  text-align: justify;
+  text-indent: 2.5vw;
+}
+
+.zap-h4 {
+  color: #2c9caf;
+  text-align: center;
+  font-size: 2.4vw;
+  margin-top: 1.5vw;
+}
+
+.zap-ul {
+  margin-top: 2vw;
+  padding: 0;
+  width: 95%;
+}
+
+.zap-ul p{
+  font-size: 2vw;
+  margin-left: 1.5vw;
+  text-align: justify;
+}
+
+.zap-ul li{
+  font-size: 1.7vw;
+  text-align: justify;
+  margin-top: 1vw;
+  margin-left: 2vw;
+}
+
+.zap-email {
+  color: #268391;
+}
+
 .form-wrapper {
     width: 100%;
     display: flex;
@@ -15,6 +60,7 @@
 
 .formH2 {
     font-size: 2.1vw;
+    color:#2c9caf;
 }
 
 .formImg {

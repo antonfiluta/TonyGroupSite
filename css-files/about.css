@@ -26,9 +26,10 @@
 
 .serf-text {
     width: 80%;
-    text-align: justify;
+    text-align: center;
     font-size: 2vw;
-    margin-top: 2vw;
+    margin-top: 2.5vw;
+    color: rgb(78, 107, 176);
 }
 
 .aboutH2 {
