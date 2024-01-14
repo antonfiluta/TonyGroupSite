@@ -208,7 +208,7 @@ input[type = radio] {
 }
 
 .items-wrapper {
-    margin: 2vw 0;
+    margin: 1vw 0;
     width: 100%;
 }
 
@@ -217,17 +217,19 @@ input[type = radio] {
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row-reverse;
 }
 
 .table-imgs {
     display: flex;
     flex-direction: column;
+    align-items: start;
     gap: 1vw;
     width: 25vw;
 }
 
 .table-imgs img {
-    width: 100%;
+    width: 80%;
 }
 
 table {
@@ -297,29 +299,19 @@ td {
 
 
 /*about-type start*/
-.about-type-box {
-    margin: 2vw 0;
-    width: 83%;
-    margin-left: 2vw;
-}
-
 .about-type {
     display: none;
+    width: 85%;
 }
 
-.aboutType {
-    margin-top: 1vw;
+.main-about {
+    width: 80%;
 }
 
-.aboutType p {
-    font-family: inter;
-    font-size: 1.4vw;
-}
-
-.aboutType p span{
-    font-family: forum;
-    font-size: 1.55vw;
-    color: rgb(27, 26, 26);
+.about-type-box {
+    margin: 2vw 0;
+    width: 100%;
+    margin-left: 2vw;
 }
 
 .about-type-box .main-about ul{
@@ -333,8 +325,12 @@ td {
     font-size: 1.8vw;
 }
 
-.about-type .mainP {
-    margin-bottom: 2vw;
+.mainP ~ hr {
+    margin: 1.5vw 0;
+}
+
+.flex-box{
+    display: flex;
 }
 
 .bigP{
@@ -347,15 +343,38 @@ td {
 .litP {
     font-family: Forum;
     font-size: 1.6vw;
-    margin-top: 0.5vw;
+    margin-top: 1vw;
     text-align: justify;
 }
 
 .bigImg {
-    width: 25vw;
-    float: left;
+    width: 38vw;
     margin-right: 3vw;
+    margin-bottom: 1vw;
     border-radius: 1vw;
+    box-shadow: 3px 4px 20px #268391;
+}
+
+.litImg {
+    width: 13vw;
+    margin-bottom: 1vw;
+    border-radius: 1vw;
+    box-shadow: 3px 4px 15px #268391;
+    margin-top: 1vw;
+}
+
+.litImg.right {
+    float: right;
+    margin-left: 2vw;
+}
+
+.litImg.left {
+    float: left;
+    margin-right: 2vw;
+}
+
+.litImg.bigWidth {
+    width: 22vw;
 }
 /*about-type end*/
 
@@ -503,21 +522,8 @@ td {
     font-size: 3.4vw;
 }
 
-.aboutType {
-    margin-top: 2vw;
-    border: 1px solid black;
-}
-
 .mainP {
     font-size: 3.2vw;
-}
-
-.aboutType p{
-    font-size: 2.3vw;
-}
-
-.aboutType p span{
-    font-size: 2.6vw;
 }
 
 .litP {
