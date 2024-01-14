@@ -9,6 +9,11 @@ body {
     background-color: rgba(156, 185, 251);
 }
 
+a {
+    text-decoration: none;
+    color: rgb(78, 107, 176);
+}
+
 body,
 main,
 header,
@@ -236,6 +241,9 @@ label {
 
 
 
+
+
+
 /* main start*/
 main {
     margin-top: 15vw;
@@ -262,6 +270,9 @@ main > p {
     text-align: justify;
 }
 /* main end*/
+
+
+
 
 
 
