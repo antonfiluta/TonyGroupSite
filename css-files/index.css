@@ -301,7 +301,7 @@ td {
 /*about-type start*/
 .about-type {
     display: none;
-    width: 85%;
+    width: 90%;
 }
 
 .main-about {
@@ -345,6 +345,23 @@ td {
     font-size: 1.6vw;
     margin-top: 1vw;
     text-align: justify;
+    text-indent: 0.1vw;
+}
+
+.litH {
+    font-family: Forum;
+    font-size: 1.7vw;
+    text-align: center;
+    margin-top: 1.5vw;
+    font-weight: bold;
+}
+
+.fullWidthImg {
+    text-align: center;
+    width: 70%;
+    margin: 1vw 0;
+    border-radius: 1vw;
+    box-shadow: 2px 3px 10px #268391;
 }
 
 .bigImg {
@@ -356,7 +373,7 @@ td {
 }
 
 .litImg {
-    width: 13vw;
+    width: 12vw;
     margin-bottom: 1vw;
     border-radius: 1vw;
     box-shadow: 3px 4px 15px #268391;
@@ -365,16 +382,16 @@ td {
 
 .litImg.right {
     float: right;
-    margin-left: 2vw;
+    margin-left: 2.5vw;
 }
 
 .litImg.left {
     float: left;
-    margin-right: 2vw;
+    margin-right: 2.5vw;
 }
 
 .litImg.bigWidth {
-    width: 22vw;
+    width: 24vw;
 }
 /*about-type end*/
 
@@ -509,6 +526,14 @@ td {
 
 
 /*about-type start*/
+.about-type {
+    width: 100%;
+}
+
+.main-about {
+    width: 100%;
+}
+
 .about-type-box {
     margin: 2vw 0;
     margin-left: 0;
@@ -524,6 +549,13 @@ td {
 
 .mainP {
     font-size: 3.2vw;
+    text-align: center;
+    margin-bottom: 3.5vw;
+}
+
+.flex-box{
+    flex-direction: column;
+    align-items: center;
 }
 
 .litP {
@@ -534,7 +566,51 @@ td {
 .bigP{
     font-size: 3.1vw;
     margin-top: 3vw;
+    text-align: center;
 }
+
+.litH {
+    font-size: 3.6vw;
+    margin-top: 1.5vw;
+}
+
+.fullWidthImg {
+    width: 80vw;
+    margin: 1vw 0;
+    border-radius: 1vw;
+    box-shadow: 2px 3px 10px #268391;
+}
+
+.bigImg {
+    width: 80%;
+    margin-bottom: 2.5vw;
+    border-radius: 1vw;
+    box-shadow: 2px 3px 10px #268391;
+}
+
+.litImg {
+    width: 23vw;
+    margin-bottom: 1vw;
+    border-radius: 1vw;
+    box-shadow: 3px 4px 15px #268391;
+    margin-top: 1vw;
+}
+
+.litImg.right {
+    float: right;
+    margin-left: 2.5vw;
+}
+
+.litImg.left {
+    float: left;
+    margin-right: 2.5vw;
+}
+
+.litImg.bigWidth {
+    width: 24vw;
+}
+
+
 /*about-type end*/
 }
 
