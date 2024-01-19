@@ -331,13 +331,18 @@ td {
 
 .flex-box{
     display: flex;
+    width: 100%;
 }
 
 .bigP{
     font-family: inter;
     font-size: 1.7vw;
-    text-align: justify;
+    text-align: center;
     margin-top: 1.5vw;
+}
+
+.main-about .bigP {
+    text-align: start;
 }
 
 .litP {
