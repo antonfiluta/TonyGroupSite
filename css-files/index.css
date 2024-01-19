@@ -559,8 +559,8 @@ td {
 }
 
 .litP {
-    font-size: 3.5vw;
-    margin-top: 2vw;
+    font-size: 3.3vw;
+    margin-top: 2.4vw;
 }
 
 .bigP{
@@ -576,38 +576,23 @@ td {
 
 .fullWidthImg {
     width: 80vw;
-    margin: 1vw 0;
-    border-radius: 1vw;
-    box-shadow: 2px 3px 10px #268391;
 }
 
 .bigImg {
     width: 80%;
     margin-bottom: 2.5vw;
-    border-radius: 1vw;
     box-shadow: 2px 3px 10px #268391;
 }
 
 .litImg {
     width: 23vw;
-    margin-bottom: 1vw;
-    border-radius: 1vw;
-    box-shadow: 3px 4px 15px #268391;
-    margin-top: 1vw;
-}
-
-.litImg.right {
-    float: right;
-    margin-left: 2.5vw;
-}
-
-.litImg.left {
-    float: left;
-    margin-right: 2.5vw;
+    margin-bottom: 1.5vw;
+    box-shadow: 3px 4px 5px #268391;
+    margin-top: 2vw;
 }
 
 .litImg.bigWidth {
-    width: 24vw;
+    width: 48vw;
 }
 
 
