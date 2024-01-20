@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-
 }
 
 .zapros-text {
@@ -111,6 +110,7 @@
 @media screen and (max-width: 700px) {
   .form-wrapper {
       flex-direction: column;
+      margin-top: 3vw;
   }
   
   .form-box {
@@ -129,5 +129,27 @@
       padding: 12px 22px;
       font-size: 2vw;
   }
+  
+  .zapros-text {
+    font-size: 3.2vw;
+    text-indent: 1vw;
+  }
+  
+  .zap-h4 {
+    font-size: 3.7vw;
+    margin-top: 1.8vw;
+  }
 
+  .zap-ul{
+    margin-bottom: 2.5vw;
+  }
+  
+  .zap-ul p{
+    font-size: 3.2vw;
+  }
+  
+  .zap-ul li{
+    font-size: 3vw;
+    margin-left: 2.5vw;
+  }
 }
