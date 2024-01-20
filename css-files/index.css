@@ -1,3 +1,21 @@
+@font-face {
+    font-family: "Forum"; 
+    src: url("font/Forum/Forum-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "Inter"; 
+    src: url("font/Inter/Inter-VariableFont_slnt,wght.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+
+
+
+
 /* main start*/
 .main-head {
     display: flex;
@@ -605,19 +623,3 @@ td {
 }
 /*about-type end*/
 }
-
-
-
-@font-face {
-    font-family: "Forum"; 
-    src: url("font/Forum/Forum-Regular.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-} 
-
-@font-face {
-    font-family: "Inter"; 
-    src: url("font/Inter/Inter-VariableFont_slnt,wght.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-} 
