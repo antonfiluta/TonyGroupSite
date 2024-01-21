@@ -416,6 +416,10 @@ td {
 .litImg.bigWidth {
     width: 24vw;
 }
+
+#bigImg4 {
+    width: 30vw;
+}
 /*about-type end*/
 
 
@@ -496,6 +500,7 @@ td {
     border-radius: 3px;
     margin-bottom: 0.5vw;
     box-shadow: 0 0 1px 0;
+    transition: all 0.5s;
 }
 
 .table-imgs {
@@ -510,7 +515,6 @@ td {
 }
 
 .tips:hover {
-    font-size: 3vw;
     margin: -0.25vw 0 0.5vw -0.25vw;
     box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, 0.6);
 }
@@ -540,7 +544,7 @@ td {
 #t9:checked ~ .tips-wrapper .tips-box label:nth-of-type(9) > span,
 #t10:checked ~ .tips-wrapper .tips-box label:nth-of-type(10) > span,
 #t11:checked ~ .tips-wrapper .tips-box label:nth-of-type(11) > span {
-    font-size: 3.1vw;
+    font-size: 2.8vw;
     margin: -0.5vw 0 0.6vw -0.5vw;
     box-shadow: 9px 9px 2px 1px rgba(0, 0, 0, 0.5);
 }
@@ -620,6 +624,10 @@ td {
 
 #calal3Img {
     width: 38vw;
+}
+
+#bigImg4 {
+    width: 80vw;
 }
 /*about-type end*/
 }
