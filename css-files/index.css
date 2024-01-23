@@ -349,6 +349,7 @@ td {
 
 .flex-box{
     display: flex;
+    justify-content: center;
     width: 100%;
 }
 
@@ -391,6 +392,7 @@ td {
     width: 38vw;
     margin-right: 3vw;
     margin-bottom: 1vw;
+    margin-top: 1vw;
     border-radius: 1vw;
     box-shadow: 3px 4px 20px #268391;
 }
@@ -408,7 +410,8 @@ td {
     margin-left: 2.5vw;
 }
 
-.litImg.left {
+.litImg.left,
+.bigImg.left {
     float: left;
     margin-right: 2.5vw;
 }
@@ -419,6 +422,10 @@ td {
 
 #bigImg4 {
     width: 30vw;
+}
+
+#catal4-lit-img {
+    width: 18vw;
 }
 /*about-type end*/
 
@@ -628,6 +635,10 @@ td {
 
 #bigImg4 {
     width: 80vw;
+}
+
+#catal4-lit-img {
+    width: 25vw;
 }
 /*about-type end*/
 }
