@@ -113,7 +113,7 @@ label {
     cursor: pointer;
     text-transform: uppercase;
     font-family: inter;
-    transition: all 0.5s;
+    transition: all 0.3s;
     overflow: hidden;
     z-index: 1;
     text-align: center;
@@ -266,7 +266,7 @@ main {
     background-color: aliceblue;
     padding: 2vw;
     position: relative;
-    box-shadow: 0 0 1vw 0 black;
+    box-shadow: 0 0 20px 0 black;
 }
 
 h1 {
@@ -295,19 +295,81 @@ main > p {
 /* footer start*/
 footer {
     display: flex;
-    background: rgba(156, 185, 251);
+    background: #82c7d3;
+    padding: 2vw 2.5vw 0 2.5vw;
+    flex-direction: column;
+    gap: 1.4vw;
 }
 
 .footBlock1 {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    font-size: 1.6vw;
-    padding: 2vw;
+    justify-content: space-between;
+    font-size: 1.8vw;
 }
 
 .footBlock1 span {
     font-family: forum;
+    border: black 1.5px solid;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    box-shadow: 2px 2px 3px black;
+    transition: 0.5s;
+}
+
+.footBlock1 span:hover {
+    background-color: #48acbe;
+}
+
+.footBlock2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot-buttons {
+    position: relative;
+    border: black 2px solid;
+    font-size: 1.3vw;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: inter;
+    transition: all 0.55s;
+    text-align: center;
+    background-color: transparent;
+    padding: 0.7vw;
+    border-radius: 3px;
+    box-shadow: 0 0 5px black;
+}
+
+.foot-buttons:hover {
+    margin-left: -0.6vw;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #84c8d3;
+}
+
+.foot-bottom {
+    width: 100%;
+    padding: 0.6vw 0;
+    border-top: 1px solid black;
+}
+
+.foot-bottom span {
+    font-family: forum;
+    font-size: 1.3vw;
+}
+
+#toUp {
+    background-color: #a2e5f1;
+    font-size: 1.4vw;
+}
+
+#toUp:hover {
+    padding: 0.6vw 0.9vw;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #84c8d3;
 }
 /* footer end*/
 
