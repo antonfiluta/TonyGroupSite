@@ -436,9 +436,38 @@ main > p {
 /* main end*/
 
 /* footer start*/
+footer {
+    padding: 2vw 2vw 0 2vw;
+    gap: 2vw;
+}
+
 .footBlock1 {
-    font-size: 2.9vw;
-    padding: 3.5vw;
+    font-size: 2.3vw;
+}
+
+.footBlock1 span {
+    border-radius: 0.5vw;
+    box-shadow: 1.5px 1.5px 2px black;
+}
+
+.foot-buttons {
+    font-size: 1.65vw;
+}
+
+.foot-buttons:hover {
+    margin: 0;
+}
+
+.foot-bottom span {
+    font-size: 1.9vw;
+}
+
+#toUp {
+    font-size: 1.7vw;
+}
+
+#toUp:hover {
+    margin: 0;
 }
 /* footer end*/
 }
