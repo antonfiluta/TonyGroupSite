@@ -442,7 +442,7 @@ footer {
 }
 
 .footBlock1 {
-    font-size: 2.3vw;
+    font-size: 2.54vw;
 }
 
 .footBlock1 span {
@@ -451,7 +451,7 @@ footer {
 }
 
 .foot-buttons {
-    font-size: 1.65vw;
+    font-size: 1.96vw;
 }
 
 .foot-buttons:hover {
@@ -459,11 +459,11 @@ footer {
 }
 
 .foot-bottom span {
-    font-size: 1.9vw;
+    font-size: 2.25vw;
 }
 
 #toUp {
-    font-size: 1.7vw;
+    font-size: 2.1vw;
 }
 
 #toUp:hover {
