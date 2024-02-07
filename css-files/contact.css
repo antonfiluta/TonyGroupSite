@@ -77,7 +77,7 @@
 
 
 @media screen and (max-width: 700px) {
-    main {
+    .contacts-wrapper {
         height: 70vh;
     }
 
@@ -92,10 +92,6 @@
     
     .card-wrapper {
         gap: 5vw;
-        padding: 3vw;
-    }
-
-    .card {
-        margin: 12vw 0 20vw 0;
+        padding: 4vw;
     }
 }
