@@ -437,8 +437,8 @@ main > p {
 
 /* footer start*/
 footer {
-    padding: 2vw 2vw 0 2vw;
-    gap: 2vw;
+    padding: 3.7vw 2vw 0 2vw;
+    gap: 3vw;
 }
 
 .footBlock1 {
@@ -451,7 +451,9 @@ footer {
 }
 
 .foot-buttons {
-    font-size: 1.96vw;
+    font-size: 2.05vw;
+    border: black 1.3px solid;
+    color: black;
 }
 
 .foot-buttons:hover {

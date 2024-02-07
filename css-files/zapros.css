@@ -62,6 +62,7 @@
     display: flex;
     margin-top: 2vw;
     gap: 10vw;
+    padding-bottom: 4vw;
 }
 
 .form-box {
