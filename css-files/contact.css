@@ -12,9 +12,6 @@
     font-weight: normal; 
 }
 
-
-
-
 .contacts-wrapper {
     width: 100%;
     display: flex;
@@ -80,6 +77,10 @@
 
 
 @media screen and (max-width: 700px) {
+    main {
+        height: 90vw;
+    }
+
     .contacts-info span {
         font-size: 3.4vw;
     }
