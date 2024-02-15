@@ -95,6 +95,62 @@
 
 
 /* tipes start*/
+.tips-cards-wrapper {
+    width: 100%;
+    padding: 1vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tips-card-box-wrapper {
+    width: 16.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tips-card-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(206, 221, 255);
+    width: 16.5vw;
+    height: 15vw;
+    border-radius: 1vw;
+    border: solid 2px black;
+    box-shadow: 0 0 5px black;
+    transition: all 0.3s;
+    font-size: 2.4vw;
+}
+
+.tips-card-box:hover {
+    background: rgb(193, 211, 255);
+    width: 17vw;
+    height: 15.5vw;
+    border: dashed 3.6px rgb(78, 107, 176);
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.7);
+    font-size: 2.55vw;
+}
+
+.tips-card-box:hover .tips-card-img {
+    width: 75%;
+}
+
+.tips-card-img {
+    width: 70%;
+    transition: 0.3s;
+}
+
+.tips-card-text {
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.1);
+}
+
 .tips-wrapper {
     width: 100%;
     display: flex;
@@ -483,6 +539,46 @@ td {
 
 
 /*tips start*/
+.tips-cards-wrapper {
+    padding: 1vw 0;
+    row-gap: 4vw;
+}
+
+.tips-card-box-wrapper {
+    width: 50%;
+}
+
+.tips-card-box {
+    width: 39vw;
+    height: 35vw;
+    border-radius: 3vw;
+    font-size: 4.2vw;
+}
+
+.tips-card-box:hover {
+    width: 39vw;
+    height: 35vw;
+    font-size: 4.3vw;
+}
+
+.tips-card-box:hover .tips-card-img {
+    width: 75%;
+}
+
+.tips-card-img {
+    width: 70%;
+    transition: 0.3s;
+}
+
+.tips-card-text {
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+
 .tips-wrapper {
     margin: 1vw 0;
 }

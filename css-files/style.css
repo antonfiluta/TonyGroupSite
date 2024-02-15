@@ -22,7 +22,7 @@
 }
 
 body {
-    background-color: rgba(156, 185, 251);
+    background-color: rgb(156, 185, 251);
 }
 
 a {
@@ -428,6 +428,7 @@ main {
 h1 {
     font-size: 4.3vw;
     text-shadow: 0.07em 0.07em 1px rgb(142, 141, 141);
+    text-align: center;
 }
 
 main > p {
