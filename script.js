@@ -136,6 +136,7 @@ card3.onclick = hideTips();
 card4.onclick = hideTips();
 
 function hideTips() {
+
   t1.checked = false;
   t2.checked = false;
   t3.checked = false;
@@ -146,4 +147,5 @@ function hideTips() {
   t8.checked = false;
   t9.checked = false;
   t10.checked = false;
+  t11.checked = false;
 }
