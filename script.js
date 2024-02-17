@@ -105,7 +105,8 @@ const t6 = document.getElementById('t6');
 const t7 = document.getElementById('t7');
 const t8 = document.getElementById('t8');
 const t9 = document.getElementById('t9');
-const t10 = document.getElementById('t9');
+const t10 = document.getElementById('t10');
+const t11 = document.getElementById('t11');
 
 
 const c1 = document.getElementById('c1');
@@ -136,7 +137,6 @@ card3.onclick = hideTips();
 card4.onclick = hideTips();
 
 function hideTips() {
-
   t1.checked = false;
   t2.checked = false;
   t3.checked = false;
