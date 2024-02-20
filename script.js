@@ -131,10 +131,10 @@ window.onclick = function(event) {
   }
 };
 
-card1.onclick = hideTips();
-card2.onclick = hideTips();
-card3.onclick = hideTips();
-card4.onclick = hideTips();
+card1.onclick = hideTips;
+card2.onclick = hideTips;
+card3.onclick = hideTips;
+card4.onclick = hideTips;
 
 function hideTips() {
   t1.checked = false;
