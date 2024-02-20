@@ -663,10 +663,54 @@ td {
     text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.1);
 }
 
+#c1:checked ~ .tips-cards-wrapper .tips-card-box-wrapper:nth-of-type(1) .tips-card-box,
+#c2:checked ~ .tips-cards-wrapper .tips-card-box-wrapper:nth-of-type(2) .tips-card-box,
+#c3:checked ~ .tips-cards-wrapper .tips-card-box-wrapper:nth-of-type(3) .tips-card-box,
+#c4:checked ~ .tips-cards-wrapper .tips-card-box-wrapper:nth-of-type(4) .tips-card-box  {
+    border: dashed 3px black;
+    box-shadow: 0 0 9.5px 6px rgba(0, 0, 0, 0.65), inset 0 0 3px black;
+    background: rgb(174, 197, 249);
+    font-size: 4.3vw;
+    width: 39vw;
+    height: 35vw;
+}
+
+#c1:checked ~  .tips-wrapper {
+    height: 31vw;
+    padding-top: 1vw;
+}
+
+#c2:checked ~  .tips-wrapper {
+    height: 16.5vw;
+    padding-top: 1vw;
+}
+
+#c3:checked ~  .tips-wrapper {
+    height: 21vw;
+    padding-top: 1vw;
+}
+
+#c4:checked ~  .tips-wrapper {
+    height: 12.5vw;
+    padding-top: 1vw;
+}
+
+.tips-box {
+    padding: 0 1.5vw;
+}
+
+.tips-box label {
+    height: 3vw;
+    margin-bottom: 2vw;
+}
+
+
+
 
 
 .tips-wrapper {
     margin: 1vw 0;
+    padding-left: 0;
 }
 
 .items-wrapper {
@@ -676,18 +720,10 @@ td {
     overflow: scroll;
 }
 
-.TIB {
-    display: none;
-}
-
-.tips-box {
-    width: 90%;
-    padding: 1.5vw;
-}
 
 .tips {
     border: 1px solid black;
-    font-size: 2.8vw;
+    font-size: 2.65vw;
     padding: 0.6vw;
     border-radius: 3px;
     margin-bottom: 0.5vw;
@@ -736,7 +772,7 @@ td {
 #t9:checked ~ .tips-wrapper .tips-box label:nth-of-type(9) > span,
 #t10:checked ~ .tips-wrapper .tips-box label:nth-of-type(10) > span,
 #t11:checked ~ .tips-wrapper .tips-box label:nth-of-type(11) > span {
-    font-size: 2.8vw;
+    font-size: 2.65vw;
     margin: -0.5vw 0 0.6vw -0.5vw;
     box-shadow: 9px 9px 2px 1px rgba(0, 0, 0, 0.5);
 }
