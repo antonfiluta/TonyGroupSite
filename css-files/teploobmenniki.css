@@ -352,30 +352,14 @@ input[type = radio] {
     top: 0;
 }
 
-#t1:checked ~ .items-wrapper .table-box:nth-of-type(1),
-#t2:checked ~ .items-wrapper .table-box:nth-of-type(2),
-#t3:checked ~ .items-wrapper .table-box:nth-of-type(3),
-#t4:checked ~ .items-wrapper .table-box:nth-of-type(4),
-#t5:checked ~ .items-wrapper .table-box:nth-of-type(5),
-#t6:checked ~ .items-wrapper .table-box:nth-of-type(6),
-#t7:checked ~ .items-wrapper .table-box:nth-of-type(7),
-#t8:checked ~ .items-wrapper .table-box:nth-of-type(8),
-#t9:checked ~ .items-wrapper .table-box:nth-of-type(9),
-#t10:checked ~ .items-wrapper .table-box:nth-of-type(10),
-#t11:checked ~ .items-wrapper .table-box:nth-of-type(11),
-#t20:checked ~ .items-wrapper .table-box:nth-of-type(20)
- {
-    display: flex;
-}
-
 .items-wrapper {
     margin: 1vw 0;
     width: 100%;
 }
 
 .table-box{
-    display: none;
     width: 100%;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row-reverse;
@@ -426,43 +410,61 @@ td {
 .magic-HR {
     display: none;
 }
-
-#t1:checked ~ .about-type-box .about-type:nth-of-type(2),
-#t2:checked ~ .about-type-box .about-type:nth-of-type(3),
-#t3:checked ~ .about-type-box .about-type:nth-of-type(4),
-#t4:checked ~ .about-type-box .about-type:nth-of-type(5),
-#t5:checked ~ .about-type-box .about-type:nth-of-type(6),
-#t6:checked ~ .about-type-box .about-type:nth-of-type(7),
-#t7:checked ~ .about-type-box .about-type:nth-of-type(8),
-#t8:checked ~ .about-type-box .about-type:nth-of-type(9),
-#t9:checked ~ .about-type-box .about-type:nth-of-type(10),
-#t10:checked ~ .about-type-box .about-type:nth-of-type(11),
-#t11:checked ~ .about-type-box .about-type:nth-of-type(12) {
-    display: block;
-}
-
-#t1:checked ~ .about-type-box .main-about, 
-#t2:checked ~ .about-type-box .main-about, 
-#t3:checked ~ .about-type-box .main-about, 
-#t4:checked ~ .about-type-box .main-about, 
-#t5:checked ~ .about-type-box .main-about, 
-#t6:checked ~ .about-type-box .main-about, 
-#t7:checked ~ .about-type-box .main-about, 
-#t8:checked ~ .about-type-box .main-about, 
-#t9:checked ~ .about-type-box .main-about, 
-#t10:checked ~ .about-type-box .main-about, 
-#t11:checked ~ .about-type-box .main-about {
-    display: none;
-}
 /*tipes end*/
+
+
+
+/*items start*/
+.item-name {
+    font-size: 2.3vw;
+    margin-left: 0;
+    margin-top: 0.7vw;
+    font-family: Inter;
+    color: rgb(18, 17, 17);
+    text-shadow: 0.05em 0.04em 1px rgb(142, 141, 141);
+}
+
+.item-page-buttons{
+    display: flex;
+    justify-content: left;
+    gap: 5vw;
+    margin-top: 1vw;
+}
+
+.item-page-buttons button {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    padding: 0.25vw 0.35vw;
+    border-radius: 1vw;
+    background: white;
+    border: 1.5px solid black;
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+.item-page-buttons button:hover {
+    background:rgb(180, 200, 248);
+    border: 1.5px solid black;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #268391;
+}
+
+.item-page-buttons button img {
+    height: 2.5vw;
+}
+
+.item-page-buttons button span {
+    font-size: 1.3vw;
+}
+/*items end*/
 
 
 
 
 /*about-type start*/
 .about-type {
-    display: none;
-    width: 90%;
+    width: 100%;
 }
 
 .main-about {
@@ -503,6 +505,7 @@ td {
     font-size: 1.7vw;
     text-align: center;
     margin-top: 1.5vw;
+    font-weight: normal;
 }
 
 .main-about .bigP {
@@ -864,4 +867,31 @@ td {
     width: 25vw;
 }
 /*about-type end*/
+
+
+
+
+/*items start*/
+.item-name {
+    font-size: 3.4vw;
+}
+
+.item-page-buttons{
+    justify-content: space-between;
+    margin-top: 2.4vw;
+    margin-bottom: 2.5vw;
+}
+
+.item-page-buttons button {
+    padding: 0.45vw 0.55vw;
+}
+
+.item-page-buttons button img {
+    height: 4vw;
+}
+
+.item-page-buttons button span {
+    font-size: 2.7vw;
+}
+/*items end*/
 }

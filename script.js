@@ -9,10 +9,12 @@ const main = document.getElementById('main');
 const menuB = document.getElementById('menuBox');
 const list = document.getElementById('list');
 
+const ParentOrChild = document.getElementById('itemLife');
+
 
 function toScroll() {
     if (window.scrollY > 100) { //с прокруткой
-        if (window.innerWidth < 700) {
+        if (window.innerWidth < 700) { //проверяет разрешение экрана
             head.style.height = "10vw";
             logo.style.width = "30vw";
             //burger
@@ -25,12 +27,17 @@ function toScroll() {
             nav.style.height = "5vw";
             menuBox.style.display = "none";
         }
-        logo.src = "images/logoM.jpeg";
         head.style.alignItems = "center";
         num.style.display = "none";
         mail.style.display = "none";
+
+        if (ParentOrChild.title === "child") { //проверяет вложенность файла
+          logo.src = "../../images/logoM.jpeg";
+        } else {
+          logo.src = "images/logoM.jpeg";
+        }
     } else {                      //без прокурутки
-        if (window.innerWidth < 700) {
+        if (window.innerWidth < 700) {//проверяет разрешение экрана
             head.style.height = "40vw";
             logo.style.width = "45vw";
             nav.style.height = "7vw";
@@ -46,6 +53,12 @@ function toScroll() {
       num.style.display = "block";
       mail.style.display = "block";
       menuBox.style.display = "none";
+
+      if (ParentOrChild.title === "child") { //проверяет вложенность файла 
+        logo.src = "../../images/bigLogo.jpeg";
+      } else {
+        logo.src = "images/bigLogo.jpeg";
+      }
     }
   }
   window.addEventListener('scroll', toScroll);
