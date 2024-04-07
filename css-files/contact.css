@@ -15,19 +15,19 @@
 .contacts-wrapper {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .contacts-info span {
     font-family: forum;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     color: black;
 }
 
 .contacts-info span:nth-child(2) {
     font-family: forum;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     margin-left: 16px;
 }
 
@@ -38,7 +38,7 @@
     overflow: hidden;
     border-radius: 20px;
     margin-top: 3vw;
-    box-shadow: 0 0 20px 7px #07182E;
+    box-shadow: 0 0 17px 7px #07182E;
     margin-bottom: 4vw;
     background-color: linear-gradient(to bottom right, #82c7d3, #237c89);
 }
@@ -64,6 +64,21 @@
     height: 300%;
     animation: rotBGimg 4s infinite;
 }
+
+.map {
+    width: 40%;
+    height: 30vw;
+    border-radius: 3vw;
+    border: #07182E 4px solid;
+    overflow: hidden;
+    box-shadow: 0 0 10px 4px #237c89;
+}
+
+.map iframe {
+    width: 100%;
+    height: 31vw;
+    border: 0;
+}
   
 @keyframes rotBGimg {
     from {
@@ -78,7 +93,9 @@
 
 @media screen and (max-width: 700px) {
     .contacts-wrapper {
-        height: 60vh;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
     }
 
     .contacts-info span {
@@ -93,5 +110,14 @@
     .card-wrapper {
         gap: 5vw;
         padding: 4vw;
+    }
+
+    .map {
+        width: 74%;
+        height: 54vw;
+    }
+    
+    .map iframe {
+        height: 53vw;
     }
 }
