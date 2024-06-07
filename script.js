@@ -99,27 +99,15 @@ window.onclick = function(event) {
   hideList();
 };
 
-list.onclick = function(event) {
-  let target = event.target; 
-  if (target.id != 'list') return;
-  hideList();
-};
+// list.onclick = function(event) {
+//   let target = event.target; 
+//   if (target.id != 'list') return;
+//   hideListt();
+// };
 
 
 
 
-
-const t1 = document.getElementById('t1');
-const t2 = document.getElementById('t2');
-const t3 = document.getElementById('t3');
-const t4 = document.getElementById('t4');
-const t5 = document.getElementById('t5');
-const t6 = document.getElementById('t6');
-const t7 = document.getElementById('t7');
-const t8 = document.getElementById('t8');
-const t9 = document.getElementById('t9');
-const t10 = document.getElementById('t10');
-const t11 = document.getElementById('t11');
 
 
 const c1 = document.getElementById('c1');
@@ -140,25 +128,5 @@ window.onclick = function(event) {
     c2.checked = false;
     c3.checked = false;
     c4.checked = false;
-    hideTips();
   }
 };
-
-card1.onclick = hideTips;
-card2.onclick = hideTips;
-card3.onclick = hideTips;
-card4.onclick = hideTips;
-
-function hideTips() {
-  t1.checked = false;
-  t2.checked = false;
-  t3.checked = false;
-  t4.checked = false;
-  t5.checked = false;
-  t6.checked = false;
-  t7.checked = false;
-  t8.checked = false;
-  t9.checked = false;
-  t10.checked = false;
-  t11.checked = false;
-}
