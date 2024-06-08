@@ -121,12 +121,22 @@ const card3 = document.getElementById('c-id3');
 const card4 = document.getElementById('c-id4');
 
 
+
 window.onclick = function(event) {
   let target = event.target; 
-  if (target.id === 'card-wrap' || target.id === 'main') {
+
+  if (target.id == 'c-id1' || target.id == 'c1' || target.id == 'c-id2' || target.id == 'c2' || target.id == 'c-id3' || target.id == 'c3' || target.id == 'c-id4' || target.id == 'c4' || target.id == 'tips-box') {
+    return;
+  } else {
+    unCheckRadio();
+  }
+};
+
+function unCheckRadio() {
     c1.checked = false;
     c2.checked = false;
     c3.checked = false;
     c4.checked = false;
-  }
-};
+}
+
+
