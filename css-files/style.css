@@ -114,7 +114,6 @@ label {
     text-transform: uppercase;
     font-family: inter;
     transition: all 0.3s;
-    overflow: hidden;
     z-index: 1;
     text-align: center;
     background-color: white;
@@ -133,6 +132,7 @@ label {
     left: 0;
     width: 0%;
     height: 100%;
+    border-radius: 3px;
     background: linear-gradient(to right, rgb(155, 195, 235), rgb(115, 115, 222));
     transition: all 0.8s;
     z-index: -1;
@@ -177,6 +177,53 @@ label {
     color: rgb(32, 77, 182);
 }
 /* header end */
+
+
+
+/* dropdown start */
+#dropdown-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#dropdown-img {
+    margin-right: 0.6vw;
+    width: 3vw;
+    transition: 2s;
+    cursor: pointer;
+}
+
+#dropdown-img:hover {
+    animation-name: dropDownAnimation;
+    animation-duration: 0.65s;
+}
+
+
+#dopLinks-wrapper {
+    position: absolute;
+    top: 15vw;
+    right: 0;
+    width: 12vw;
+    height: 0;
+    border-radius: 0 0 0 1.5vw;
+    overflow: hidden;
+    box-shadow: 0 0 20px #268391;
+    transition: 0.5s;
+}
+
+.dopLinks-box {
+    display: flex;
+    flex-direction: column;
+    height: 7vw;
+    width: 100%;
+}
+/* dropdown end */
 
 
 
@@ -480,4 +527,12 @@ footer {
 @keyframes width {
     0% {width:0;}
     100% {width: 100%;}
+}
+
+@keyframes dropDownAnimation {
+    0% {width: 3vw;}
+    45% {width: 3.55vw;}
+    50% {width: 3.35vw; margin-right: 0.4vw;}
+    55% {width: 3.55vw;}
+    100% {width: 3vw;}
 }

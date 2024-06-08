@@ -26,6 +26,7 @@ function toScroll() {
             nav.style.display = "flex";
             nav.style.height = "5vw";
             menuBox.style.display = "none";
+            dopLinks.style.top = "5vw";
         }
         head.style.alignItems = "center";
         num.style.display = "none";
@@ -47,6 +48,7 @@ function toScroll() {
             logo.style.width = "28vw";
             nav.style.height = "4.5vw";
             nav.style.display = "flex";
+            dopLinks.style.top = "15vw";
         }
       head.style.alignItems = "end";
       logo.src = "images/bigLogo.jpeg";
@@ -140,3 +142,52 @@ function unCheckRadio() {
 }
 
 
+
+
+
+
+const dropdownArea = document.getElementById("dropdown-wrapper");
+const dropdownImg = document.getElementById("dropdown-img");
+const dopLinks = document.getElementById("dopLinks-wrapper");
+
+
+dropdownArea.onmouseover = function() {
+    dropdownImg.src = "images/folder-for-arrows/dropdownArrowWhite.png";
+    dropdownImg.style.rotate = "360deg";
+}
+
+dropdownArea.onmouseout = function() {
+  dropdownImg.src = "images/folder-for-arrows/dropdownArrowBlue.png";
+  dropdownImg.style.rotate = "-360deg";
+}
+
+
+
+dropdownImg.onclick = function() {
+  if (dopLinks.style.height === "7vw") {
+    dopLinks.style.height = "0vw";
+  } else {
+    dopLinks.style.height = "7vw";
+  }
+}
+
+window.onscroll = function() {
+  dopLinks.style.height = "0vw";
+}
+
+window.onclick = function(event) {
+  let target = event.target;
+  if (target.id !== "dropdown-img") {
+    dopLinks.style.height = "0vw";
+  }
+}
+
+
+const toContactBut = document.getElementById('toContact');
+
+toContactBut.onclick = function(event) {
+  let target = event.target;
+  if (target.id !== "dropdown-img") {
+    window.location.href = 'contact.html';
+  }
+}
