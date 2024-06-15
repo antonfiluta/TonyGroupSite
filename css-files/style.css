@@ -215,12 +215,13 @@ label {
     overflow: hidden;
     box-shadow: 0 0 20px #268391;
     transition: 0.5s;
+    background-color: white;
 }
 
 .dopLinks-box {
     display: flex;
     flex-direction: column;
-    height: 7vw;
+    height: 4vw;
     width: 100%;
 }
 /* dropdown end */
@@ -272,7 +273,7 @@ label {
     display: flex;
     flex-direction: column;
     width: 35vw;
-    height: 30vw;
+    height: 35vw;
     border: 1px blue solid;
     border-radius: 0 0 2px 2px;
 }
@@ -466,6 +467,36 @@ nav {
     height: 2.5px;
 }
 /* header end */
+
+
+/* dropdown start */
+#dropdown-img {
+    margin-right: 0.15vw;
+    width: 5vw;
+}
+
+#dropdown-img:hover {
+    animation-name: none;
+}
+
+#dopLinks-wrapper {
+    top: 40vw;
+    width: 25vw;
+    border-radius: 0 0 0 1.5vw;
+    box-shadow: -2px 3.5px 5px rgba(58, 103, 208, 0.4);
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.dopLinks-box {
+    display: flex;
+    flex-direction: column;
+    height: 7vw;
+    width: 100%;
+}
+/* dropdown end */
+
 
 /* main start*/
 main {

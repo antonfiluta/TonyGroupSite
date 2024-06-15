@@ -43,6 +43,7 @@ function toScroll() {
             logo.style.width = "45vw";
             nav.style.height = "7vw";
             nav.style.display = "flex";
+            dopLinks.style.top = "40vw";
         } else {
             head.style.height = "15vw";
             logo.style.width = "28vw";
@@ -70,7 +71,7 @@ let isHide = true;
 function menu(x) {
   x.classList.toggle("change");
   if (isHide) {
-    menuM.style.height = "30vw";
+    menuM.style.height = "35vw";
     isHide = false;
   } else {
     menuM.style.height = "0";
@@ -87,19 +88,19 @@ function hideMenu() {
 window.addEventListener('scroll', hideMenu);
 
 
-function showList() {
-  list.style.display = "flex";
-}
+// function showList() {
+//   list.style.display = "flex";
+// }
 
-function hideList() {
-  list.style.display = "none";
-}
+// function hideList() {
+//   list.style.display = "none";
+// }
 
-window.onclick = function(event) {
-  let target = event.target; 
-  if (target.id != 'list') return;
-  hideList();
-};
+// window.onclick = function(event) {
+//   let target = event.target; 
+//   if (target.id != 'list') return;
+//   hideList();
+// };
 
 // list.onclick = function(event) {
 //   let target = event.target; 
@@ -110,7 +111,7 @@ window.onclick = function(event) {
 
 
 
-
+//закрывает открытый раздел в каталоге
 
 const c1 = document.getElementById('c1');
 const c2 = document.getElementById('c2');
@@ -126,7 +127,9 @@ const card4 = document.getElementById('c-id4');
 
 window.onclick = function(event) {
   let target = event.target; 
-
+  if (target.id !== "dropdown-img") {
+    dopLinks.style.height = "0vw";
+  } 
   if (target.id == 'c-id1' || target.id == 'c1' || target.id == 'c-id2' || target.id == 'c2' || target.id == 'c-id3' || target.id == 'c3' || target.id == 'c-id4' || target.id == 'c4' || target.id == 'tips-box') {
     return;
   } else {
@@ -144,7 +147,7 @@ function unCheckRadio() {
 
 
 
-
+//выпадающее меню в хедере
 
 const dropdownArea = document.getElementById("dropdown-wrapper");
 const dropdownImg = document.getElementById("dropdown-img");
@@ -152,34 +155,43 @@ const dopLinks = document.getElementById("dopLinks-wrapper");
 
 
 dropdownArea.onmouseover = function() {
+  if (ParentOrChild.title === "child") { //проверяет вложенность файла 
+    dropdownImg.src = "../../images/folder-for-arrows/dropdownArrowWhite.png";
+  } else {
     dropdownImg.src = "images/folder-for-arrows/dropdownArrowWhite.png";
+  }
     dropdownImg.style.rotate = "360deg";
 }
 
 dropdownArea.onmouseout = function() {
-  dropdownImg.src = "images/folder-for-arrows/dropdownArrowBlue.png";
+  if (ParentOrChild.title === "child") { //проверяет вложенность файла 
+    dropdownImg.src = "../../images/folder-for-arrows/dropdownArrowBlue.png";
+  } else {
+    dropdownImg.src = "images/folder-for-arrows/dropdownArrowBlue.png";
+  }
   dropdownImg.style.rotate = "-360deg";
 }
 
 
 
 dropdownImg.onclick = function() {
-  if (dopLinks.style.height === "7vw") {
-    dopLinks.style.height = "0vw";
+  if (window.innerWidth > 700) {
+     if (dopLinks.style.height === "4vw") {
+         dopLinks.style.height = "0vw";
+     } else {
+         dopLinks.style.height = "4vw";
+     }
   } else {
-    dopLinks.style.height = "7vw";
+     if (dopLinks.style.height === "7vw") {
+        dopLinks.style.height = "0vw";
+     } else {
+        dopLinks.style.height = "7vw";
+  }
   }
 }
 
 window.onscroll = function() {
   dopLinks.style.height = "0vw";
-}
-
-window.onclick = function(event) {
-  let target = event.target;
-  if (target.id !== "dropdown-img") {
-    dopLinks.style.height = "0vw";
-  }
 }
 
 
@@ -188,6 +200,12 @@ const toContactBut = document.getElementById('toContact');
 toContactBut.onclick = function(event) {
   let target = event.target;
   if (target.id !== "dropdown-img") {
-    window.location.href = 'contact.html';
+    if (ParentOrChild.title === "child") { //проверяет вложенность файла 
+      window.location.href = '../../contact.html';
+    } else {
+      window.location.href = 'contact.html';
+    }
   }
 }
+ 
+

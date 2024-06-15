@@ -60,6 +60,25 @@ main {
     text-align: center;
 }
 
+
+
+.video-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+video {
+    width: 65%;
+    border-radius: 2vw;
+    border: 2px solid #268391;
+    box-shadow: 0 3px 20px 5px #268391;
+    background-color: black;
+}
+
+
 .label-wrapper {
     width: 100%;
     display: flex;
