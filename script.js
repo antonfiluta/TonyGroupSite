@@ -8,12 +8,19 @@ const navM = document.getElementById('navM');
 const main = document.getElementById('main');
 const menuB = document.getElementById('menuBox');
 const list = document.getElementById('list');
+let bodyB = document.getElementsByTagName("body");
 
 const ParentOrChild = document.getElementById('itemLife');
 
-
+let scrollNow;
 function toScroll() {
-    if (window.scrollY > 100) { //с прокруткой
+    if (bodyB[0].style.overflow !== "hidden") {
+     scrollNow = window.scrollY
+    } else {
+     scrollNow = 103
+    }
+
+    if (scrollNow > 100) { //с прокруткой
         if (window.innerWidth < 700) { //проверяет разрешение экрана
             head.style.height = "10vw";
             logo.style.width = "30vw";
@@ -64,7 +71,12 @@ function toScroll() {
       }
     }
   }
+
   window.addEventListener('scroll', toScroll);
+
+
+
+
 
 let isHide = true;
 

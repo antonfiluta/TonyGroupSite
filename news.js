@@ -1,3 +1,5 @@
+
+
 //плавное открытие скрытого текста в новостях
 let newsTextBlock = document.getElementsByClassName("hide-block");
 let testLength = document.getElementsByClassName("hide-text-test-box");
@@ -31,7 +33,6 @@ let mainImage = document.getElementsByClassName("main-news-img");
 let imageBar = document.getElementsByClassName("image-bar");
 let mainB = document.getElementById("mainBlock");
 let footer = document.getElementById("footerBlock");
-let bodyB = document.getElementsByTagName("body");
 
 
 
@@ -42,6 +43,8 @@ function showImg(k) {
 
     showImageBoxesWrapper.style.display = "flex";
     imageBoxes[k].style.display = "flex";
+
+    toScroll();
 }
 
 
@@ -81,6 +84,7 @@ window.onclick = function(event) {
     mainB.style.filter = "blur(0)";
     footer.style.filter = "blur(0)";
     bodyB[0].style.overflow = "auto";
+    
 
     showImageBoxesWrapper.style.display = "none";
     for (let i = 0; i < imageBoxes.length; i++) {
