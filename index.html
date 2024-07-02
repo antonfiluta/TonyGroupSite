@@ -24,7 +24,7 @@
 <body>
   <header id="header">
     <div id="number">+375 (33) 300-23-11</div>
-    <div id="mail">tonigroup@yandex.ru</div>
+    <div id="mail"><a href="mailto:tonigroup@yandex.ru">tonigroup@yandex.ru</a></div>
     <div onclick="window.location.href='index.html'" id="logoBox"><img src="images/bigLogo.jpeg" alt="ToniGroup_TEW" id="logo"></div>
     <nav id="nav">
       <input type="radio" name="radio" id="r1" checked>
@@ -41,7 +41,12 @@
         <button class="head-buttons" onclick="window.location.href = 'zapros.html'">подбор</button>
       </label>
       <label for="r4">
-        <button class="head-buttons" onclick="window.location.href = 'contact.html'">контакты</button>
+        <button class="head-buttons" id="toContact">
+         <span style="font-family: Inter; margin-left: -2vw;">контакты</span> 
+         <div id="dropdown-wrapper">
+            <img src="images/folder-for-arrows/dropdownArrowBlue.png" alt="dropdown" id="dropdown-img">
+         </div>
+        </button>
       </label>
     </nav>
     <div id="menuBox" onclick="menu(this)">
@@ -67,6 +72,13 @@
         <label for="m4">
           <button class="head-buttons" onclick="window.location.href = 'contact.html'">контакты</button>
         </label>
+        <button class="head-buttons" onclick="window.location.href = 'news.html'">новости</button>
+      </div>
+    </div>
+
+    <div id="dopLinks-wrapper">
+      <div class="dopLinks-box">
+        <button class="head-buttons" onclick="window.location.href = 'news.html'">новости</button>
       </div>
     </div>
   </header>
@@ -85,6 +97,13 @@
         <p class="serf-text">Принципы надежного партнерства и инновационный подход в ведении бизнеса - основные составляющие деятельности компании.</p>
         <p class="serf-text">Работа с компанией «ТониГрупп» позволит Вам достичь новых горизонтов и успехов в вашем бизнесе!</p>
       </div>
+    </div>
+    <hr>
+    <div class="video-wrapper">
+      <h2 class="aboutH2">Заголовок</h2>
+      <video controls>
+        <source src="images/video-for-site.mp4" type="video/mp4">
+      </video>
     </div>
     <hr>
     <h2 class="aboutH2">Нам доверяют</h2>

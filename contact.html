@@ -40,9 +40,13 @@
       <label for="r3">
         <button class="head-buttons" onclick="window.location.href = 'zapros.html'">подбор</button>
       </label>
-      <label for="r4">
-        <button class="head-buttons">контакты</button>
-      </label>
+      <button class="head-buttons" id="toContact">
+        <span style="font-family: Inter; margin-left: -2vw;">контакты</span> 
+        <div id="dropdown-wrapper">
+           <img src="images/folder-for-arrows/dropdownArrowBlue.png" alt="dropdown" id="dropdown-img">
+        </div>
+       </button>
+     </label>
     </nav>
     <div id="menuBox" onclick="menu(this)">
       <div class="bar1" id="b1"></div>
@@ -67,6 +71,13 @@
         <label for="m4">
           <button class="head-buttons">контакты</button>
         </label>
+        <button class="head-buttons" onclick="window.location.href = 'news.html'">новости</button>
+      </div>
+    </div>
+
+    <div id="dopLinks-wrapper">
+      <div class="dopLinks-box">
+        <button class="head-buttons" onclick="window.location.href = 'news.html'">новости</button>
       </div>
     </div>
   </header>
