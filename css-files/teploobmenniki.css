@@ -707,9 +707,10 @@ td {
 }
 
 .litP {
-    font-size: 3.6vw;
+    font-size: 3.75vw;
     margin-top: 2.8vw;
     margin-bottom: 1vw;
+    text-wrap:pretty;
 }
 
 li.litP {
@@ -774,7 +775,7 @@ li.litP {
 
 .item-page-buttons{
     justify-content: space-between;
-    margin-top: 4vw;
+    margin-top: 7vw;
     margin-bottom: 2.5vw;
 }
 
