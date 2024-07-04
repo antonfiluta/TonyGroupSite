@@ -671,6 +671,7 @@ td {
 /*about-type start*/
 .about-type {
     width: 100%;
+    padding: 0 1vw;
 }
 
 .about-type ul {
@@ -706,14 +707,15 @@ td {
 }
 
 .litP {
-    font-size: 3.5vw;
-    margin-top: 2.4vw;
-    text-align: left;
-    letter-spacing: 0.75px;
+    font-size: 3.6vw;
+    margin-top: 2.8vw;
+    margin-bottom: 1vw;
 }
 
 li.litP {
-    padding-left: 2vw;
+    position: relative;
+    left: 2.5vw;
+    padding-right: 2.5vw;
 }
 
 .bigP{
@@ -723,8 +725,8 @@ li.litP {
 }
 
 .litH {
-    font-size: 4vw;
-    margin-top: 1.5vw;
+    font-size: 4.3vw;
+    margin-top: 3vw;
 }
 
 
@@ -735,13 +737,13 @@ li.litP {
 .bigImg {
     width: 80%;
     margin-bottom: 2.5vw;
-    box-shadow: 2px 3px 8px #268391;
+    box-shadow: 0 0 6px #268391;
 }
 
 .litImg {
     width: 23vw;
     margin-bottom: 1.5vw;
-    box-shadow: 1.5px 2px 4px #268391;
+    box-shadow: 0 0 4px #268391;
     margin-top: 2vw;
 }
 
@@ -767,7 +769,7 @@ li.litP {
 
 /*items start*/
 .item-name {
-    font-size: 4vw;
+    font-size: 4.4vw;
 }
 
 .item-page-buttons{

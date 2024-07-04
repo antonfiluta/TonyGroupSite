@@ -451,7 +451,7 @@ header {
 
 #mail {
     top: 6vw;
-    font-size: 3.9vw;
+    font-size: 3.4vw;
 }
 
 #logoBox {
@@ -530,12 +530,12 @@ footer {
 }
 
 .footBlock1 {
-    font-size: 2.54vw;
+    font-size: 2.35vw;
 }
 
 .footBlock1 span {
     border-radius: 0.5vw;
-    box-shadow: 1.5px 1.5px 2px black;
+    box-shadow: 1px 1px 4px black;
 }
 
 .foot-buttons {
