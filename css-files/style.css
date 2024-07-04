@@ -446,12 +446,12 @@ header {
 }
 
 #number {
-    font-size: 3.6vw;
+    font-size: 3.9vw;
 }
 
 #mail {
-    top: 5.3vw;
-    font-size: 3vw;
+    top: 6vw;
+    font-size: 3.9vw;
 }
 
 #logoBox {
@@ -469,12 +469,11 @@ nav {
 }
 
 .head-buttons {
-    font-size: 2.4vw;
-    border-radius: 3px;
+    font-size: 2.7vw;
 }
 
 .head-buttons::after {
-    height: 2.5px;
+    height: 1.5px;
 }
 /* header end */
 
