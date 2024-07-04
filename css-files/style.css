@@ -28,6 +28,7 @@ body {
 a {
     text-decoration: none;
     color: rgb(78, 107, 176);
+    cursor: pointer;
 }
 
 body,
@@ -363,6 +364,10 @@ footer {
     border-radius: 0.5vw;
     box-shadow: 2px 2px 3px black;
     transition: 0.5s;
+}
+
+.footBlock1 span a {
+    color: black;
 }
 
 .footBlock1 span:hover {
