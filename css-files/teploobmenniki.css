@@ -692,12 +692,12 @@ td {
 
 .about-type-box .main-about ul{
     padding-top: 1.4vw;
-    padding-left: 2vw;
-    font-size: 3.2vw;
+    padding-left: 2.5vw;
+    font-size: 3.4vw;
 }
 
 .mainP {
-    font-size: 3.5vw;
+    font-size: 3.6vw;
     text-align: center;
     margin-bottom: 3.5vw;
 }
@@ -708,18 +708,19 @@ td {
 }
 
 .litP {
-    font-size: 3.3vw;
+    font-size: 3.5vw;
     margin-top: 2.4vw;
+    text-align: left;
 }
 
 .bigP{
-    font-size: 3.1vw;
+    font-size: 3.3vw;
     margin-top: 3vw;
     text-align: center;
 }
 
 .litH {
-    font-size: 3.6vw;
+    font-size: 3.8vw;
     margin-top: 1.5vw;
 }
 
