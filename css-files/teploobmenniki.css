@@ -12,10 +12,6 @@
     font-weight: normal; 
 } 
 
-
-
-
-
 /* main start*/
 .main-head {
     display: flex;
@@ -508,6 +504,12 @@ td {
 
 
 @media screen and (max-width: 700px) {
+
+    ul {
+        padding-left: 3vw;
+    }
+    
+
 /* lupa start*/
 .main-head {
     margin-bottom: 1vw;
