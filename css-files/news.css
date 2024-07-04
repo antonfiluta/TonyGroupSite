@@ -175,7 +175,7 @@ main {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     z-index: 2;
     display: none;
     flex-direction: column;
@@ -221,7 +221,7 @@ main {
 }
 
 .image-top-block img:nth-child(2) {
-    height: 65vh;
+    height: 65dvh;
     border: 1.5px solid rgb(78, 107, 176);
     box-shadow: 0 0 10px 3.5px rgb(78, 107, 176);
     border-radius: 5px;
