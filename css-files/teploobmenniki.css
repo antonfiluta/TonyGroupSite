@@ -504,12 +504,6 @@ td {
 
 
 @media screen and (max-width: 700px) {
-
-    ul {
-        padding-left: 20vw;
-    }
-    
-
 /* lupa start*/
 .main-head {
     margin-bottom: 1vw;
@@ -679,6 +673,10 @@ td {
 /*about-type start*/
 .about-type {
     width: 100%;
+}
+
+.about-type ul {
+    padding-left: 20vw;
 }
 
 .main-about {
