@@ -1,5 +1,3 @@
-
-
 //плавное открытие скрытого текста в новостях
 let newsTextBlock = document.getElementsByClassName("hide-block");
 let testLength = document.getElementsByClassName("hide-text-test-box");
@@ -7,23 +5,19 @@ let newsButtons = document.getElementsByClassName("hide-block-button");
 
 function showNews(n) {
     let lenght = testLength[n].offsetHeight;
-    if (window.innerWidth < 700) {
-      if (newsTextBlock[n].style.height == (lenght + "px")) {
-        newsTextBlock[n].style.height = "6.2vw";
-        newsButtons[n].innerHTML = "Читать дальше..."
-      } else {
-        newsButtons[n].innerHTML = "Скрыть текст"
-        newsTextBlock[n].style.height = lenght + "px";
-      }   
+    let newsHeight = newsTextBlock[n].style.height;
+    let buttonText = newsButtons[n].innerHTML;
+
+    if (newsHeight == (lenght + "px")) {
+      if (window.innerWidth < 700) {
+        newsHeight = "6.2vw";
+      }
+      newsHeight = "3.4vw";
+      buttonText = "Читать дальше..."
     } else {
-     if (newsTextBlock[n].style.height == (lenght + "px")) {
-        newsTextBlock[n].style.height = "3.4vw";
-        newsButtons[n].innerHTML = "Читать дальше..."
-     } else {
-        newsButtons[n].innerHTML = "Скрыть текст"
-        newsTextBlock[n].style.height = lenght + "px";
-     }   
-    } 
+      buttonText = "Скрыть текст"
+      newsHeight= lenght + "px";
+    }
 }
 
 
@@ -35,7 +29,7 @@ let mainB = document.getElementById("mainBlock");
 let footer = document.getElementById("footerBlock");
 
 
-
+//показ картинок
 function showImg(k) {
     mainB.style.filter = "blur(10px)";
     footer.style.filter = "blur(10px)";
@@ -48,6 +42,8 @@ function showImg(k) {
 }
 
 
+
+//подсветка фоток в баре
 for (let i = 0; i < imageBar.length; i++) {
   imageBar[i].onmouseover = function() {
     if (imageBar[i].style.gap == "1px") {
@@ -64,7 +60,8 @@ for (let i = 0; i < imageBar.length; i++) {
 
 
 
-window.onclick = function(event) {
+window.addEventListener('click', (event) => {
+  
   let target = event.target; 
   if (target.alt === "news-photo") {
      mainImage[0].src = target.src; 
@@ -96,35 +93,31 @@ window.onclick = function(event) {
   const dopLinks = document.getElementById("dopLinks-wrapper"); // чтобы работало закрытие доп-вкладок
   if (target.id !== "dropdown-img") { 
     dopLinks.style.height = "0vw";
-  }  
-}
+  }
+
+})
 
 
 let imageBottomBlock = document.getElementsByClassName("image-bottom-block");
-
 let imageNow = 0;
 let groupNow = 0;
+let Maxlength = 0;
 
 function chengeImg(k, n) {
-   imageNow = k - 1;
-   groupNow = n - 1;
+   imageNow = k;
+   groupNow = n;
+   Maxlength = imageBottomBlock[groupNow - 1].getElementsByClassName("image-bottom-block-box").length;
 }
 
 function chengeImgArrow(k) {
-  if (k > 0) {
-    if (imageNow < 4) {
-      imageNow += k
-    } else {
-      imageNow = 0
-    }
-  } else {
-    if (imageNow > 0) {
-      imageNow += k
-    } else {
-      imageNow = 4
-    }
+  imageNow += k;
+  if (imageNow == 0) {
+    imageNow = Maxlength
+  } else if (imageNow == (Maxlength + 1)) {
+    imageNow = 1
   }
-  mainImage[0].src = imageBottomBlock[groupNow].getElementsByClassName("image-bottom-block-box")[imageNow].getElementsByClassName("image-bar")[0].src; 
+
+  mainImage[0].src = imageBottomBlock[groupNow - 1].getElementsByClassName("image-bottom-block-box")[imageNow - 1].getElementsByClassName("image-bar")[0].src; 
   for (let i = 0; i < imageBar.length; i++) {
     imageBar[i].style.filter = "grayscale(1)";
     imageBar[i].style.gap = "1px";

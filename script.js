@@ -167,38 +167,32 @@ const dopLinks = document.getElementById("dopLinks-wrapper");
 
 
 dropdownArea.onmouseover = function() {
-  if (ParentOrChild.title === "child") { //проверяет вложенность файла 
-    dropdownImg.src = "../../images/folder-for-arrows/dropdownArrowWhite.png";
-  } else {
-    dropdownImg.src = "images/folder-for-arrows/dropdownArrowWhite.png";
-  }
-    dropdownImg.style.rotate = "360deg";
+  let dropSrc = "images/folder-for-arrows/dropdownArrowWhite.png";
+  dropdownImg.src = dropSrc;
+
+  if (ParentOrChild.title === "child") dropdownImg.src = "../../" + dropSrc;
+
+  dropdownImg.style.rotate = "360deg";
 }
 
 dropdownArea.onmouseout = function() {
-  if (ParentOrChild.title === "child") { //проверяет вложенность файла 
-    dropdownImg.src = "../../images/folder-for-arrows/dropdownArrowBlue.png";
-  } else {
-    dropdownImg.src = "images/folder-for-arrows/dropdownArrowBlue.png";
-  }
+  let dropSrc = "images/folder-for-arrows/dropdownArrowBlue.png";
+  dropdownImg.src = dropSrc;
+
+  if (ParentOrChild.title === "child")  dropdownImg.src = "../../" + dropSrc;
+
   dropdownImg.style.rotate = "-360deg";
 }
 
 
 
 dropdownImg.onclick = function() {
-  if (window.innerWidth > 700) {
-     if (dopLinks.style.height === "4vw") {
-         dopLinks.style.height = "0vw";
-     } else {
-         dopLinks.style.height = "4vw";
-     }
-  } else {
-     if (dopLinks.style.height === "7vw") {
-        dopLinks.style.height = "0vw";
-     } else {
-        dopLinks.style.height = "7vw";
-  }
+  let dopHeight = dopLinks.style.height;
+  dopLinks.style.height = "0vw"
+
+  if (dopHeight === "0vw") {
+    dopLinks.style.height = "4vw";
+    if (window.innerWidth < 700) dopLinks.style.height = "7vw";
   }
 }
 
@@ -219,5 +213,3 @@ toContactBut.onclick = function(event) {
     }
   }
 }
- 
-
