@@ -1,5 +1,7 @@
 import { newsInform  } from "./date/data-for-news";
 
+alert("hello");
+
 function generateNews(i) {
     let newsBody = document.createElement('div');
     let h2 = document.createElement('h2');
@@ -78,7 +80,7 @@ function generateNews(i) {
             chengeImg((k + 1), newsInform[i].indexOfNews + 1)
         })
     }
-};
+}
 
 
 for (let i = 0; i < newsInform.length; i++) {
