@@ -1,0 +1,37 @@
+export const newsInform = [
+        {
+            headText: "Tonigroup is getting better",
+            dateText: "07.07.2024",
+            newsText: "Галактики типа «зеленая фасоль» представляют собой активные галактики, светящиеся зеленым из-за интенсивного излучения области вокруг центральной черной дыры. В ходе Слоановского цифрового обзора неба (SDSS) идентифицировано только 17 таких галактик.",
+            images: ["images/news/cosmos_3.jpeg", "images/news/cosmos_1.jpg", "images/news/cosmos_4.jpeg", "images/news/cosmos_2.jpeg", "images/news/cosmos_5.jpeg"],
+            indexOfNews: 0
+        },
+        {
+            headText: "Tonigroup is getting better",
+            dateText: "07.07.2024",
+            newsText: "Галактики типа «зеленая фасоль» представляют собой активные галактики, светящиеся зеленым из-за интенсивного излучения области вокруг центральной черной дыры. В ходе Слоановского цифрового обзора неба (SDSS) идентифицировано только 17 таких галактик.",
+            images: ["images/news/cosmos_3.jpeg", "images/news/cosmos_1.jpg", "images/news/cosmos_4.jpeg", "images/news/cosmos_2.jpeg", "images/news/cosmos_5.jpeg"],
+            indexOfNews: 1
+        },
+        {
+            headText: "Tonigroup is getting better",
+            dateText: "07.07.2024",
+            newsText: "Галактики типа «зеленая фасоль» представляют собой активные галактики, светящиеся зеленым из-за интенсивного излучения области вокруг центральной черной дыры. В ходе Слоановского цифрового обзора неба (SDSS) идентифицировано только 17 таких галактик.",
+            images: ["images/news/cosmos_3.jpeg", "images/news/cosmos_1.jpg", "images/news/cosmos_4.jpeg", "images/news/cosmos_2.jpeg", "images/news/cosmos_5.jpeg"],
+            indexOfNews: 2
+        },
+        {
+            headText: "Tonigroup is getting better",
+            dateText: "07.07.2024",
+            newsText: "Галактики типа «зеленая фасоль» представляют собой активные галактики, светящиеся зеленым из-за интенсивного излучения области вокруг центральной черной дыры. В ходе Слоановского цифрового обзора неба (SDSS) идентифицировано только 17 таких галактик.",
+            images: ["images/news/cosmos_3.jpeg", "images/news/cosmos_1.jpg", "images/news/cosmos_4.jpeg", "images/news/cosmos_2.jpeg", "images/news/cosmos_5.jpeg"],
+            indexOfNews: 3
+        },
+        {
+            headText: "Tonigroup is getting better",
+            dateText: "07.07.2024",
+            newsText: "Галактики типа «зеленая фасоль» представляют собой активные галактики, светящиеся зеленым из-за интенсивного излучения области вокруг центральной черной дыры. В ходе Слоановского цифрового обзора неба (SDSS) идентифицировано только 17 таких галактик.",
+            images: ["images/news/cosmos_3.jpeg", "images/news/cosmos_1.jpg", "images/news/cosmos_4.jpeg", "images/news/cosmos_2.jpeg", "images/news/cosmos_5.jpeg"],
+            indexOfNews: 4
+        }
+    ];

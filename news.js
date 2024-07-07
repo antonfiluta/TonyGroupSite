@@ -1,27 +1,3 @@
-//плавное открытие скрытого текста в новостях
-let newsTextBlock = document.getElementsByClassName("hide-block");
-let testLength = document.getElementsByClassName("hide-text-test-box");
-let newsButtons = document.getElementsByClassName("hide-block-button");
-
-function showNews(n) {
-    let lenght = testLength[n].offsetHeight;
-    let newsHeight = newsTextBlock[n].style.height;
-    let buttonText = newsButtons[n].innerHTML;
-
-    if (newsHeight == (lenght + "px")) {
-      if (window.innerWidth < 700) {
-        newsHeight = "6.2vw";
-      }
-      newsHeight = "3.4vw";
-      buttonText = "Читать дальше..."
-    } else {
-      buttonText = "Скрыть текст"
-      newsHeight= lenght + "px";
-    }
-}
-
-
-
 let imageBoxes = document.getElementsByClassName("showImageBox");
 let mainImage = document.getElementsByClassName("main-news-img");
 let imageBar = document.getElementsByClassName("image-bar");
@@ -61,8 +37,10 @@ for (let i = 0; i < imageBar.length; i++) {
 
 
 window.addEventListener('click', (event) => {
-  
   let target = event.target; 
+
+
+  
   if (target.alt === "news-photo") {
      mainImage[0].src = target.src; 
      for (let i = 0; i < imageBar.length; i++) {
@@ -94,10 +72,11 @@ window.addEventListener('click', (event) => {
   if (target.id !== "dropdown-img") { 
     dopLinks.style.height = "0vw";
   }
-
 })
 
 
+
+//хранение номеров фотографий, груп и тд в нынешний момент
 let imageBottomBlock = document.getElementsByClassName("image-bottom-block");
 let imageNow = 0;
 let groupNow = 0;
@@ -126,4 +105,34 @@ function chengeImgArrow(k) {
       imageBar[i].style.gap = "2px";
     }
   }
+}
+
+
+
+
+//плавное открытие скрытого текста в новостях
+let newsTextBlock = document.getElementsByClassName("hide-block");
+let testLength = document.getElementsByClassName("hide-text");
+let buttonIndex = document.getElementsByClassName('hide-block-button');
+
+function showNews(event) {
+    for (let i = 0; i < buttonIndex.length; i++){
+      if (event.target == buttonIndex[i]) {
+        let lenght = testLength[i].offsetHeight;
+        let newsHeight = newsTextBlock[i].style.height;
+    
+        if (newsHeight == (lenght + "px")) {
+          if (window.innerWidth < 700) {
+            newsTextBlock[i].style.height = "6.2vw";
+          }
+          newsTextBlock[i].style.height = "3.4vw";
+          buttonIndex[i].innerHTML = "Читать дальше..."
+        } else {
+            buttonIndex[i].innerHTML = "Скрыть текст"
+            newsTextBlock[i].style.height = lenght + "px";
+        }  
+      return
+      }
+    }
+
 }

@@ -84,69 +84,8 @@
   </header>
   <main id="mainBlock">
     <h1>Новости и Полезные статьи</h1>
-    <hr style="width: 100%;">
-
-    <div class="news-wrapper"> <!-- начало статьи  -->
-      <h2 class="news-h2">Захватывающие галактики</h2>
-      <span class="date">09.06.2024</span>
-
-      <div class="hide-block-wrapper"> <!--  Текст (видимый) -->
-        <div class="hide-block">
-          <p class="hide-text">Галактики типа «зеленая фасоль» представляют собой активные галактики, светящиеся зеленым из-за интенсивного излучения области вокруг центральной черной дыры. В ходе Слоановского цифрового обзора неба (SDSS) идентифицировано только 17 таких галактик.</p>
-        </div>
-        <button class="hide-block-button" onclick="showNews(0)">Читать дальше...</button>
-        <div class="hide-text-test-box"> <!--  Текст (скрытый)  -->
-          <p class="hide-text-test">Галактики типа «зеленая фасоль» представляют собой активные галактики, светящиеся зеленым из-за интенсивного излучения области вокруг центральной черной дыры. В ходе Слоановского цифрового обзора неба (SDSS) идентифицировано только 17 таких галактик.</p>
-        </div>
-      </div>
-      
-      <div class="news-images-wrapper"> <!-- фотографии  -->
-        <div class="news-images-box">
-          <img src="images/news/cosmos_3.jpeg" alt="news-photo" onclick="showImg(0), chengeImg(1, 1)" >
-        </div>
-        <div class="news-images-box">
-          <img src="images/news/cosmos_1.jpg" alt="news-photo" onclick="showImg(0), chengeImg(2, 1)">         
-        </div>
-        <div class="news-images-box">
-          <img src="images/news/cosmos_2.jpeg" alt="news-photo" onclick="showImg(0), chengeImg(3, 1)">
-        </div>
-      </div>
-    </div> <!-- конец статьи  -->
-
-
-    <div class="news-wrapper"> <!-- начало статьи  -->
-      <h2 class="news-h2">Захватывающие галактики</h2>
-      <span class="date">09.06.2024</span>
-
-      <div class="hide-block-wrapper"> <!--  Текст (видимый) -->
-        <div class="hide-block">
-          <p class="hide-text">Галактики типа «зеленая фасоль» представляют собой активные галактики, светящиеся зеленым из-за интенсивного излучения области вокруг центральной черной дыры. В ходе Слоановского цифрового обзора неба (SDSS) идентифицировано только 17 таких галактик.</p>
-        </div>
-        <button class="hide-block-button" onclick="showNews(1)">Читать дальше...</button>
-        <div class="hide-text-test-box"> <!--  Текст (скрытый)  -->
-          <p class="hide-text-test">Галактики типа «зеленая фасоль» представляют собой активные галактики, светящиеся зеленым из-за интенсивного излучения области вокруг центральной черной дыры. В ходе Слоановского цифрового обзора неба (SDSS) идентифицировано только 17 таких галактик.</p>
-        </div>
-      </div>
-      
-      <div class="news-images-wrapper"> <!-- фотографии  -->
-        <div class="news-images-box">
-          <img src="images/news/cosmos_3.jpeg" alt="news-photo" onclick="showImg(1), chengeImg(1, 2)">
-        </div>
-        <div class="news-images-box">
-          <img src="images/news/cosmos_1.jpg" alt="news-photo" onclick="showImg(1), chengeImg(2, 2)">         
-        </div>
-        <div class="news-images-box">
-          <img src="images/news/cosmos_3.jpeg" alt="news-photo" onclick="showImg(1), chengeImg(3, 2)">
-        </div>
-        <div class="news-images-box">
-          <img src="images/news/cosmos_5.jpeg" alt="news-photo" onclick="showImg(1), chengeImg(4, 2)">         
-        </div>
-        <div class="news-images-box">
-          <img src="images/news/cosmos_5.jpeg" alt="news-photo" onclick="showImg(1), chengeImg(5, 2)">
-        </div>
-      </div>
-    </div> <!-- конец статьи  -->
-
+    <hr style="width: 100%;" id="startOfNews">
+    <!-- здесь появляются newsBlocks -->
   </main>
   <footer id="footerBlock"> 
       <div class="footBlock1">
@@ -169,50 +108,16 @@
 
   <div id="showImageBoxesWrapper">
 
-    <div class="image-top-block">
+    <div class="image-top-block" id="startOfImageBlocks">
       <img src="images/folder-for-arrows/toLeft.png" alt="кнопка назад"  onclick="chengeImgArrow(-1)">
-      <img src="images/news/cosmos_3.jpeg" alt="news-photo" class="main-news-img">
+      <img src="images/news/cosmos_3.jpeg" alt="news-photo" class="main-news-img" id="mainNewsImg">
       <img src="images/folder-for-arrows/toRight.png" alt="кнопка вперед"  onclick="chengeImgArrow(1)">
     </div>
-
-    <div class="showImageBox">
-      <div class="image-bottom-block">
-        <div class="image-bottom-block-box">
-          <img src="images/news/cosmos_3.jpeg" alt="news-photo" onclick="chengeImg(1, 1)" class="image-bar">
-        </div>
-        <div class="image-bottom-block-box">
-          <img src="images/news/cosmos_1.jpg" alt="news-photo" onclick="chengeImg(2, 1)" class="image-bar">
-        </div>
-        <div class="image-bottom-block-box">
-          <img src="images/news/cosmos_4.jpeg" alt="news-photo" onclick="chengeImg(3, 1)" class="image-bar">
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="showImageBox">
-      <div class="image-bottom-block">
-        <div class="image-bottom-block-box">
-          <img src="images/news/cosmos_3.jpeg" alt="news-photo" onclick="chengeImg(1, 2)" class="image-bar">
-        </div>
-        <div class="image-bottom-block-box">
-          <img src="images/news/cosmos_1.jpg" alt="news-photo" onclick="chengeImg(2, 2)" class="image-bar">
-        </div>
-        <div class="image-bottom-block-box">
-          <img src="images/news/cosmos_3.jpeg" alt="news-photo" onclick="chengeImg(3, 2)" class="image-bar">
-        </div>
-        <div class="image-bottom-block-box">
-          <img src="images/news/cosmos_5.jpeg" alt="news-photo" onclick="chengeImg(4, 2)" class="image-bar">
-        </div>
-        <div class="image-bottom-block-box">
-          <img src="images/news/cosmos_5.jpeg" alt="news-photo" onclick="chengeImg(5, 2)" class="image-bar">
-        </div>
-      </div>
-    </div>
+    <!-- здесь появляются hideBlocks -->
   </div>
 
   <script src="script.js"></script>
   <script src="news.js"></script>
+  <script src="news-build.js" type="module"></script>
 </body>
 </html>
