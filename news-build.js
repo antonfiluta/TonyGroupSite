@@ -1,4 +1,4 @@
-import { newsInform  } from "./date/data-for-news";
+import { newsInform  } from "./data-for-news";
 
 alert("hello");
 
