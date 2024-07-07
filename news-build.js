@@ -1,4 +1,4 @@
-import { newsInform  } from "dataForNews.js";
+import { newsInform  } from "/dataForNews.js";
 
 alert("hello");
 
