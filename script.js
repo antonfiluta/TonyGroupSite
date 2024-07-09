@@ -70,9 +70,15 @@ function toScroll() {
         logo.src = "images/bigLogo.jpeg";
       }
     }
+
+
+    hideMenu()
   }
 
-  window.addEventListener('scroll', toScroll);
+window.addEventListener('scroll', toScroll);
+
+
+
 
 
 
@@ -80,8 +86,8 @@ function toScroll() {
 
 let isHide = true;
 
-function menu(x) {
-  x.classList.toggle("change");
+function menu() {
+  menuB.classList.toggle("change");
   if (isHide) {
     menuM.style.height = "35vw";
     isHide = false;
@@ -97,34 +103,24 @@ function hideMenu() {
   isHide = true;
 }
 
-window.addEventListener('scroll', hideMenu);
+window.addEventListener('click', (event) => {
+  let target = event.target;
+  if (target == menuB || target.classList == "bar")return;
+  hideMenu()
+});
+
+window.addEventListener('touchend', (event) => {
+  let target = event.target;
+  if (target == menuB || target.classList == "bar")return;
+  hideMenu()
+});
 
 
-// function showList() {
-//   list.style.display = "flex";
-// }
-
-// function hideList() {
-//   list.style.display = "none";
-// }
-
-// window.onclick = function(event) {
-//   let target = event.target; 
-//   if (target.id != 'list') return;
-//   hideList();
-// };
-
-// list.onclick = function(event) {
-//   let target = event.target; 
-//   if (target.id != 'list') return;
-//   hideListt();
-// };
 
 
 
 
 //закрывает открытый раздел в каталоге
-
 const c1 = document.getElementById('c1');
 const c2 = document.getElementById('c2');
 const c3 = document.getElementById('c3');
@@ -136,8 +132,7 @@ const card3 = document.getElementById('c-id3');
 const card4 = document.getElementById('c-id4');
 
 
-
-window.onclick = function(event) {
+window.addEventListener('click', (event) => {
   let target = event.target; 
   if (target.id !== "dropdown-img") {
     dopLinks.style.height = "0vw";
@@ -147,7 +142,19 @@ window.onclick = function(event) {
   } else {
     unCheckRadio();
   }
-};
+});
+
+window.addEventListener('touchend', (event) => {
+  let target = event.target; 
+  if (target.id !== "dropdown-img") {
+    dopLinks.style.height = "0vw";
+  } 
+  if (target.id == 'c-id1' || target.id == 'c1' || target.id == 'c-id2' || target.id == 'c2' || target.id == 'c-id3' || target.id == 'c3' || target.id == 'c-id4' || target.id == 'c4' || target.id == 'tips-box') {
+    return;
+  } else {
+    unCheckRadio();
+  }
+});
 
 function unCheckRadio() {
     c1.checked = false;
@@ -160,7 +167,6 @@ function unCheckRadio() {
 
 
 //выпадающее меню в хедере
-
 const dropdownArea = document.getElementById("dropdown-wrapper");
 const dropdownImg = document.getElementById("dropdown-img");
 const dopLinks = document.getElementById("dopLinks-wrapper");
@@ -197,14 +203,14 @@ function showLinks() {
   }
 }
 
-window.onscroll = function() {
+window.addEventListener('scroll', () => {
   dopLinks.style.height = "0vw";
-}
+});
 
 
 const toContactBut = document.getElementById('toContact');
 
-toContactBut.onclick = function(event) {
+toContactBut.addEventListener('click', (event) => {
   let target = event.target;
   if (target.id !== "dropdown-img") {
     if (ParentOrChild.title === "child") { //проверяет вложенность файла 
@@ -215,4 +221,44 @@ toContactBut.onclick = function(event) {
   } else {
     showLinks()
   }
-}
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function showList() {
+//   list.style.display = "flex";
+// }
+
+// function hideList() {
+//   list.style.display = "none";
+// }
+
+// window.onclick = function(event) {
+//   let target = event.target; 
+//   if (target.id != 'list') return;
+//   hideList();
+// };
+
+// list.onclick = function(event) {
+//   let target = event.target; 
+//   if (target.id != 'list') return;
+//   hideListt();
+// };

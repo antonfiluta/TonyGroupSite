@@ -12,18 +12,6 @@
     font-weight: normal; 
 }
 
-::-webkit-scrollbar {
-    background: aliceblue;
-    width: 1vw;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgb(78, 107, 176);
-    border-radius: 5vw;
-    border: 3px solid aliceblue;
-}
-
-
 
 * {
     margin: 0;
@@ -254,7 +242,7 @@ label {
     top: 1.8vw;
 }
 
-.bar1, .bar2, .bar3 {
+#b1, #b2, #b3 {
     width: 8vw;
     height: 0.7vw;
     background-color: rgb(89, 108, 157);
@@ -262,15 +250,15 @@ label {
     transition: 0.4s;
 }
 
-.change .bar1 {
+.change #b1 {
     transform: rotate(45deg) translateY(2.35vw);
 }
 
-.change .bar2 {
+.change #b2 {
     opacity: 0;
 }
 
-.change .bar3 {
+.change #b3 {
     transform: rotate(-45deg) translateY(-2.35vw);
 }
 
