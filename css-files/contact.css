@@ -113,11 +113,18 @@
     }
 
     .map {
-        width: 74%;
-        height: 54vw;
+        width: 85%;
+        height: 65vw;
+        border-radius: 3vw;
+        border: #07182E 1.5px solid;
+        box-shadow: 0 0 4px 1px #237c89;
     }
     
     .map iframe {
-        height: 53vw;
+        height: 65vw;
+        width: 102%;
+        position: relative;
+        left: -1px;
+        top: -1px;
     }
 }

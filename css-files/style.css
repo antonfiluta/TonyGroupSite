@@ -330,7 +330,7 @@ h1 {
     margin-left: 3vw;
     font-family: Inter;
     color: rgb(18, 17, 17);
-    text-shadow: 0.05em 0.04em 1px rgb(142, 141, 141);
+    text-shadow: 0.03em 0.025em 1px rgb(142, 141, 141);
 }
 
 main > p {
