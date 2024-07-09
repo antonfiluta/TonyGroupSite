@@ -211,5 +211,7 @@ toContactBut.onclick = function(event) {
     } else {
       window.location.href = 'contact.html';
     }
+  } else {
+    window.location.href = 'news.html'
   }
 }
