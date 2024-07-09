@@ -39,8 +39,6 @@ for (let i = 0; i < imageBar.length; i++) {
 window.addEventListener('click', (event) => {
   let target = event.target; 
 
-
-  
   if (target.alt === "news-photo") {
      mainImage[0].src = target.src; 
      for (let i = 0; i < imageBar.length; i++) {
@@ -55,7 +53,7 @@ window.addEventListener('click', (event) => {
      target.style.gap = "2px";
   }
 
-  if (target.id === "showImageBoxesWrapper") { //закрытие фотографий при нажатии на темную область
+  if (target.id == "showImageBoxesWrapper") { //закрытие фотографий при нажатии на темную область
     mainB.style.filter = "blur(0)";
     footer.style.filter = "blur(0)";
     bodyB[0].style.overflow = "auto";
@@ -74,6 +72,22 @@ window.addEventListener('click', (event) => {
   }
 })
 
+
+window.addEventListener('touchend', (event) => {
+  let target = event.target; 
+
+  if (target.id == "showImageBoxesWrapper") { //закрытие фотографий при нажатии на темную область
+    mainB.style.filter = "blur(0)";
+    footer.style.filter = "blur(0)";
+    bodyB[0].style.overflow = "auto";
+    
+
+    showImageBoxesWrapper.style.display = "none";
+    for (let i = 0; i < imageBoxes.length; i++) {
+       imageBoxes[i].style.display = "none";
+    }
+  }
+})
 
 
 //хранение номеров фотографий, груп и тд в нынешний момент

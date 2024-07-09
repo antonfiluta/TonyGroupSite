@@ -21,13 +21,11 @@
 
 .contacts-info span {
     font-family: forum;
-    font-size: 2.2vw;
     color: black;
 }
 
 .contacts-info span:nth-child(2) {
     font-family: forum;
-    font-size: 2.2vw;
     margin-left: 16px;
 }
 
@@ -52,6 +50,7 @@
     border-radius: 20px;
     z-index: 1;
     border: #07182E 2px solid;
+    font-size: 2.2vw;
 }
   
 .card::before {
@@ -99,17 +98,30 @@
     }
 
     .contacts-info span {
-        font-size: 3.4vw;
+        font-size: 3.7vw;
     }
     
     .contacts-info span:nth-child(2) {
-        font-size: 3.4vw;
+        font-size: 3.7vw;
         margin-left: 10px;
+    }
+
+    .card {
+       padding: 2vw;
+       border-radius: 3.5vw;
+       box-shadow: 0 0 8px 3px #07182E;
+       margin-bottom: 6vw;
+    }
+
+    .card a {
+        color: black;
     }
     
     .card-wrapper {
         gap: 5vw;
-        padding: 4vw;
+        padding: 5vw;
+        border-radius: 3.5vw;
+        border: #07182E 1.5px solid;
     }
 
     .map {
