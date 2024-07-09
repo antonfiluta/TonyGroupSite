@@ -96,6 +96,8 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 1vw;
+    overflow: hidden;
 }
 
 .label-wrapper div img {
@@ -127,16 +129,23 @@ video {
     font-size: 2.9vw;
 }
 
+.label-wrapper {
+    gap: 5vw 3vw;
+    box-shadow: 0 0 6px #268391;
+}
+
+.label-wrapper div {
+    width: 15vw;
+    border-radius: 1.5vw;
+}
+
 .aboutH2 {
     font-size: 3.8vw;
     text-shadow: 0.07em 0.07em 1px rgb(142, 141, 141);
 }
 
 video {
-    width: 85%;
-    border-radius: 2vw;
-    border: 2px solid #268391;
-    box-shadow: 0 2px 15px 5px #268391;
-    background-color: black;
+    width: 90%;
+    box-shadow: 0 2px 8px 3px #268391;
 }
 }
