@@ -173,20 +173,22 @@ const dopLinks = document.getElementById("dopLinks-wrapper");
 dopLinks.style.height = "0vw";
 
 
-dropdownArea.onmouseover = function() {
+dropdownArea.onmouseover = function(event) {
+  dropdownImg.style.rotate = "360deg";
+  if (r4.checked === true) return;
+
   let dropSrc = "images/folder-for-arrows/dropdownArrowWhite.png";
   dropdownImg.src = dropSrc;
 
   if (ParentOrChild.title === "child") dropdownImg.src = "../../" + dropSrc;
-
-  dropdownImg.style.rotate = "360deg";
 }
 
-dropdownArea.onmouseout = function() {
-  let dropSrc = "images/folder-for-arrows/dropdownArrowBlue.png";
-  dropdownImg.src = dropSrc;
+dropdownArea.onmouseout = function(event) {
+    let dropSrc = "images/folder-for-arrows/dropdownArrowBlue.png";
+    dropdownImg.src = dropSrc;
 
-  if (ParentOrChild.title === "child")  dropdownImg.src = "../../" + dropSrc;
+    if (ParentOrChild.title === "child")  dropdownImg.src = "../../" + dropSrc;  
+  
 
   dropdownImg.style.rotate = "-360deg";
 }
