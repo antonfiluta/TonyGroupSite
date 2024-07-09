@@ -12,6 +12,17 @@
     font-weight: normal; 
 }
 
+::-webkit-scrollbar {
+    background: aliceblue;
+    width: 1vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(78, 107, 176);
+    border-radius: 5vw;
+    border: 3px solid aliceblue;
+}
+
 
 
 * {
