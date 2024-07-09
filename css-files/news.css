@@ -73,18 +73,6 @@ main {
     text-align: justify;
 }
 
-.hide-text-test-box {
-    position: absolute;
-    visibility:hidden;
-}
-
-.hide-text-test {
-    font-size: 1.7vw;
-    line-height: 1.72vw;
-    text-align: justify;
-    width: 60vw;
-}
-
 .hide-block-button {
     background-color: rgba(78, 107, 176, 0.2);
     border: 1.5px solid rgb(78, 107, 176);
@@ -95,6 +83,7 @@ main {
     margin-top: 0.5vw;
     box-shadow: 0 0 8px rgb(78, 107, 176);
     transition: 0.5s;
+    color: black;
 }
 
 .hide-block-button:hover {
@@ -271,17 +260,18 @@ main {
         width: 90vw;
         padding: 2.5vw;
         padding-top: 1.5vw;
-        border-radius: 2vw;
-        margin-bottom: 5vw;
+        border-radius: 1.3vw;
+        margin-bottom: 8vw;
+        box-shadow: 0 0 5px rgb(78, 107, 176);
     }
     
     .news-h2 {
         font-size: 4.65vw;
-        margin-bottom: 2vw;
+        margin-bottom: 1.5vw;
     }
     
     .date {
-        font-size: 2.5vw;
+        font-size: 2.9vw;
         margin-bottom: 2vw;
     }
     
@@ -295,18 +285,19 @@ main {
         line-height: 3.1vw;
     }
     
-    .hide-text-test {
-        font-size: 3.1vw;
-        line-height: 3.1vw;
-        width: 85vw;
-    }
-    
     .hide-block-button {
+        border: 1px solid rgb(78, 107, 176);
+        box-shadow: 0 0 5px rgb(78, 107, 176);
         font-size: 2.7vw;
         border-radius: 1.5vw;
         padding: 1vw 1.5vw;
         margin-bottom: 2vw;
         margin-top: 2vw;
+    }
+
+    .hide-block-button:hover {
+        border: 1px solid #268391;
+        box-shadow: 0 0 8px #268391;
     }
 
     .news-images-wrapper {
@@ -318,7 +309,7 @@ main {
     
     .news-images-box {
         border-radius: 1vw;
-        border: 2.5px solid black;
+        border: 2px solid black;
         height: 21vw;
     }
     
