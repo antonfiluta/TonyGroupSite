@@ -270,7 +270,7 @@ main {
     }
 
     .news-wrapper:hover {
-        box-shadow: 0 0 12px rgb(78, 107, 176);
+        box-shadow: 0 0 7.5px rgb(78, 107, 176);
     }
     
     .news-h2 {
@@ -297,8 +297,8 @@ main {
     .hide-block-button {
         border: 1px solid rgb(78, 107, 176);
         box-shadow: 0 0 5px rgb(78, 107, 176);
-        font-size: 2.7vw;
-        border-radius: 1.5vw;
+        font-size: 2.95vw;
+        border-radius: 1.3vw;
         padding: 1vw 1.5vw;
         margin-bottom: 2vw;
         margin-top: 2vw;
@@ -306,7 +306,7 @@ main {
 
     .hide-block-button:hover {
         border: 1px solid #268391;
-        box-shadow: 0 0 8px #268391;
+        box-shadow: 0 0 4px #268391;
     }
 
     .news-images-wrapper {
