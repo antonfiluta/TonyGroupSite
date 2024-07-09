@@ -164,6 +164,7 @@ function unCheckRadio() {
 const dropdownArea = document.getElementById("dropdown-wrapper");
 const dropdownImg = document.getElementById("dropdown-img");
 const dopLinks = document.getElementById("dopLinks-wrapper");
+dopLinks.style.height = "0vw";
 
 
 dropdownArea.onmouseover = function() {
@@ -186,9 +187,9 @@ dropdownArea.onmouseout = function() {
 
 
 
-dropdownImg.onclick = function() {
+function showLinks() {
   let dopHeight = dopLinks.style.height;
-  dopLinks.style.height = "0vw"
+  dopLinks.style.height = "0vw";
 
   if (dopHeight === "0vw") {
     dopLinks.style.height = "4vw";
@@ -212,6 +213,6 @@ toContactBut.onclick = function(event) {
       window.location.href = 'contact.html';
     }
   } else {
-    window.location.href = 'news.html'
+    showLinks()
   }
 }
