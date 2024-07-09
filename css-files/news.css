@@ -266,6 +266,11 @@ main {
         border-radius: 1.3vw;
         margin-bottom: 8vw;
         box-shadow: 0 0 5px rgb(78, 107, 176);
+        border: 1px solid rgb(78, 107, 176);
+    }
+
+    .news-wrapper:hover {
+        box-shadow: 0 0 12px rgb(78, 107, 176);
     }
     
     .news-h2 {
@@ -351,6 +356,7 @@ main {
         height: auto;
         width: 85vw;
         border: 1.5px solid rgb(78, 107, 176);
+        box-shadow: 0 0 4px 1.5px rgb(78, 107, 176);
     }
     
     .image-bottom-block {
@@ -370,5 +376,6 @@ main {
     
     .image-bottom-block-box:hover {
         border: 1px solid #268391;
+        box-shadow: 0 0 6px #268391;
     }
 }
