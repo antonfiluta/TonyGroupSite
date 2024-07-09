@@ -111,28 +111,26 @@ function chengeImgArrow(k) {
 
 
 //плавное открытие скрытого текста в новостях
-let newsTextBlock = document.getElementsByClassName("hide-block");
-let testLength = document.getElementsByClassName("hide-text");
-let buttonIndex = document.getElementsByClassName('hide-block-button');
+let textBox = document.getElementsByClassName("hide-block"); //собираем массив всех коробок с новостями
 
-function showNews(event) {
-    for (let i = 0; i < buttonIndex.length; i++){
-      if (event.target == buttonIndex[i]) {
-        let lenght = testLength[i].offsetHeight;
-        let newsHeight = newsTextBlock[i].style.height;
-    
-        if (newsHeight == (lenght + "px")) {
-          if (window.innerWidth < 700) {
-            newsTextBlock[i].style.height = "6.2vw";
-          }
-          newsTextBlock[i].style.height = "3.4vw";
-          buttonIndex[i].innerHTML = "Читать дальше..."
-        } else {
-            buttonIndex[i].innerHTML = "Скрыть текст"
-            newsTextBlock[i].style.height = lenght + "px";
-        }  
-      return
-      }
+function showNews(i, event) {
+    let target = event.target;
+    let textElems = textBox[i].getElementsByClassName("hide-text");
+    let boxHeight = 0; //сумарная высота всех абзацев в новости
+    for (let k = 0; k < textElems.length; k++) {
+       boxHeight += textElems[k].offsetHeight;
     }
-
+    
+    let newsBoxHeight = textBox[i].style.height;  //высота обвертки новостей в данный момент
+    
+    if (newsBoxHeight == (boxHeight + "px")) {
+        textBox[i].style.height = "3.4vw";
+        target.innerHTML = "Читать дальше...";
+        if (window.innerWidth < 700) {
+          textBox[i].style.height = "6.2vw";
+        }
+    } else {
+        target.innerHTML = "Скрыть текст"
+        textBox[i].style.height = boxHeight + "px";
+    } 
 }

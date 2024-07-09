@@ -1,7 +1,3 @@
-import { newsInform  } from "/some.js";
-
-alert("hello");
-
 function generateNews(i) {
     let newsBody = document.createElement('div');
     let h2 = document.createElement('h2');
@@ -11,17 +7,16 @@ function generateNews(i) {
     let hideImageBlock = document.createElement('div');
     let hideImageBlockWrapper = document.createElement('div');
     let hideBox = document.createElement('div');
-    let p = document.createElement('p');
     let textButton = document.createElement('button');
     
     
     
     
-    startOfNews.after(newsBody);
-    newsBody.className = "news-wrapper";
+    mainBlock.append(newsBody);
+    newsBody.className = "news-wrapper"; // создаем тело новости
     
     newsBody.prepend(h2);
-    h2.innerHTML = newsInform[i].headText; //head text
+    h2.innerHTML = newsInform[i].headText; //заголок
     h2.className = "news-h2";
     
     h2.after(date);
@@ -29,24 +24,27 @@ function generateNews(i) {
     date.className = "date";
     
     date.after(textBlock);
-    textBlock.className = "hide-block-wrapper";
+    textBlock.className = "hide-block-wrapper"; // блок в котором находится текст, кнопка и фотки
     
-    textBlock.prepend(hideBox);
+    textBlock.prepend(hideBox); // блок с тексом
     hideBox.className = "hide-block";
     
-    hideBox.prepend(p);
-    p.className = "hide-text"; //ниже текст новости   P.S./ future: if (1+ <p>) =====> <pre>, либо for() => create many <p>
-    p.innerHTML = newsInform[i].newsText;
+    for (let k = 0; k < newsInform[i].newsText.length; k++) { // текст
+       let p = document.createElement('p');
+       hideBox.append(p);
+       p.className = "hide-text";
+       p.innerHTML = newsInform[i].newsText[k];
+    }
     
-    hideBox.after(textButton);
+    hideBox.after(textButton); 
     textButton.className = "hide-block-button";
     textButton.innerHTML = "Читать дальше...";
-    textButton.onclick = () => showNews(event);
+    textButton.onclick = () => showNews(newsInform[i].indexOfNews, event);
 
     textButton.after(imageBlock);
-    imageBlock.className = "news-images-wrapper";
+    imageBlock.className = "news-images-wrapper"; // блок фоток
 
-    startOfImageBlocks.after(hideImageBlock);
+    showImageBoxesWrapper.append(hideImageBlock); //не видимий изначально блок
     hideImageBlock.className = "showImageBox";
     hideImageBlock.prepend(hideImageBlockWrapper);
     hideImageBlockWrapper.className = "image-bottom-block";
@@ -73,7 +71,7 @@ function generateNews(i) {
 
         img.addEventListener('click', () => {
             showImg(newsInform[i].indexOfNews); //номер новости, начинается с нуля
-            chengeImg((k + 1), (newsInform[1].indexOfNews + 1)) //first -- number of the image (start from 1), second -- number of the group (start from 1, == showImg + 1)
+            chengeImg((k + 1), (newsInform[i].indexOfNews + 1)) //first -- number of the image (start from 1), second -- number of the group (start from 1, == showImg + 1)
         })
 
         hideImg.addEventListener('click', () => {
@@ -81,6 +79,8 @@ function generateNews(i) {
         })
     }
 }
+
+
 
 
 for (let i = 0; i < newsInform.length; i++) {
