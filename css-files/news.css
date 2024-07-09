@@ -62,15 +62,18 @@ main {
 .hide-block {
     width: 60vw;
     position: relative;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     height: 3.4vw;
-    transition: 0.55s;
+    transition: 0.9s;
 }
 
 .hide-text {
     font-size: 1.7vw;
     line-height: 1.72vw;
     text-align: justify;
+    padding-bottom: 1.5vw;
 }
 
 .hide-block-button {
@@ -283,6 +286,7 @@ main {
     .hide-text {
         font-size: 3.1vw;
         line-height: 3.1vw;
+        padding-bottom: 2.8vw;
     }
     
     .hide-block-button {
