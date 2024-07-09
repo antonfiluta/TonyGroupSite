@@ -76,6 +76,20 @@ window.addEventListener('click', (event) => {
 window.addEventListener('touchend', (event) => {
   let target = event.target; 
 
+  if (target.alt === "news-photo") {
+     mainImage[0].src = target.src; 
+     for (let i = 0; i < imageBar.length; i++) {
+      imageBar[i].style.filter = "grayscale(1)";
+      imageBar[i].style.gap = "1px";
+      if (imageBar[i].src == target.src) {
+        imageBar[i].style.filter = "grayscale(0)";
+        imageBar[i].style.gap = "2px";
+      }
+     }
+     target.style.filter = "grayscale(0)";
+     target.style.gap = "2px";
+  }
+
   if (target.id == "showImageBoxesWrapper") { //закрытие фотографий при нажатии на темную область
     mainB.style.filter = "blur(0)";
     footer.style.filter = "blur(0)";
@@ -86,6 +100,12 @@ window.addEventListener('touchend', (event) => {
     for (let i = 0; i < imageBoxes.length; i++) {
        imageBoxes[i].style.display = "none";
     }
+  }
+
+
+  const dopLinks = document.getElementById("dopLinks-wrapper"); // чтобы работало закрытие доп-вкладок
+  if (target.id !== "dropdown-img") { 
+    dopLinks.style.height = "0vw";
   }
 })
 
