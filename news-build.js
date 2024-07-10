@@ -39,7 +39,7 @@ function generateNews(i) {
     hideBox.after(textButton); 
     textButton.className = "hide-block-button";
     textButton.innerHTML = "Читать дальше...";
-    textButton.onclick = () => showNews(newsInform[i].indexOfNews, event);
+    textButton.onclick = () => showNews(i, event);
 
     textButton.after(imageBlock);
     imageBlock.className = "news-images-wrapper"; // блок фоток
@@ -70,12 +70,12 @@ function generateNews(i) {
         hideImg.alt = img.alt;
 
         img.addEventListener('click', () => {
-            showImg(newsInform[i].indexOfNews); //номер новости, начинается с нуля
-            chengeImg((k + 1), (newsInform[i].indexOfNews + 1)) //first -- number of the image (start from 1), second -- number of the group (start from 1, == showImg + 1)
+            showImg(i); //номер новости, начинается с нуля
+            chengeImg((k + 1), (i + 1)) //first -- number of the image (start from 1), second -- number of the group (start from 1, == showImg + 1)
         })
 
         hideImg.addEventListener('click', () => {
-            chengeImg((k + 1), newsInform[i].indexOfNews + 1)
+            chengeImg((k + 1), i + 1)
         })
     }
 }
