@@ -12,6 +12,13 @@ const newsInform = [
             "images/news/cosmos_5.jpeg", 
             "images/news/cosmos_1.jpg", 
             "images/news/cosmos_4.jpeg",
+            "images/news/cosmos_2.jpeg"
+        ],
+        alts: [
+            "some",
+            "some",
+            "some",
+            "some"
         ]
     },
   ];

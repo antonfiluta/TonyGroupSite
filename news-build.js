@@ -60,7 +60,7 @@ function generateNews(i) {
         imageBox.className = "news-images-box";
         imageBox.append(img);
         img.src = newsInform[i].images[k]; //url картинки
-        img.alt = "news-photo";
+        img.alt = newsInform[i].alts[k];
 
         hideImageBlockWrapper.append(hideImgBox);
         hideImgBox.className = "image-bottom-block-box";
