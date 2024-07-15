@@ -61,6 +61,7 @@ function generateNews(i) {
         imageBox.append(img);
         img.src = newsInform[i].images[k]; //url картинки
         img.alt = newsInform[i].alts[k];
+        img.title = "click me";
 
         hideImageBlockWrapper.append(hideImgBox);
         hideImgBox.className = "image-bottom-block-box";
