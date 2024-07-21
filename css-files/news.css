@@ -24,28 +24,23 @@ main {
     flex-direction: column;
     justify-content: start;
     padding: 1.5vw;
-    padding-top: 1vw;
     margin: 0 0.5vw;
-    border: 2px solid rgb(78, 107, 176);
+    border: 1.5px solid rgb(78, 107, 176);
     border-radius: 1.5vw;
-    background-color: rgba(78, 107, 176, 0.15);
-    box-shadow: 0 0 15px rgb(78, 107, 176);
+    background-color: rgba(99, 129, 199, 0.1);
+    box-shadow: 0 0 15px 1.5px rgba(78, 107, 176, 0.5);
     transition: 0.2s;
     margin-bottom: 3.5vw;
 }
 
-.news-wrapper:hover {
-    box-shadow: 0 0 20px rgb(78, 107, 176);
-}
-
 .news-h2 {
-    font-size: 3.1vw;
-    margin-bottom: 0.6vw;
+    font-size: 2.8vw;
+    margin-bottom: 1.5vw;
 }
 
 .date {
     font-size: 1.5vw;
-    margin-bottom: 1vw;
+    margin-bottom: 1.5vw;
 }
 
 .hide-block {
@@ -54,34 +49,35 @@ main {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    height: 3.4vw;
+    height: 6.8vw;
     transition: 0.9s;
 }
 
 .hide-text {
     font-size: 1.7vw;
-    line-height: 1.72vw;
+    line-height: 1.74vw;
     text-align: justify;
-    padding-bottom: 1.5vw;
+    padding-bottom: 1.7vw;
 }
 
 .hide-block-button {
-    background-color: rgba(78, 107, 176, 0.2);
-    border: 1.5px solid rgb(78, 107, 176);
+    background-color: rgba(78, 107, 176, 0.12);
+    border: 1.5px solid rgb(87, 116, 183);
     font-size: 1.55vw;
     border-radius: 1vw;
     padding: 0.5vw;
     margin-bottom: 1vw;
     margin-top: 0.5vw;
-    box-shadow: 0 0 8px rgb(78, 107, 176);
+    box-shadow: 0 0 6px rgb(78, 107, 176);
     transition: 0.5s;
     color: black;
+    cursor: pointer;
 }
 
 .hide-block-button:hover {
-    background-color: rgba(38, 88, 145, 0.25);
+    background-color: rgba(38, 88, 145, 0.15);
     border: 1.5px solid #268391;
-    box-shadow: 0 0 13px #268391;
+    box-shadow: 0 0 8px #268391;
 }
 
 .showMoreButton {
@@ -118,6 +114,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor:zoom-in;
 }
 
 .news-images-boxOne {
@@ -176,6 +173,7 @@ main {
     border-radius: 5vw;
     box-shadow: 0 0 10px white;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .image-top-block img:nth-child(3) {
@@ -185,6 +183,7 @@ main {
     margin-left: 2vw;
     box-shadow: 0 0 10px white;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .image-top-block img:nth-child(1):hover, 
@@ -217,6 +216,7 @@ main {
     height: 11dvh;
     filter: grayscale(1);
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .image-bottom-block-box:hover {
@@ -265,7 +265,7 @@ main {
     
     .hide-block {
         width: 85vw;
-        height: 6.2vw;
+        height: 12vw;
     }
     
     .hide-text {

@@ -73,9 +73,15 @@ main {
 video {
     width: 65%;
     border-radius: 2vw;
-    border: 2px solid #268391;
-    box-shadow: 0 3px 20px 5px #268391;
+    border: 2px solid black;
+    box-shadow: 0 3px 20px 5px rgba(0, 0, 0, 0.6);
     background-color: black;
+    transition: 0.333s;
+}
+
+video:hover {
+    border: 2px solid rgb(78, 107, 176);
+    box-shadow: 0 3px 20px 2px rgb(78, 107, 176);
 }
 
 

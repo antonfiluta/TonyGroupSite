@@ -173,10 +173,10 @@ function showNews(i, event) {
     let newsBoxHeight = textBox[i].style.height;  //высота обвертки новостей в данный момент
     
     if (newsBoxHeight == (boxHeight + "px")) {
-        textBox[i].style.height = "3.4vw";
+        textBox[i].style.height = "6.84vw";
         target.innerHTML = "Читать дальше...";
         if (window.innerWidth < 700) {
-          textBox[i].style.height = "6.2vw";
+          textBox[i].style.height = "12vw";
         }
     } else {
         target.innerHTML = "Скрыть текст"
