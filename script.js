@@ -40,9 +40,9 @@ function toScroll() {
         mail.style.display = "none";
 
         if (ParentOrChild.title === "child") { //проверяет вложенность файла
-          logo.src = "../../images/logoM.jpeg";
+          logo.src = "../../assets/images/mainPagesImgs/logoM.jpeg";
         } else {
-          logo.src = "images/logoM.jpeg";
+          logo.src = "assets/images/mainPagesImgs/logoM.jpeg";
         }
     } else {                      //без прокурутки
         if (window.innerWidth < 700) {//проверяет разрешение экрана
@@ -59,15 +59,15 @@ function toScroll() {
             dopLinks.style.top = "15vw";
         }
       head.style.alignItems = "end";
-      logo.src = "images/bigLogo.jpeg";
+      logo.src = "assets/images/mainPagesImgs/bigLogo.jpeg";
       num.style.display = "block";
       mail.style.display = "block";
       menuBox.style.display = "none";
 
       if (ParentOrChild.title === "child") { //проверяет вложенность файла 
-        logo.src = "../../images/bigLogo.jpeg";
+        logo.src = "../../assets/images/mainPagesImgs/bigLogo.jpeg";
       } else {
-        logo.src = "images/bigLogo.jpeg";
+        logo.src = "assets/images/mainPagesImgs/bigLogo.jpeg";
       }
     }
 
@@ -177,14 +177,14 @@ dropdownArea.onmouseover = function(event) {
   dropdownImg.style.rotate = "360deg";
   if (r4.checked === true) return;
 
-  let dropSrc = "images/folder-for-arrows/dropdownArrowWhite.png";
+  let dropSrc = "assets/images/folder-for-arrows/dropdownArrowWhite.png";
   dropdownImg.src = dropSrc;
 
   if (ParentOrChild.title === "child") dropdownImg.src = "../../" + dropSrc;
 }
 
 dropdownArea.onmouseout = function(event) {
-    let dropSrc = "images/folder-for-arrows/dropdownArrowBlue.png";
+    let dropSrc = "assets/images/folder-for-arrows/dropdownArrowBlue.png";
     dropdownImg.src = dropSrc;
 
     if (ParentOrChild.title === "child")  dropdownImg.src = "../../" + dropSrc;  

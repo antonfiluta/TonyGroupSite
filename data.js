@@ -9,10 +9,10 @@ const newsInform = [
             "Галактики типа «зеленая фасоль» представляют собой активные галактики, светящиеся зеленым из-за интенсивного излучения области вокруг центральной черной дыры. В ходе Слоановского цифрового обзора неба (SDSS) идентифицировано только 17 таких галактик."
         ],
         images: [ //массив путей к фото
-            "images/news/cosmos_5.jpeg", 
-            "images/news/cosmos_1.jpg", 
-            "images/news/cosmos_4.jpeg",
-            "images/news/cosmos_2.jpeg"
+            "assets/images/news/news1/IMG_2749.JPG",
+            "assets/images/news/news1/IMG_2750.JPG",
+            "assets/images/news/news1/IMG_2751.JPG",
+            "assets/images/news/news1/IMG_2980.JPG"
         ],
         alts: [
             "some",
@@ -31,16 +31,18 @@ const newsInform = [
             "Галактики типа «зеленая фасоль» представляют собой активные галактики, светящиеся зеленым из-за интенсивного излучения области вокруг центральной черной дыры. В ходе Слоановского цифрового обзора неба (SDSS) идентифицировано только 17 таких галактик."
         ],
         images: [ //массив путей к фото
-            "images/news/cosmos_2.jpeg", 
-            "images/news/cosmos_1.jpg", 
-            "images/news/cosmos_4.jpeg",
-            "images/news/cosmos_2.jpeg"
+            "assets/images/news/news2/1.jpg",
+            "assets/images/news/news2/2.jpg",
+            "assets/images/news/news2/3.jpg",
+            "assets/images/news/news2/4.jpg",
+            "assets/images/news/news2/5.jpeg",
         ],
         alts: [
             "some",
             "some",
             "some",
-            "some"
+            "some",
+            "some",
         ]
     },
   ];

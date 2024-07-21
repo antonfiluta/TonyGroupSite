@@ -37,12 +37,12 @@ function generateNews(i) {
     }
     
     hideBox.after(textButton); 
-    textButton.className = "hide-block-button";
+    textButton.classList.add("hide-block-button");
     textButton.innerHTML = "Читать дальше...";
     textButton.onclick = () => showNews(i, event);
 
     textButton.after(imageBlock);
-    imageBlock.className = "news-images-wrapper"; // блок фоток
+    imageBlock.classList.add("news-images-wrapper"); // блок фоток
 
     showImageBoxesWrapper.append(hideImageBlock); //не видимий изначально блок
     hideImageBlock.className = "showImageBox";
@@ -50,29 +50,42 @@ function generateNews(i) {
     hideImageBlockWrapper.className = "image-bottom-block";
 
 
-    for (let k = 0; k < newsInform[i].images.length; k++) { // число фотографий
+    let imgArrLength = newsInform[i].images.length;
+
+    for (let k = 0; k < imgArrLength; k++) { // число фотографий
         let imageBox = document.createElement('div');
-        let img = document.createElement('img');
         let hideImgBox = document.createElement('div');
         let hideImg = document.createElement('img');
 
         imageBlock.append(imageBox);
-        imageBox.className = "news-images-box";
-        imageBox.append(img);
-        img.src = newsInform[i].images[k]; //url картинки
-        img.alt = newsInform[i].alts[k];
-        img.title = "click me";
+        imageBox.classList.add("news-images-box");
+        imageBox.style.backgroundImage = 'url(' + newsInform[i].images[k] + ')'; //url картинки
+        imageBox.title = "click me";
+        imageBox.name = newsInform[i].images[k];
+
+        if (imgArrLength === 3 || imgArrLength === 5) {
+           if (k === 0) imageBox.classList.add('firstImgOne');
+           if (k !== 0) imageBox.classList.add('news-images-boxOne');
+           imageBlock.classList.add('news-images-wrapperOne');
+        }
+        
+        if (imgArrLength === 4 || imgArrLength === 6 || imgArrLength === 7) {
+           if (k === 0) imageBox.classList.add('firstImgTwo');
+           if (k !== 0) imageBox.classList.add('news-images-boxTwo');
+           imageBlock.classList.add('news-images-wrapperTwo');
+        }
+
 
         hideImageBlockWrapper.append(hideImgBox);
         hideImgBox.className = "image-bottom-block-box";
         hideImgBox.append(hideImg);
         hideImg.className = "image-bar";
-        hideImg.src = img.src;
-        hideImg.alt = img.alt;
+        hideImg.src = newsInform[i].images[k];
+        hideImg.alt = newsInform[i].alts[k];
 
-        img.addEventListener('click', () => {
+        imageBox.addEventListener('click', () => {
             showImg(i); //номер новости, начинается с нуля
-            chengeImg((k + 1), (i + 1)) //first -- number of the image (start from 1), second -- number of the group (start from 1, == showImg + 1)
+            chengeImg((k + 1), (i + 1)); //first -- number of the image (start from 1), second -- number of the group (start from 1, == showImg + 1)
         })
 
         hideImg.addEventListener('click', () => {
@@ -87,3 +100,18 @@ function generateNews(i) {
 for (let i = 0; i < newsInform.length; i++) {
     generateNews(i)
 }
+
+
+//подсветка фоток в баре
+for (let i = 0; i < imageBar.length; i++) {
+    imageBar[i].onmouseover = function() {
+      if (imageBar[i].style.gap == "1px") {
+        imageBar[i].style.filter = "grayscale(0)";
+      }
+    }
+    imageBar[i].onmouseout = function() {
+      if (imageBar[i].style.gap == "1px") {
+        imageBar[i].style.filter = "grayscale(1)";
+      }
+    }
+   }

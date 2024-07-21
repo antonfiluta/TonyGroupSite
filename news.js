@@ -19,32 +19,32 @@ function showImg(k) {
 
 
 
-//подсветка фоток в баре
-for (let i = 0; i < imageBar.length; i++) {
-  imageBar[i].onmouseover = function() {
-    if (imageBar[i].style.gap == "1px") {
-      imageBar[i].style.filter = "grayscale(0)";
-    }
-  }
-  imageBar[i].onmouseout = function() {
-    if (imageBar[i].style.gap == "1px") {
-      imageBar[i].style.filter = "grayscale(1)";
-    }
-  }
- }
-
-
-
 
 window.addEventListener('click', (event) => {
   let target = event.target; 
 
-  if (target.alt === "news-photo") {
+  if (target.classList.contains("news-images-box")) {
+    mainImage[0].src = target.name; 
+    for (let i = 0; i < imageBar.length; i++) {
+     imageBar[i].style.filter = "grayscale(1)";
+     imageBar[i].style.gap = "1px";
+     if (imageBar[i].src == mainImage[0].src) {
+       imageBar[i].style.filter = "grayscale(0)";
+       imageBar[i].style.gap = "2px";
+     }
+    }
+    target.style.filter = "grayscale(0)";
+    target.style.gap = "2px";
+ }
+
+
+
+  if (target.className === "image-bar") {
      mainImage[0].src = target.src; 
      for (let i = 0; i < imageBar.length; i++) {
       imageBar[i].style.filter = "grayscale(1)";
       imageBar[i].style.gap = "1px";
-      if (imageBar[i].src == target.src) {
+      if (imageBar[i].src == mainImage[0].src) {
         imageBar[i].style.filter = "grayscale(0)";
         imageBar[i].style.gap = "2px";
       }
@@ -75,6 +75,21 @@ window.addEventListener('click', (event) => {
 
 window.addEventListener('touchend', (event) => {
   let target = event.target; 
+
+
+  if (target.classList.contains("news-images-box")) {
+    mainImage[0].src = target.name; 
+    for (let i = 0; i < imageBar.length; i++) {
+     imageBar[i].style.filter = "grayscale(1)";
+     imageBar[i].style.gap = "1px";
+     if (imageBar[i].src == mainImage[0].src) {
+       imageBar[i].style.filter = "grayscale(0)";
+       imageBar[i].style.gap = "2px";
+     }
+    }
+    target.style.filter = "grayscale(0)";
+    target.style.gap = "2px";
+ }
 
   if (target.alt === "news-photo") {
      mainImage[0].src = target.src; 
