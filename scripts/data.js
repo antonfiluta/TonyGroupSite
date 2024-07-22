@@ -17,7 +17,7 @@ const newsInform = [
             "assets/images/news/news1/IMG_2749.JPG",
             "assets/images/news/news1/IMG_2750.JPG",
             "assets/images/news/news1/IMG_2751.JPG",
-            "assets/images/news/news1/IMG_2980.JPG"
+            "assets/images/news/news1/IMG_2980.JPG",
         ],
         alts: [
             "some",
