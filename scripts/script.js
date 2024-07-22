@@ -134,6 +134,7 @@ const card4 = document.getElementById('c-id4');
 
 window.addEventListener('click', (event) => {
   let target = event.target; 
+  if (target.classList == 'tips') alert('works');
   if (target.id !== "dropdown-img") {
     dopLinks.style.height = "0vw";
   } 
