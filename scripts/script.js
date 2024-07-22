@@ -111,7 +111,7 @@ window.addEventListener('click', (event) => {
 
 window.addEventListener('touchend', (event) => {
   let target = event.target;
-  if (target == menuB || target.classList == "bar")return;
+  if (target == menuB || target.classList == "bar") return;
   hideMenu()
 });
 
@@ -146,7 +146,7 @@ window.addEventListener('click', (event) => {
 
 window.addEventListener('touchend', (event) => {
   let target = event.target; 
-  if (target.id !== "dropdown-img") {
+  if (target.id !== "dropdown-img" && target.classList !== "tips") {
     dopLinks.style.height = "0vw";
   } 
   if (target.id == 'c-id1' || target.id == 'c1' || target.id == 'c-id2' || target.id == 'c2' || target.id == 'c-id3' || target.id == 'c3' || target.id == 'c-id4' || target.id == 'c4' || target.id == 'tips-box') {
